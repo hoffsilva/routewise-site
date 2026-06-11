@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RouteWise - Termos e Privacidade</title>
-    <meta name="description" content="Política de privacidade e termos de uso do RouteWise em português, inglês e francês.">
+    <title>RouteWise - Terms and Privacy</title>
+    <meta id="page-description" name="description" content="RouteWise privacy policy and terms of use in English, Portuguese, French, and Spanish.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -326,9 +326,10 @@
         </nav>
 
         <div class="language-switcher" aria-label="Language switcher">
-            <button type="button" data-lang="pt">PT</button>
             <button type="button" data-lang="en">EN</button>
+            <button type="button" data-lang="pt">PT</button>
             <button type="button" data-lang="fr">FR</button>
+            <button type="button" data-lang="es">ES</button>
         </div>
     </header>
 
@@ -572,15 +573,114 @@
                         ['10. Changements et contact', ['Nous pouvons mettre à jour ces conditions de temps à autre. La dernière version publiée sur le site doit être traitée comme la version en vigueur.', `Contact : <a href="mailto:${CONTACT_EMAIL}">${CONTACT_EMAIL}</a>.`]]
                     ]
                 }
+            },
+            es: {
+                metaTitle: 'RouteWise - Términos y Privacidad',
+                brandSubtitle: 'Rutas de entrega con menos tiempo perdido.',
+                home: 'Inicio',
+                privacyNav: 'Privacidad',
+                termsNav: 'Términos',
+                kicker: 'Legal',
+                title: 'Política de privacidad y términos en una sola página.',
+                intro: 'Estos documentos explican cómo RouteWise usa datos, procesa suscripciones y define las condiciones de uso de la app.',
+                footer: 'Optimiza rutas, importa direcciones y envía entregas al mapa correcto.',
+                privacy: {
+                    title: 'Política de Privacidad de RouteWise',
+                    updated: 'Última actualización: 9 de junio de 2026',
+                    intro: 'Esta política explica qué información usa RouteWise, por qué se usa y qué opciones tienes sobre tus datos.',
+                    sections: [
+                        ['1. Descripción general', ['RouteWise ayuda a repartidores a organizar paradas, importar listas de direcciones, optimizar rutas, abrir navegación en apps externas y consultar el historial de entregas.', 'Esta política se aplica a la app RouteWise, a routewise.app y a los flujos de cuenta, sincronización, importación de direcciones, OCR, mapas y suscripción conectados al producto.']],
+                        ['2. Datos que proporcionas', ['Podemos procesar datos de cuenta como correo electrónico, identificador de usuario, preferencia de idioma, plan y estado de suscripción.', 'También procesamos destinos, direcciones, nombres de paradas, archivos o textos importados, historial de entregas, preferencias de navegación, configuración de la app y otros datos que agregas al producto.']],
+                        ['3. Ubicación, mapas y rutas', ['Cuando concedes permiso, RouteWise puede usar la ubicación actual para centrar el mapa, calcular rutas desde tu posición y mejorar el orden de las paradas.', 'Las direcciones, coordenadas y consultas de búsqueda pueden enviarse a servicios de mapas, autocompletado y enrutamiento para ofrecer sugerencias, detalles de lugares, cálculo de distancia y navegación.']],
+                        ['4. Importación, cámara, OCR e imágenes', ['Si importas direcciones mediante CSV, texto, cámara o una imagen elegida por ti, la app puede procesar ese contenido para extraer texto, identificar direcciones y crear una vista previa de revisión.', 'Las imágenes pueden optimizarse en el dispositivo y enviarse al backend de RouteWise para procesamiento de IA/OCR y sugerencias de dirección. Usa esta función solo con archivos e imágenes que tengas autorización para procesar.']],
+                        ['5. Cuenta, sincronización y almacenamiento', ['RouteWise usa autenticación, tokens seguros, base de datos local y sincronización para mantener tus datos disponibles entre sesiones y dispositivos cuando ese flujo está activo.', 'Los datos de autenticación deben almacenarse mediante mecanismos seguros del dispositivo cuando estén disponibles. Aun así, eres responsable de proteger tu dispositivo y tus credenciales.']],
+                        ['6. Suscripciones y pagos', ['Si te suscribes a RouteWise Pro, el estado de la suscripción es procesado por la tienda usada para la compra y gestionado por RevenueCat para habilitar el entitlement Pro.', 'RouteWise no recibe los datos sin procesar de tu tarjeta de pago de Apple, Google o RevenueCat.']],
+                        ['7. Diagnóstico y servicios de terceros', ['Podemos usar servicios como Supabase o infraestructura equivalente para autenticación y datos, Google Maps u otros servicios de mapas para búsqueda y rutas, RevenueCat para suscripciones y Sentry para errores y estabilidad.', 'Estos proveedores procesan solo los datos necesarios para sus funciones respectivas y tienen sus propias políticas y obligaciones.']],
+                        ['8. Tus opciones', ['Puedes negar permisos de ubicación, cámara y notificaciones, aunque algunas funciones pueden quedar limitadas o no disponibles.', 'Puedes eliminar datos locales al borrar la app y puedes solicitar acceso, corrección o eliminación de datos de cuenta contactándonos.', 'También puedes eliminar tu cuenta dentro de la app; esto elimina perfil, destinos, historial de entregas, datos de sincronización, estado local de suscripción y registros de RouteWise vinculados a tu identificador de usuario.']],
+                        ['9. Retención, seguridad y límites', ['Conservamos los datos durante el tiempo necesario para proporcionar el servicio, cumplir obligaciones legales, resolver disputas y proteger la plataforma.', 'La eliminación de cuenta se procesa inmediatamente en los sistemas de RouteWise. Copias de seguridad, registros de seguridad, registros de tiendas de pago o datos exigidos por obligación legal pueden tardar hasta 30 días en expirar o conservarse solo durante el plazo legal requerido. Los datos analíticos anonimizados que no te identifican pueden permanecer.', 'Ningún sistema es 100% seguro. Usamos medidas razonables de protección, pero no podemos garantizar seguridad absoluta contra todas las amenazas.']],
+                        ['10. LGPD y derechos en Brasil', ['Para usuarios en Brasil, el tratamiento de datos personales sigue la Lei Geral de Proteção de Dados Pessoais, Ley nº 13.709/2018 (LGPD). RouteWise actúa como controlador de los datos personales usados para cuenta, soporte, suscripción y operación de la app, salvo cuando un proveedor actúa como controlador independiente en sus propios servicios.', 'Las bases legales pueden incluir ejecución de contrato, consentimiento, cumplimiento de obligación legal o regulatoria, ejercicio regular de derechos, interés legítimo y prevención de fraude, según la función usada y el contexto del tratamiento.', 'Puedes solicitar confirmación de tratamiento, acceso, corrección, anonimización, bloqueo o eliminación de datos innecesarios o tratados en incumplimiento, portabilidad cuando aplique, información sobre compartición, revisión de decisiones automatizadas cuando exista y revocación del consentimiento.', `Para ejercer derechos previstos por la LGPD o contactar el canal de privacidad, envía un correo a <a href="mailto:${CONTACT_EMAIL}">${CONTACT_EMAIL}</a>. Si lo consideras necesario, también puedes presentar una reclamación ante la Autoridade Nacional de Proteção de Dados (ANPD).`]],
+                        ['11. Contacto', [`Para preguntas de privacidad o solicitudes sobre tus datos, contacta: <a href="mailto:${CONTACT_EMAIL}">${CONTACT_EMAIL}</a>.`]]
+                    ]
+                },
+                terms: {
+                    title: 'Términos de Uso de RouteWise',
+                    updated: 'Última actualización: 9 de junio de 2026',
+                    intro: 'Estos términos explican las condiciones para usar la app RouteWise, el sitio y RouteWise Pro.',
+                    sections: [
+                        ['1. Aceptación y partes', ['Al instalar, acceder o usar RouteWise, aceptas estos términos. Si no estás de acuerdo, no uses la app ni el sitio.', 'Estos términos son entre tú y RouteWise. Apple no es responsable por la app, su contenido o el soporte de la app.']],
+                        ['2. Alcance del producto', ['RouteWise es una herramienta de productividad para repartidores. Ayuda a organizar destinos, importar listas de direcciones, optimizar rutas y abrir navegación en apps compatibles.', 'RouteWise es una herramienta de apoyo. Tú sigues siendo responsable por tus decisiones al conducir, por la seguridad vial y por cumplir las leyes locales.']],
+                        ['3. Licencia', ['Te concedemos una licencia limitada, personal, no exclusiva, intransferible, revocable y no sublicenciable para usar la app en dispositivos que posees o controlas.', 'El uso en dispositivos Apple también debe cumplir las reglas de Apple Media Services y otros términos aplicables de la App Store. En Android, también aplican los términos de Google Play.']],
+                        ['4. Restricciones de uso', ['No puedes copiar, distribuir, vender, alquilar, sublicenciar, modificar o explotar la app más allá de lo permitido por estos términos.', 'No puedes realizar ingeniería inversa, descompilar, desensamblar, intentar extraer el código fuente, eludir protecciones técnicas o crear obras derivadas de la app, excepto cuando la ley aplicable no permita esta restricción.']],
+                        ['5. Servicios de terceros y datos técnicos', ['RouteWise depende de servicios de terceros para mapas, autocompletado, enrutamiento, IA/OCR, autenticación, sincronización, suscripciones, diagnósticos e infraestructura.', 'Al usar RouteWise, aceptas que datos técnicos, diagnósticos, métricas de uso, errores y datos operativos necesarios pueden recopilarse y procesarse para mantener, proteger y mejorar la app.']],
+                        ['6. Suscripción RouteWise Pro', ['RouteWise puede ofrecer suscripciones autorrenovables llamadas RouteWise Pro, incluyendo RouteWise Pro Monthly, con periodo de 1 mes, y RouteWise Pro Annual, con periodo de 1 año.', 'El precio final varía por país, moneda, impuestos y tienda usada. El valor aplicable siempre aparece en el flujo de compra y en la pantalla de confirmación de la tienda antes de cualquier cobro.', 'La suscripción se renueva automáticamente al final de cada periodo, salvo cancelación al menos 24 horas antes del fin del periodo actual cuando se compra en App Store. Reglas equivalentes de Google Play aplican para compras en Android.', 'Puedes revisar, gestionar o cancelar la suscripción en la configuración de suscripciones del Apple ID o en el área de suscripciones de Google Play. Los reembolsos siguen las políticas de la tienda aplicable.']],
+                        ['7. Soporte, garantía y Apple', ['El mantenimiento y soporte de RouteWise son proporcionados por RouteWise, no por Apple. Para soporte, contacta hi@routewise.app.', 'Si la app no cumple una garantía aplicable, puedes notificar a Apple. En ese caso, Apple podrá reembolsar el precio pagado por la app, cuando aplique. Fuera de eso, Apple no tiene obligación de garantía, mantenimiento o soporte relacionada con RouteWise.', 'Apple y sus subsidiarias son terceros beneficiarios de estos términos y, después de tu aceptación, podrán hacer valer estos términos contra ti en esa condición.']],
+                        ['8. Propiedad intelectual y cumplimiento legal', ['Todos los derechos de RouteWise, incluyendo software, marca, diseño, textos, estructura y contenido del producto, pertenecen a RouteWise o a sus licenciantes.', 'Declaras que no estás ubicado en un país sujeto a embargo del gobierno de EE. UU., que no estás en un país designado por el gobierno de EE. UU. como patrocinador del terrorismo y que no estás en listas gubernamentales de partes prohibidas o restringidas.']],
+                        ['9. Disponibilidad y limitación de responsabilidad', ['GPS, distancia, tiempo, tráfico, geocodificación, OCR y optimización de rutas dependen de permisos, señal del dispositivo, datos ingresados y servicios de terceros. Los resultados deben tratarse como estimaciones.', 'En la máxima medida permitida por la ley, RouteWise no se responsabiliza por daños indirectos, incidentales, especiales, punitivos o consecuentes relacionados con el uso de la app, pérdida de datos, indisponibilidad, decisiones de ruta o comportamiento de terceros.']],
+                        ['10. Cambios y contacto', ['Podemos actualizar estos términos ocasionalmente. La versión más reciente publicada en el sitio debe considerarse la versión vigente.', `Contacto: <a href="mailto:${CONTACT_EMAIL}">${CONTACT_EMAIL}</a>.`]]
+                    ]
+                }
             }
         };
 
+        const SITE_LANG_STORAGE_KEY = 'routewise-site-lang';
+        const META_DESCRIPTIONS = {
+            en: 'RouteWise privacy policy and terms of use in English, Portuguese, French, and Spanish.',
+            pt: 'Política de privacidade e termos de uso do RouteWise em português, inglês, francês e espanhol.',
+            fr: 'Politique de confidentialité et conditions d’utilisation de RouteWise en anglais, portugais, français et espagnol.',
+            es: 'Política de privacidad y términos de uso de RouteWise en inglés, portugués, francés y español.',
+        };
+        const HTML_LANG = {
+            en: 'en',
+            pt: 'pt-BR',
+            fr: 'fr-CA',
+            es: 'es',
+        };
+
+        function matchSupportedLanguage(rawLanguage) {
+            if (!rawLanguage) return null;
+            const normalized = rawLanguage.trim().replace(/_/g, '-').toLowerCase();
+            if (normalized.startsWith('pt')) return 'pt';
+            if (normalized.startsWith('fr')) return 'fr';
+            if (normalized.startsWith('es')) return 'es';
+            if (normalized.startsWith('en')) return 'en';
+            return null;
+        }
+
+        function readStoredLanguage() {
+            try {
+                return window.localStorage.getItem(SITE_LANG_STORAGE_KEY);
+            } catch {
+                return null;
+            }
+        }
+
+        function writeStoredLanguage(lang) {
+            try {
+                window.localStorage.setItem(SITE_LANG_STORAGE_KEY, lang);
+            } catch {
+                // Storage can be unavailable in private browsing; URL language still works.
+            }
+        }
+
         function resolveLanguage() {
             const params = new URLSearchParams(window.location.search);
-            const raw = (params.get('lang') || navigator.language || 'pt').toLowerCase();
-            if (raw.startsWith('en')) return 'en';
-            if (raw.startsWith('fr')) return 'fr';
-            return 'pt';
+            const queryLanguage = params.get('lang');
+            if (queryLanguage) return matchSupportedLanguage(queryLanguage) || 'en';
+
+            const storedLanguage = matchSupportedLanguage(readStoredLanguage());
+            if (storedLanguage) return storedLanguage;
+
+            const browserLanguages = [
+                ...((navigator.languages || [])),
+                navigator.language,
+            ];
+
+            for (const browserLanguage of browserLanguages) {
+                const matched = matchSupportedLanguage(browserLanguage);
+                if (matched) return matched;
+            }
+
+            return 'en';
         }
 
         function renderDocument(id, doc) {
@@ -602,9 +702,11 @@
         }
 
         function applyLanguage(lang) {
-            const copy = documents[lang] || documents.pt;
-            document.documentElement.lang = lang === 'pt' ? 'pt-BR' : lang === 'fr' ? 'fr-CA' : 'en';
+            const copy = documents[lang] || documents.en;
+            const description = document.getElementById('page-description');
+            document.documentElement.lang = HTML_LANG[lang] || 'en';
             document.title = copy.metaTitle;
+            if (description) description.setAttribute('content', META_DESCRIPTIONS[lang] || META_DESCRIPTIONS.en);
             document.querySelectorAll('[data-text]').forEach((node) => {
                 const key = node.getAttribute('data-text');
                 if (copy[key]) node.textContent = copy[key];
@@ -612,21 +714,27 @@
             document.querySelectorAll('[data-lang]').forEach((button) => {
                 button.classList.toggle('active', button.getAttribute('data-lang') === lang);
             });
+            document.querySelectorAll('a[href^="./index.html"]').forEach((link) => {
+                link.setAttribute('href', `./index.html?lang=${lang}`);
+            });
             document.getElementById('legal-content').innerHTML =
                 renderDocument('privacy', copy.privacy) + renderDocument('terms', copy.terms);
         }
 
         document.querySelectorAll('[data-lang]').forEach((button) => {
             button.addEventListener('click', () => {
-                const lang = button.getAttribute('data-lang');
+                const lang = matchSupportedLanguage(button.getAttribute('data-lang')) || 'en';
                 const url = new URL(window.location.href);
                 url.searchParams.set('lang', lang);
+                writeStoredLanguage(lang);
                 history.replaceState(null, '', url);
                 applyLanguage(lang);
             });
         });
 
-        applyLanguage(resolveLanguage());
+        const activeLang = resolveLanguage();
+        writeStoredLanguage(activeLang);
+        applyLanguage(activeLang);
     </script>
 </body>
 </html>

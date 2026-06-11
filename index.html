@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RouteWise - Otimize rotas e importe endereços de entrega</title>
-    <meta name="description" content="RouteWise ajuda entregadores a otimizar rotas, importar endereços por CSV, texto, foto ou câmera, revisar sugestões e navegar até as entregas.">
+    <title>RouteWise - Optimize routes and import delivery addresses</title>
+    <meta id="page-description" name="description" content="RouteWise helps delivery drivers optimize routes, import addresses from CSV, text, photos, or camera, review suggestions, and navigate deliveries.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -118,6 +118,41 @@
 
         .nav-links a:hover {
             color: var(--primary-blue);
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .language-switcher {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            padding: 0.25rem;
+            border: 1px solid rgba(226, 232, 237, 0.85);
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.78);
+            box-shadow: var(--shadow-soft);
+        }
+
+        .language-switcher button {
+            border: 0;
+            border-radius: 999px;
+            padding: 0.48rem 0.7rem;
+            background: transparent;
+            color: var(--gray-600);
+            font: inherit;
+            font-size: 0.8rem;
+            font-weight: 800;
+            cursor: pointer;
+            transition: background 0.2s ease, color 0.2s ease;
+        }
+
+        .language-switcher button.is-active {
+            background: var(--gradient-map);
+            color: var(--white);
         }
 
         .nav-cta {
@@ -894,6 +929,39 @@
             margin: 0 auto;
         }
 
+        /* Screenshots */
+        .screenshots {
+            padding: 6rem 2rem;
+            background: linear-gradient(180deg, var(--light) 0%, var(--white) 100%);
+            border-top: 1px solid var(--gray-100);
+            border-bottom: 1px solid var(--gray-100);
+        }
+
+        .screenshots-grid {
+            max-width: 1180px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(5, minmax(0, 1fr));
+            gap: 1.1rem;
+            align-items: start;
+        }
+
+        .screenshot-card {
+            border-radius: 28px;
+            padding: 0.45rem;
+            background: var(--white);
+            border: 1px solid var(--gray-200);
+            box-shadow: var(--shadow-soft);
+            overflow: hidden;
+        }
+
+        .screenshot-card img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 22px;
+        }
+
         /* Testimonials */
         .testimonials {
             padding: 6rem 2rem;
@@ -1247,8 +1315,26 @@
 
         /* Responsive */
         @media (max-width: 968px) {
+            .hero {
+                min-height: auto;
+                align-items: flex-start;
+                padding-top: 7rem;
+            }
+
             .nav-links, .nav-cta {
                 display: none;
+            }
+
+            .nav-actions {
+                margin-left: auto;
+            }
+
+            .language-switcher {
+                gap: 0.2rem;
+            }
+
+            .language-switcher button {
+                padding: 0.45rem 0.58rem;
             }
 
             .mobile-menu-btn {
@@ -1261,12 +1347,12 @@
             }
 
             .hero-content {
-                order: 1;
+                order: 0;
             }
 
             .hero-visual {
-                order: 0;
-                margin-bottom: 2rem;
+                order: 1;
+                margin: 2.5rem 0 0;
             }
 
             .hero-description {
@@ -1307,6 +1393,11 @@
             .features-grid {
                 grid-template-columns: 1fr;
                 max-width: 400px;
+            }
+
+            .screenshots-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                max-width: 640px;
             }
 
             .comparison-grid {
@@ -1373,18 +1464,23 @@
                 width: 100%;
                 justify-content: center;
             }
+
+            .screenshots-grid {
+                grid-template-columns: 1fr;
+                max-width: 320px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="redirect-banner is-hidden" id="redirect-banner">
         <div>
-            <strong>Abrindo a App Store...</strong>
-            <span>Você está em um dispositivo móvel. O RouteWise vai abrir a página do app em instantes.</span>
+            <strong data-i18n="redirect.title">Opening the App Store...</strong>
+            <span data-i18n="redirect.body">You are on a mobile device. RouteWise will open the app page in a moment.</span>
         </div>
         <div class="redirect-actions">
-            <button class="redirect-button ghost" id="redirect-cancel" type="button">Ficar no site</button>
-            <a class="redirect-button solid" id="redirect-continue" href="https://apps.apple.com/us/app/routewise-mobile/id6756224699" target="_blank" rel="noreferrer">Abrir App Store</a>
+            <button class="redirect-button ghost" id="redirect-cancel" type="button" data-i18n="redirect.cancel">Stay on site</button>
+            <a class="redirect-button solid" id="redirect-continue" href="https://apps.apple.com/us/app/routewise-mobile/id6756224699" target="_blank" rel="noreferrer" data-i18n="redirect.continue">Open App Store</a>
         </div>
     </div>
 
@@ -1396,10 +1492,19 @@
                 <span class="logo-text">RouteWise</span>
             </a>
             <ul class="nav-links">
-                <li><a href="#recursos">Recursos</a></li>
-                <li><a href="#como-funciona">Como Funciona</a></li>
+                <li><a href="#recursos" data-i18n="nav.features">Features</a></li>
+                <li><a href="#screenshots" data-i18n="nav.screenshots">Screenshots</a></li>
+                <li><a href="#como-funciona" data-i18n="nav.howItWorks">How It Works</a></li>
             </ul>
-            <a class="nav-cta" id="nav-store-link" href="https://apps.apple.com/us/app/routewise-mobile/id6756224699" target="_blank" rel="noreferrer">Baixar app</a>
+            <div class="nav-actions">
+                <div class="language-switcher" aria-label="Language switcher">
+                    <button type="button" data-lang-switch="en">EN</button>
+                    <button type="button" data-lang-switch="pt">PT</button>
+                    <button type="button" data-lang-switch="fr">FR</button>
+                    <button type="button" data-lang-switch="es">ES</button>
+                </div>
+                <a class="nav-cta" id="nav-store-link" href="https://apps.apple.com/us/app/routewise-mobile/id6756224699" target="_blank" rel="noreferrer" data-i18n="nav.download">Download app</a>
+            </div>
             <button class="mobile-menu-btn" aria-label="Menu">
                 <span></span>
                 <span></span>
@@ -1412,29 +1517,27 @@
     <section class="hero">
         <div class="hero-container">
             <div class="hero-content">
-                <div class="hero-badge">Rotas otimizadas com importação inteligente</div>
-                <h1>Entregue mais.<br>Dirija <span>menos.</span></h1>
-                <p class="hero-description">
-                    RouteWise otimiza suas rotas automaticamente e agora também importa paradas por CSV, texto, foto ou câmera para você revisar antes de sair para entregar.
-                </p>
+                <div class="hero-badge" data-i18n="hero.badge">Optimized routes with smart importing</div>
+                <h1 data-i18n-html="hero.title">Deliver more.<br>Drive <span>less.</span></h1>
+                <p class="hero-description" data-i18n="hero.description">RouteWise optimizes your routes automatically and imports stops from CSV, text, photos, or camera so you can review them before starting deliveries.</p>
                 <div class="hero-ctas">
                     <a href="https://apps.apple.com/us/app/routewise-mobile/id6756224699" class="btn-primary" id="hero-store-link" target="_blank" rel="noreferrer">
                         <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                        Baixar na App Store
+                        <span data-i18n="hero.primaryCta">Download on the App Store</span>
                     </a>
                     <a href="#como-funciona" class="btn-secondary">
                         <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-                        Como funciona
+                        <span data-i18n="hero.secondaryCta">How it works</span>
                     </a>
                 </div>
                 <div class="hero-trust">
                     <div class="hero-trust-item">
                         <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-                        Rotas otimizadas
+                        <span data-i18n="hero.trustRoute">Optimized routes</span>
                     </div>
                     <div class="hero-trust-item">
                         <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-                        CSV, texto, foto e câmera
+                        <span data-i18n="hero.trustImport">CSV, text, photos, and camera</span>
                     </div>
                 </div>
             </div>
@@ -1443,8 +1546,8 @@
                     <div class="phone-frame">
                         <div class="phone-screen">
                             <div class="phone-header">
-                                <div class="phone-header-text">Rota otimizada</div>
-                                <div class="phone-header-title">15 paradas • 42 km</div>
+                                <div class="phone-header-text" data-i18n="mockup.headerText">Optimized route</div>
+                                <div class="phone-header-title" data-i18n="mockup.headerTitle">15 stops • 42 km</div>
                             </div>
                             <div class="phone-map">
                                 <div class="map-route">
@@ -1467,10 +1570,10 @@
                             </div>
                             <div class="phone-bottom-bar">
                                 <div class="bottom-bar-info">
-                                    <span class="bottom-bar-label">Tempo estimado</span>
+                                    <span class="bottom-bar-label" data-i18n="mockup.etaLabel">Estimated time</span>
                                     <span class="bottom-bar-value">1h 23min</span>
                                 </div>
-                                <div class="bottom-bar-btn">Iniciar</div>
+                                <div class="bottom-bar-btn" data-i18n="mockup.start">Start</div>
                             </div>
                         </div>
                     </div>
@@ -1478,15 +1581,15 @@
                 <div class="floating-card floating-card-1">
                     <div class="floating-icon time">📄</div>
                     <div>
-                        <div class="floating-text">Importe uma lista</div>
-                        <div class="floating-value">CSV, texto ou foto</div>
+                        <div class="floating-text" data-i18n="floating.importText">Import a list</div>
+                        <div class="floating-value" data-i18n="floating.importValue">CSV, text, or photo</div>
                     </div>
                 </div>
                 <div class="floating-card floating-card-2">
                     <div class="floating-icon route">📸</div>
                     <div>
-                        <div class="floating-text">Menos km rodados</div>
-                        <div class="floating-value">Rota otimizada</div>
+                        <div class="floating-text" data-i18n="floating.routeText">Fewer kilometers</div>
+                        <div class="floating-value" data-i18n="floating.routeValue">Optimized route</div>
                     </div>
                 </div>
             </div>
@@ -1498,41 +1601,57 @@
     <!-- Features -->
     <section class="features" id="recursos">
         <div class="section-header">
-            <span class="section-tag">Recursos</span>
-            <h2>Tudo que você precisa para entregar melhor</h2>
-            <p>Otimização de rotas continua no centro do app, agora com importação e revisão de listas para acelerar a montagem das paradas.</p>
+            <span class="section-tag" data-i18n="features.kicker">Features</span>
+            <h2 data-i18n="features.title">Everything you need to deliver better</h2>
+            <p data-i18n="features.description">Route optimization stays at the center of the app, now with list importing and review to build stops faster.</p>
         </div>
         <div class="features-grid">
             <div class="feature-card">
                 <div class="feature-icon blue">🚀</div>
-                <h3>Otimização instantânea</h3>
-                <p>Adicione suas paradas e o RouteWise calcula uma rota eficiente para reduzir tempo, distância e retrabalho.</p>
+                <h3 data-i18n="features.instantTitle">Instant optimization</h3>
+                <p data-i18n="features.instantBody">Add your stops and RouteWise calculates an efficient route to reduce time, distance, and rework.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon teal">📄</div>
-                <h3>Importar arquivos</h3>
-                <p>Envie CSV ou texto com endereços. O app entende listas com ou sem cabeçalho e prepara os itens para revisão.</p>
+                <h3 data-i18n="features.filesTitle">Import files</h3>
+                <p data-i18n="features.filesBody">Send CSV or text with addresses. The app understands lists with or without headers and prepares items for review.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon orange">📸</div>
-                <h3>Foto ou câmera com IA</h3>
-                <p>Selecione uma foto ou tire uma imagem de lista, manifesto ou documento. A IA extrai múltiplos endereços em um único preview.</p>
+                <h3 data-i18n="features.photoTitle">Photo or camera with AI</h3>
+                <p data-i18n="features.photoBody">Select a photo or capture a list, manifest, or document. AI extracts multiple addresses into a single preview.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon coral">✅</div>
-                <h3>Preview antes de salvar</h3>
-                <p>Revise cada item, marque o que entra na rota e corrija endereços com baixa confiança sem bloquear o lote inteiro.</p>
+                <h3 data-i18n="features.previewTitle">Preview before saving</h3>
+                <p data-i18n="features.previewBody">Review each item, choose what enters the route, and fix low-confidence addresses without blocking the whole batch.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon blue">🚀</div>
-                <h3>Sugestões de endereço</h3>
-                <p>Cada endereço válido recebe sugestões do Google Places para facilitar a escolha do local correto antes de buscar detalhes.</p>
+                <h3 data-i18n="features.suggestionsTitle">Address suggestions</h3>
+                <p data-i18n="features.suggestionsBody">Each valid address receives Google Places suggestions to help pick the right location before fetching details.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon teal">🗺️</div>
-                <h3>Integração com GPS</h3>
-                <p>Abra sua rota no Google Maps, Waze ou Apple Maps e use o app de navegação que você já conhece.</p>
+                <h3 data-i18n="features.gpsTitle">GPS integration</h3>
+                <p data-i18n="features.gpsBody">Open your route in Google Maps, Waze, or Apple Maps and use the navigation app you already know.</p>
             </div>
+        </div>
+    </section>
+
+    <!-- App Store Screenshots -->
+    <section class="screenshots" id="screenshots">
+        <div class="section-header">
+            <span class="section-tag" data-i18n="screenshots.kicker">App screenshots</span>
+            <h2 data-i18n="screenshots.title">The same localized screens published on the App Store</h2>
+            <p data-i18n="screenshots.description">Preview the current RouteWise app flow in your selected language before downloading.</p>
+        </div>
+        <div class="screenshots-grid" aria-live="polite">
+            <figure class="screenshot-card"><img src="assets/screens/en/image1.jpg" alt="RouteWise app screenshot 1" data-screenshot="1" loading="lazy"></figure>
+            <figure class="screenshot-card"><img src="assets/screens/en/image2.jpg" alt="RouteWise app screenshot 2" data-screenshot="2" loading="lazy"></figure>
+            <figure class="screenshot-card"><img src="assets/screens/en/image3.jpg" alt="RouteWise app screenshot 3" data-screenshot="3" loading="lazy"></figure>
+            <figure class="screenshot-card"><img src="assets/screens/en/image4.jpg" alt="RouteWise app screenshot 4" data-screenshot="4" loading="lazy"></figure>
+            <figure class="screenshot-card"><img src="assets/screens/en/image5.jpg" alt="RouteWise app screenshot 5" data-screenshot="5" loading="lazy"></figure>
         </div>
     </section>
 
@@ -1541,25 +1660,25 @@
     <section class="how-it-works" id="como-funciona">
         <div class="steps-container">
             <div class="section-header">
-                <span class="section-tag">Como Funciona</span>
-                <h2>Comece em 3 passos simples</h2>
-                <p>Sem configuração complicada. É só baixar e começar a usar.</p>
+                <span class="section-tag" data-i18n="steps.kicker">How It Works</span>
+                <h2 data-i18n="steps.title">Start in 3 simple steps</h2>
+                <p data-i18n="steps.description">No complicated setup. Download the app and start using it.</p>
             </div>
             <div class="steps">
                 <div class="step">
                     <div class="step-number">1</div>
-                    <h3>Importe os endereços</h3>
-                    <p>Use arquivo CSV, texto, foto, câmera ou adição manual.</p>
+                    <h3 data-i18n="steps.oneTitle">Import addresses</h3>
+                    <p data-i18n="steps.oneBody">Use a CSV file, text, photo, camera, or manual entry.</p>
                 </div>
                 <div class="step">
                     <div class="step-number">2</div>
-                    <h3>Revise o preview</h3>
-                    <p>Escolha as sugestões corretas, ignore duplicados e confirme só o que está pronto.</p>
+                    <h3 data-i18n="steps.twoTitle">Review the preview</h3>
+                    <p data-i18n="steps.twoBody">Choose the right suggestions, ignore duplicates, and confirm only what is ready.</p>
                 </div>
                 <div class="step">
                     <div class="step-number">3</div>
-                    <h3>Otimize e navegue</h3>
-                    <p>Salve as paradas no app, calcule a rota e navegue com seu GPS favorito.</p>
+                    <h3 data-i18n="steps.threeTitle">Optimize and navigate</h3>
+                    <p data-i18n="steps.threeBody">Save stops in the app, calculate the route, and navigate with your favorite GPS.</p>
                 </div>
             </div>
         </div>
@@ -1577,44 +1696,516 @@
                         <img src="icon.png" alt="RouteWise" class="footer-logo-icon">
                         <span class="footer-logo-text">RouteWise</span>
                     </div>
-                    <p>Otimizando rotas de entrega para ajudar entregadores a trabalhar de forma mais inteligente, não mais difícil.</p>
+                    <p data-i18n="footer.tagline">Optimizing delivery routes to help drivers work smarter, not harder.</p>
                 </div>
                 <div class="footer-links">
                     <div class="footer-column">
-                        <h4>Produto</h4>
+                        <h4 data-i18n="footer.product">Product</h4>
                         <ul>
-                            <li><a href="#recursos">Recursos</a></li>
-                            <li><a href="#como-funciona">Como Funciona</a></li>
+                            <li><a href="#recursos" data-i18n="nav.features">Features</a></li>
+                            <li><a href="#screenshots" data-i18n="nav.screenshots">Screenshots</a></li>
+                            <li><a href="#como-funciona" data-i18n="nav.howItWorks">How It Works</a></li>
                         </ul>
                     </div>
                     <div class="footer-column">
-                        <h4>Suporte</h4>
+                        <h4 data-i18n="footer.support">Support</h4>
                         <ul>
-                            <li><a href="#">Central de Ajuda</a></li>
-                            <li><a href="#">Contato</a></li>
-                            <li><a href="#">FAQ</a></li>
+                            <li><a href="mailto:hi@routewise.app" data-i18n="footer.help">Help Center</a></li>
+                            <li><a href="mailto:hi@routewise.app" data-i18n="footer.contact">Contact</a></li>
+                            <li><a href="mailto:hi@routewise.app" data-i18n="footer.faq">FAQ</a></li>
                         </ul>
                     </div>
                     <div class="footer-column">
-                        <h4>Legal</h4>
+                        <h4 data-i18n="footer.legal">Legal</h4>
                         <ul>
-                            <li><a href="privacy.html">Privacidade</a></li>
-                            <li><a href="terms.html">Termos de Uso</a></li>
+                            <li><a href="privacy.html" data-localized-link data-i18n="footer.privacy">Privacy</a></li>
+                            <li><a href="terms.html" data-localized-link data-i18n="footer.terms">Terms of Use</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2025 RouteWise. Todos os direitos reservados.</p>
+                <p data-i18n="footer.copyright">© 2026 RouteWise. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <script>
         const APP_STORE_URL = 'https://apps.apple.com/us/app/routewise-mobile/id6756224699';
+        const SITE_LANG_STORAGE_KEY = 'routewise-site-lang';
+
+        const translations = {
+            en: {
+                meta: {
+                    title: 'RouteWise - Optimize routes and import delivery addresses',
+                    description: 'RouteWise helps delivery drivers optimize routes, import addresses from CSV, text, photos, or camera, review suggestions, and navigate deliveries.',
+                },
+                redirect: {
+                    title: 'Opening the App Store...',
+                    body: 'You are on a mobile device. RouteWise will open the app page in a moment.',
+                    cancel: 'Stay on site',
+                    continue: 'Open App Store',
+                },
+                nav: {
+                    features: 'Features',
+                    screenshots: 'Screenshots',
+                    howItWorks: 'How It Works',
+                    download: 'Download app',
+                },
+                hero: {
+                    badge: 'Optimized routes with smart importing',
+                    title: 'Deliver more.<br>Drive <span>less.</span>',
+                    description: 'RouteWise optimizes your routes automatically and imports stops from CSV, text, photos, or camera so you can review them before starting deliveries.',
+                    primaryCta: 'Download on the App Store',
+                    secondaryCta: 'How it works',
+                    trustRoute: 'Optimized routes',
+                    trustImport: 'CSV, text, photos, and camera',
+                },
+                mockup: {
+                    headerText: 'Optimized route',
+                    headerTitle: '15 stops • 42 km',
+                    etaLabel: 'Estimated time',
+                    start: 'Start',
+                },
+                floating: {
+                    importText: 'Import a list',
+                    importValue: 'CSV, text, or photo',
+                    routeText: 'Fewer kilometers',
+                    routeValue: 'Optimized route',
+                },
+                features: {
+                    kicker: 'Features',
+                    title: 'Everything you need to deliver better',
+                    description: 'Route optimization stays at the center of the app, now with list importing and review to build stops faster.',
+                    instantTitle: 'Instant optimization',
+                    instantBody: 'Add your stops and RouteWise calculates an efficient route to reduce time, distance, and rework.',
+                    filesTitle: 'Import files',
+                    filesBody: 'Send CSV or text with addresses. The app understands lists with or without headers and prepares items for review.',
+                    photoTitle: 'Photo or camera with AI',
+                    photoBody: 'Select a photo or capture a list, manifest, or document. AI extracts multiple addresses into a single preview.',
+                    previewTitle: 'Preview before saving',
+                    previewBody: 'Review each item, choose what enters the route, and fix low-confidence addresses without blocking the whole batch.',
+                    suggestionsTitle: 'Address suggestions',
+                    suggestionsBody: 'Each valid address receives Google Places suggestions to help pick the right location before fetching details.',
+                    gpsTitle: 'GPS integration',
+                    gpsBody: 'Open your route in Google Maps, Waze, or Apple Maps and use the navigation app you already know.',
+                },
+                screenshots: {
+                    kicker: 'App screenshots',
+                    title: 'The same localized screens published on the App Store',
+                    description: 'Preview the current RouteWise app flow in your selected language before downloading.',
+                    altPrefix: 'RouteWise app screenshot',
+                },
+                steps: {
+                    kicker: 'How It Works',
+                    title: 'Start in 3 simple steps',
+                    description: 'No complicated setup. Download the app and start using it.',
+                    oneTitle: 'Import addresses',
+                    oneBody: 'Use a CSV file, text, photo, camera, or manual entry.',
+                    twoTitle: 'Review the preview',
+                    twoBody: 'Choose the right suggestions, ignore duplicates, and confirm only what is ready.',
+                    threeTitle: 'Optimize and navigate',
+                    threeBody: 'Save stops in the app, calculate the route, and navigate with your favorite GPS.',
+                },
+                footer: {
+                    tagline: 'Optimizing delivery routes to help drivers work smarter, not harder.',
+                    product: 'Product',
+                    support: 'Support',
+                    help: 'Help Center',
+                    contact: 'Contact',
+                    faq: 'FAQ',
+                    legal: 'Legal',
+                    privacy: 'Privacy',
+                    terms: 'Terms of Use',
+                    copyright: '© 2026 RouteWise. All rights reserved.',
+                },
+            },
+            pt: {
+                meta: {
+                    title: 'RouteWise - Otimize rotas e importe endereços de entrega',
+                    description: 'RouteWise ajuda entregadores a otimizar rotas, importar endereços por CSV, texto, foto ou câmera, revisar sugestões e navegar até as entregas.',
+                },
+                redirect: {
+                    title: 'Abrindo a App Store...',
+                    body: 'Você está em um dispositivo móvel. O RouteWise vai abrir a página do app em instantes.',
+                    cancel: 'Ficar no site',
+                    continue: 'Abrir App Store',
+                },
+                nav: {
+                    features: 'Recursos',
+                    screenshots: 'Screenshots',
+                    howItWorks: 'Como Funciona',
+                    download: 'Baixar app',
+                },
+                hero: {
+                    badge: 'Rotas otimizadas com importação inteligente',
+                    title: 'Entregue mais.<br>Dirija <span>menos.</span>',
+                    description: 'RouteWise otimiza suas rotas automaticamente e também importa paradas por CSV, texto, foto ou câmera para você revisar antes de sair para entregar.',
+                    primaryCta: 'Baixar na App Store',
+                    secondaryCta: 'Como funciona',
+                    trustRoute: 'Rotas otimizadas',
+                    trustImport: 'CSV, texto, foto e câmera',
+                },
+                mockup: {
+                    headerText: 'Rota otimizada',
+                    headerTitle: '15 paradas • 42 km',
+                    etaLabel: 'Tempo estimado',
+                    start: 'Iniciar',
+                },
+                floating: {
+                    importText: 'Importe uma lista',
+                    importValue: 'CSV, texto ou foto',
+                    routeText: 'Menos km rodados',
+                    routeValue: 'Rota otimizada',
+                },
+                features: {
+                    kicker: 'Recursos',
+                    title: 'Tudo que você precisa para entregar melhor',
+                    description: 'Otimização de rotas continua no centro do app, agora com importação e revisão de listas para acelerar a montagem das paradas.',
+                    instantTitle: 'Otimização instantânea',
+                    instantBody: 'Adicione suas paradas e o RouteWise calcula uma rota eficiente para reduzir tempo, distância e retrabalho.',
+                    filesTitle: 'Importar arquivos',
+                    filesBody: 'Envie CSV ou texto com endereços. O app entende listas com ou sem cabeçalho e prepara os itens para revisão.',
+                    photoTitle: 'Foto ou câmera com IA',
+                    photoBody: 'Selecione uma foto ou tire uma imagem de lista, manifesto ou documento. A IA extrai múltiplos endereços em um único preview.',
+                    previewTitle: 'Preview antes de salvar',
+                    previewBody: 'Revise cada item, marque o que entra na rota e corrija endereços com baixa confiança sem bloquear o lote inteiro.',
+                    suggestionsTitle: 'Sugestões de endereço',
+                    suggestionsBody: 'Cada endereço válido recebe sugestões do Google Places para facilitar a escolha do local correto antes de buscar detalhes.',
+                    gpsTitle: 'Integração com GPS',
+                    gpsBody: 'Abra sua rota no Google Maps, Waze ou Apple Maps e use o app de navegação que você já conhece.',
+                },
+                screenshots: {
+                    kicker: 'Screenshots do app',
+                    title: 'As mesmas telas localizadas publicadas na App Store',
+                    description: 'Veja o fluxo atual do RouteWise no idioma escolhido antes de baixar.',
+                    altPrefix: 'Screenshot do app RouteWise',
+                },
+                steps: {
+                    kicker: 'Como Funciona',
+                    title: 'Comece em 3 passos simples',
+                    description: 'Sem configuração complicada. É só baixar e começar a usar.',
+                    oneTitle: 'Importe os endereços',
+                    oneBody: 'Use arquivo CSV, texto, foto, câmera ou adição manual.',
+                    twoTitle: 'Revise o preview',
+                    twoBody: 'Escolha as sugestões corretas, ignore duplicados e confirme só o que está pronto.',
+                    threeTitle: 'Otimize e navegue',
+                    threeBody: 'Salve as paradas no app, calcule a rota e navegue com seu GPS favorito.',
+                },
+                footer: {
+                    tagline: 'Otimizando rotas de entrega para ajudar entregadores a trabalhar de forma mais inteligente, não mais difícil.',
+                    product: 'Produto',
+                    support: 'Suporte',
+                    help: 'Central de Ajuda',
+                    contact: 'Contato',
+                    faq: 'FAQ',
+                    legal: 'Legal',
+                    privacy: 'Privacidade',
+                    terms: 'Termos de Uso',
+                    copyright: '© 2026 RouteWise. Todos os direitos reservados.',
+                },
+            },
+            fr: {
+                meta: {
+                    title: 'RouteWise - Optimisez vos itinéraires et importez des adresses de livraison',
+                    description: 'RouteWise aide les livreurs à optimiser les itinéraires, importer des adresses par CSV, texte, photo ou caméra, réviser les suggestions et naviguer vers les livraisons.',
+                },
+                redirect: {
+                    title: 'Ouverture de l’App Store...',
+                    body: 'Vous êtes sur un appareil mobile. RouteWise ouvrira la page de l’app dans un instant.',
+                    cancel: 'Rester sur le site',
+                    continue: 'Ouvrir l’App Store',
+                },
+                nav: {
+                    features: 'Fonctions',
+                    screenshots: 'Captures',
+                    howItWorks: 'Fonctionnement',
+                    download: 'Télécharger',
+                },
+                hero: {
+                    badge: 'Itinéraires optimisés avec importation intelligente',
+                    title: 'Livrez plus.<br>Roulez <span>moins.</span>',
+                    description: 'RouteWise optimise automatiquement vos itinéraires et importe les arrêts depuis CSV, texte, photos ou caméra pour révision avant les livraisons.',
+                    primaryCta: 'Télécharger sur l’App Store',
+                    secondaryCta: 'Voir le fonctionnement',
+                    trustRoute: 'Itinéraires optimisés',
+                    trustImport: 'CSV, texte, photos et caméra',
+                },
+                mockup: {
+                    headerText: 'Itinéraire optimisé',
+                    headerTitle: '15 arrêts • 42 km',
+                    etaLabel: 'Temps estimé',
+                    start: 'Démarrer',
+                },
+                floating: {
+                    importText: 'Importez une liste',
+                    importValue: 'CSV, texte ou photo',
+                    routeText: 'Moins de kilomètres',
+                    routeValue: 'Itinéraire optimisé',
+                },
+                features: {
+                    kicker: 'Fonctions',
+                    title: 'Tout ce qu’il faut pour mieux livrer',
+                    description: 'L’optimisation reste au centre de l’app, maintenant avec importation et révision de listes pour créer les arrêts plus vite.',
+                    instantTitle: 'Optimisation instantanée',
+                    instantBody: 'Ajoutez vos arrêts et RouteWise calcule un itinéraire efficace pour réduire le temps, la distance et les reprises.',
+                    filesTitle: 'Importer des fichiers',
+                    filesBody: 'Envoyez un CSV ou du texte avec des adresses. L’app comprend les listes avec ou sans en-tête et prépare les éléments pour révision.',
+                    photoTitle: 'Photo ou caméra avec IA',
+                    photoBody: 'Choisissez une photo ou capturez une liste, un manifeste ou un document. L’IA extrait plusieurs adresses dans un seul aperçu.',
+                    previewTitle: 'Aperçu avant sauvegarde',
+                    previewBody: 'Révisez chaque élément, choisissez ce qui entre dans la route et corrigez les adresses à faible confiance sans bloquer tout le lot.',
+                    suggestionsTitle: 'Suggestions d’adresse',
+                    suggestionsBody: 'Chaque adresse valide reçoit des suggestions Google Places pour aider à choisir le bon lieu avant de charger les détails.',
+                    gpsTitle: 'Intégration GPS',
+                    gpsBody: 'Ouvrez votre route dans Google Maps, Waze ou Apple Maps et utilisez l’app de navigation que vous connaissez déjà.',
+                },
+                screenshots: {
+                    kicker: 'Captures de l’app',
+                    title: 'Les mêmes écrans localisés publiés sur l’App Store',
+                    description: 'Prévisualisez le flux actuel de RouteWise dans la langue choisie avant de télécharger.',
+                    altPrefix: 'Capture d’écran de l’app RouteWise',
+                },
+                steps: {
+                    kicker: 'Fonctionnement',
+                    title: 'Commencez en 3 étapes simples',
+                    description: 'Pas de configuration compliquée. Téléchargez l’app et commencez.',
+                    oneTitle: 'Importez les adresses',
+                    oneBody: 'Utilisez un fichier CSV, du texte, une photo, la caméra ou l’ajout manuel.',
+                    twoTitle: 'Révisez l’aperçu',
+                    twoBody: 'Choisissez les bonnes suggestions, ignorez les doublons et confirmez seulement ce qui est prêt.',
+                    threeTitle: 'Optimisez et naviguez',
+                    threeBody: 'Sauvegardez les arrêts dans l’app, calculez la route et naviguez avec votre GPS préféré.',
+                },
+                footer: {
+                    tagline: 'Optimiser les itinéraires de livraison pour aider les livreurs à travailler plus intelligemment.',
+                    product: 'Produit',
+                    support: 'Soutien',
+                    help: 'Centre d’aide',
+                    contact: 'Contact',
+                    faq: 'FAQ',
+                    legal: 'Légal',
+                    privacy: 'Confidentialité',
+                    terms: 'Conditions d’utilisation',
+                    copyright: '© 2026 RouteWise. Tous droits réservés.',
+                },
+            },
+            es: {
+                meta: {
+                    title: 'RouteWise - Optimiza rutas e importa direcciones de entrega',
+                    description: 'RouteWise ayuda a repartidores a optimizar rutas, importar direcciones por CSV, texto, foto o cámara, revisar sugerencias y navegar hasta las entregas.',
+                },
+                redirect: {
+                    title: 'Abriendo App Store...',
+                    body: 'Estás en un dispositivo móvil. RouteWise abrirá la página de la app en un momento.',
+                    cancel: 'Quedarse en el sitio',
+                    continue: 'Abrir App Store',
+                },
+                nav: {
+                    features: 'Funciones',
+                    screenshots: 'Capturas',
+                    howItWorks: 'Cómo funciona',
+                    download: 'Descargar app',
+                },
+                hero: {
+                    badge: 'Rutas optimizadas con importación inteligente',
+                    title: 'Entrega más.<br>Maneja <span>menos.</span>',
+                    description: 'RouteWise optimiza tus rutas automáticamente e importa paradas desde CSV, texto, fotos o cámara para que puedas revisarlas antes de salir a entregar.',
+                    primaryCta: 'Descargar en App Store',
+                    secondaryCta: 'Cómo funciona',
+                    trustRoute: 'Rutas optimizadas',
+                    trustImport: 'CSV, texto, fotos y cámara',
+                },
+                mockup: {
+                    headerText: 'Ruta optimizada',
+                    headerTitle: '15 paradas • 42 km',
+                    etaLabel: 'Tiempo estimado',
+                    start: 'Iniciar',
+                },
+                floating: {
+                    importText: 'Importa una lista',
+                    importValue: 'CSV, texto o foto',
+                    routeText: 'Menos kilómetros',
+                    routeValue: 'Ruta optimizada',
+                },
+                features: {
+                    kicker: 'Funciones',
+                    title: 'Todo lo que necesitas para entregar mejor',
+                    description: 'La optimización de rutas sigue en el centro de la app, ahora con importación y revisión de listas para crear paradas más rápido.',
+                    instantTitle: 'Optimización instantánea',
+                    instantBody: 'Agrega tus paradas y RouteWise calcula una ruta eficiente para reducir tiempo, distancia y trabajo repetido.',
+                    filesTitle: 'Importar archivos',
+                    filesBody: 'Envía CSV o texto con direcciones. La app entiende listas con o sin encabezado y prepara los elementos para revisión.',
+                    photoTitle: 'Foto o cámara con IA',
+                    photoBody: 'Selecciona una foto o captura una lista, manifiesto o documento. La IA extrae varias direcciones en una sola vista previa.',
+                    previewTitle: 'Vista previa antes de guardar',
+                    previewBody: 'Revisa cada elemento, elige lo que entra en la ruta y corrige direcciones de baja confianza sin bloquear todo el lote.',
+                    suggestionsTitle: 'Sugerencias de dirección',
+                    suggestionsBody: 'Cada dirección válida recibe sugerencias de Google Places para ayudarte a elegir el lugar correcto antes de cargar detalles.',
+                    gpsTitle: 'Integración con GPS',
+                    gpsBody: 'Abre tu ruta en Google Maps, Waze o Apple Maps y usa la app de navegación que ya conoces.',
+                },
+                screenshots: {
+                    kicker: 'Capturas de la app',
+                    title: 'Las mismas pantallas localizadas publicadas en App Store',
+                    description: 'Mira el flujo actual de RouteWise en el idioma elegido antes de descargar.',
+                    altPrefix: 'Captura de pantalla de la app RouteWise',
+                },
+                steps: {
+                    kicker: 'Cómo funciona',
+                    title: 'Comienza en 3 pasos simples',
+                    description: 'Sin configuración complicada. Descarga la app y empieza a usarla.',
+                    oneTitle: 'Importa las direcciones',
+                    oneBody: 'Usa un archivo CSV, texto, foto, cámara o entrada manual.',
+                    twoTitle: 'Revisa la vista previa',
+                    twoBody: 'Elige las sugerencias correctas, ignora duplicados y confirma solo lo que está listo.',
+                    threeTitle: 'Optimiza y navega',
+                    threeBody: 'Guarda las paradas en la app, calcula la ruta y navega con tu GPS favorito.',
+                },
+                footer: {
+                    tagline: 'Optimizando rutas de entrega para ayudar a repartidores a trabajar de forma más inteligente.',
+                    product: 'Producto',
+                    support: 'Soporte',
+                    help: 'Centro de ayuda',
+                    contact: 'Contacto',
+                    faq: 'FAQ',
+                    legal: 'Legal',
+                    privacy: 'Privacidad',
+                    terms: 'Términos de uso',
+                    copyright: '© 2026 RouteWise. Todos los derechos reservados.',
+                },
+            },
+        };
+
+        const HTML_LANG = {
+            en: 'en',
+            pt: 'pt-BR',
+            fr: 'fr-CA',
+            es: 'es',
+        };
+
+        function matchSupportedLanguage(rawLanguage) {
+            if (!rawLanguage) return null;
+            const normalized = rawLanguage.trim().replace(/_/g, '-').toLowerCase();
+            if (normalized.startsWith('pt')) return 'pt';
+            if (normalized.startsWith('fr')) return 'fr';
+            if (normalized.startsWith('es')) return 'es';
+            if (normalized.startsWith('en')) return 'en';
+            return null;
+        }
+
+        function readStoredLanguage() {
+            try {
+                return window.localStorage.getItem(SITE_LANG_STORAGE_KEY);
+            } catch {
+                return null;
+            }
+        }
+
+        function writeStoredLanguage(lang) {
+            try {
+                window.localStorage.setItem(SITE_LANG_STORAGE_KEY, lang);
+            } catch {
+                // Storage can be unavailable in private browsing; the URL still carries the language.
+            }
+        }
+
+        function resolveLanguage() {
+            const params = new URLSearchParams(window.location.search);
+            const queryLanguage = params.get('lang');
+            if (queryLanguage) return matchSupportedLanguage(queryLanguage) || 'en';
+
+            const storedLanguage = matchSupportedLanguage(readStoredLanguage());
+            if (storedLanguage) return storedLanguage;
+
+            const browserLanguages = [
+                ...((navigator.languages || [])),
+                navigator.language,
+            ];
+
+            for (const browserLanguage of browserLanguages) {
+                const matched = matchSupportedLanguage(browserLanguage);
+                if (matched) return matched;
+            }
+
+            return 'en';
+        }
+
+        function translatePath(copy, key) {
+            return key.split('.').reduce((value, part) => {
+                if (!value) return null;
+                return value[part];
+            }, copy);
+        }
 
         function isMobileDevice() {
             return /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent || '');
+        }
+
+        function updateLocalizedLinks(lang) {
+            document.querySelectorAll('[data-localized-link]').forEach((link) => {
+                if (!link.dataset.originalHref) {
+                    link.dataset.originalHref = link.getAttribute('href') || '';
+                }
+
+                const originalHref = link.dataset.originalHref;
+                if (!originalHref) return;
+
+                const url = new URL(originalHref, window.location.href);
+                url.searchParams.set('lang', lang);
+                link.setAttribute('href', `${url.pathname.split('/').pop()}${url.search}${url.hash}`);
+            });
+        }
+
+        function updateScreenshots(lang, copy) {
+            document.querySelectorAll('[data-screenshot]').forEach((image) => {
+                const index = image.getAttribute('data-screenshot');
+                image.setAttribute('src', `assets/screens/${lang}/image${index}.jpg`);
+                image.setAttribute('alt', `${copy.screenshots.altPrefix} ${index}`);
+            });
+        }
+
+        function applyLanguage(lang) {
+            const copy = translations[lang] || translations.en;
+            const description = document.getElementById('page-description');
+
+            document.documentElement.lang = HTML_LANG[lang] || 'en';
+            document.title = copy.meta.title;
+            if (description) description.setAttribute('content', copy.meta.description);
+
+            document.querySelectorAll('[data-i18n]').forEach((node) => {
+                const key = node.getAttribute('data-i18n');
+                const value = translatePath(copy, key);
+                if (typeof value === 'string') node.textContent = value;
+            });
+
+            document.querySelectorAll('[data-i18n-html]').forEach((node) => {
+                const key = node.getAttribute('data-i18n-html');
+                const value = translatePath(copy, key);
+                if (typeof value === 'string') node.innerHTML = value;
+            });
+
+            document.querySelectorAll('[data-lang-switch]').forEach((button) => {
+                button.classList.toggle('is-active', button.getAttribute('data-lang-switch') === lang);
+            });
+
+            updateLocalizedLinks(lang);
+            updateScreenshots(lang, copy);
+        }
+
+        function initLanguageSwitcher(activeLang) {
+            document.querySelectorAll('[data-lang-switch]').forEach((button) => {
+                button.addEventListener('click', () => {
+                    const nextLang = matchSupportedLanguage(button.getAttribute('data-lang-switch')) || 'en';
+                    const current = new URL(window.location.href);
+                    current.searchParams.set('lang', nextLang);
+                    writeStoredLanguage(nextLang);
+                    window.history.replaceState({}, '', `${current.pathname}${current.search}${current.hash}`);
+                    applyLanguage(nextLang);
+                });
+            });
+
+            writeStoredLanguage(activeLang);
         }
 
         function setupStoreLinks() {
@@ -1623,7 +2214,7 @@
             });
         }
 
-        function setupStoreRedirect() {
+        function setupStoreRedirect(lang) {
             const current = new URL(window.location.href);
             const shouldStay = current.searchParams.get('stay') === '1';
             const forcedRedirect = current.searchParams.get('download') === '1' ||
@@ -1651,6 +2242,7 @@
             cancel.addEventListener('click', () => {
                 cancelled = true;
                 current.searchParams.set('stay', '1');
+                current.searchParams.set('lang', lang);
                 window.history.replaceState({}, '', `${current.pathname}${current.search}${current.hash}`);
                 banner.classList.add('is-hidden');
             });
@@ -1662,8 +2254,11 @@
             }, 1400);
         }
 
+        const activeLang = resolveLanguage();
+        applyLanguage(activeLang);
+        initLanguageSwitcher(activeLang);
         setupStoreLinks();
-        setupStoreRedirect();
+        setupStoreRedirect(activeLang);
 
         // Navbar scroll effect
         const nav = document.getElementById('nav');
@@ -1679,7 +2274,12 @@
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
+                const href = this.getAttribute('href');
+                if (href === '#') {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                    return;
+                }
+                const target = document.querySelector(href);
                 if (target) {
                     target.scrollIntoView({
                         behavior: 'smooth',
@@ -1704,29 +2304,12 @@
             });
         }, observerOptions);
 
-        document.querySelectorAll('.feature-card, .testimonial-card, .step, .comparison-card').forEach(el => {
+        document.querySelectorAll('.feature-card, .testimonial-card, .step, .comparison-card, .screenshot-card').forEach(el => {
             el.style.opacity = '0';
             el.style.transform = 'translateY(30px)';
             el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
             observer.observe(el);
         });
-    // Waitlist form handler
-        function handleWaitlist(e) {
-            e.preventDefault();
-            const form = e.target;
-            const email = form.querySelector('input[type="email"]').value;
-            
-            // Replace form with success message
-            form.innerHTML = `
-                <div class="waitlist-success">
-                    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                    </svg>
-                    <h3>Você está na lista!</h3>
-                    <p>Avisaremos em ${email} assim que o RouteWise estiver disponível.</p>
-                </div>
-            `;
-        }
     </script>
 </body>
 </html>

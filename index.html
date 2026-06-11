@@ -137,6 +137,72 @@
             box-shadow: 0 6px 25px rgba(232, 93, 76, 0.4);
         }
 
+        .redirect-banner {
+            position: fixed;
+            top: 86px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1001;
+            width: min(calc(100% - 32px), 980px);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            padding: 0.9rem 1rem;
+            border: 1px solid rgba(226, 232, 237, 0.9);
+            border-radius: 18px;
+            background: rgba(255, 255, 255, 0.92);
+            box-shadow: var(--shadow-medium);
+            backdrop-filter: blur(18px);
+        }
+
+        .redirect-banner.is-hidden {
+            display: none;
+        }
+
+        .redirect-banner strong {
+            display: block;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 0.95rem;
+            color: var(--dark);
+        }
+
+        .redirect-banner span {
+            display: block;
+            margin-top: 0.15rem;
+            font-size: 0.9rem;
+            color: var(--gray-600);
+        }
+
+        .redirect-actions {
+            display: inline-flex;
+            gap: 0.6rem;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
+
+        .redirect-button {
+            border: 0;
+            border-radius: 999px;
+            padding: 0.7rem 1rem;
+            font: inherit;
+            font-size: 0.9rem;
+            font-weight: 700;
+            cursor: pointer;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        .redirect-button.ghost {
+            background: var(--gray-100);
+            color: var(--dark-soft);
+        }
+
+        .redirect-button.solid {
+            background: var(--gradient-map);
+            color: var(--white);
+        }
+
         /* Hero Section */
         .hero {
             min-height: 100vh;
@@ -1215,6 +1281,21 @@
                 justify-content: center;
             }
 
+            .redirect-banner {
+                top: 78px;
+                align-items: flex-start;
+                flex-direction: column;
+            }
+
+            .redirect-actions {
+                width: 100%;
+            }
+
+            .redirect-button {
+                flex: 1;
+                text-align: center;
+            }
+
             .phone-mockup {
                 max-width: 280px;
             }
@@ -1296,6 +1377,17 @@
     </style>
 </head>
 <body>
+    <div class="redirect-banner is-hidden" id="redirect-banner">
+        <div>
+            <strong>Abrindo a App Store...</strong>
+            <span>Você está em um dispositivo móvel. O RouteWise vai abrir a página do app em instantes.</span>
+        </div>
+        <div class="redirect-actions">
+            <button class="redirect-button ghost" id="redirect-cancel" type="button">Ficar no site</button>
+            <a class="redirect-button solid" id="redirect-continue" href="https://apps.apple.com/us/app/routewise-mobile/id6756224699" target="_blank" rel="noreferrer">Abrir App Store</a>
+        </div>
+    </div>
+
     <!-- Navigation -->
     <nav class="nav" id="nav">
         <div class="nav-container">
@@ -1307,6 +1399,7 @@
                 <li><a href="#recursos">Recursos</a></li>
                 <li><a href="#como-funciona">Como Funciona</a></li>
             </ul>
+            <a class="nav-cta" id="nav-store-link" href="https://apps.apple.com/us/app/routewise-mobile/id6756224699" target="_blank" rel="noreferrer">Baixar app</a>
             <button class="mobile-menu-btn" aria-label="Menu">
                 <span></span>
                 <span></span>
@@ -1325,13 +1418,13 @@
                     RouteWise otimiza suas rotas automaticamente e agora também importa paradas por CSV, texto, foto ou câmera para você revisar antes de sair para entregar.
                 </p>
                 <div class="hero-ctas">
-                    <a href="#como-funciona" class="btn-primary">
-                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8" fill="currentColor"/></svg>
-                        Como funciona
+                    <a href="https://apps.apple.com/us/app/routewise-mobile/id6756224699" class="btn-primary" id="hero-store-link" target="_blank" rel="noreferrer">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                        Baixar na App Store
                     </a>
-                    <a href="#recursos" class="btn-secondary">
+                    <a href="#como-funciona" class="btn-secondary">
                         <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-                        Ver recursos
+                        Como funciona
                     </a>
                 </div>
                 <div class="hero-trust">
@@ -1518,6 +1611,60 @@
     </footer>
 
     <script>
+        const APP_STORE_URL = 'https://apps.apple.com/us/app/routewise-mobile/id6756224699';
+
+        function isMobileDevice() {
+            return /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent || '');
+        }
+
+        function setupStoreLinks() {
+            document.querySelectorAll('#nav-store-link, #hero-store-link, #redirect-continue').forEach((link) => {
+                link.href = APP_STORE_URL;
+            });
+        }
+
+        function setupStoreRedirect() {
+            const current = new URL(window.location.href);
+            const shouldStay = current.searchParams.get('stay') === '1';
+            const forcedRedirect = current.searchParams.get('download') === '1' ||
+                current.searchParams.get('store') === 'ios';
+
+            if (shouldStay) return;
+
+            if (forcedRedirect) {
+                window.location.href = APP_STORE_URL;
+                return;
+            }
+
+            if (!isMobileDevice()) return;
+
+            const banner = document.getElementById('redirect-banner');
+            const cancel = document.getElementById('redirect-cancel');
+            const continueLink = document.getElementById('redirect-continue');
+
+            if (!banner || !cancel || !continueLink) return;
+
+            banner.classList.remove('is-hidden');
+            continueLink.href = APP_STORE_URL;
+
+            let cancelled = false;
+            cancel.addEventListener('click', () => {
+                cancelled = true;
+                current.searchParams.set('stay', '1');
+                window.history.replaceState({}, '', `${current.pathname}${current.search}${current.hash}`);
+                banner.classList.add('is-hidden');
+            });
+
+            window.setTimeout(() => {
+                if (!cancelled) {
+                    window.location.href = APP_STORE_URL;
+                }
+            }, 1400);
+        }
+
+        setupStoreLinks();
+        setupStoreRedirect();
+
         // Navbar scroll effect
         const nav = document.getElementById('nav');
         window.addEventListener('scroll', () => {

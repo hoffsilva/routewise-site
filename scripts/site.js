@@ -489,6 +489,25 @@
             }
         });
 
+        // Mobile hamburger menu
+        const menuButton = nav.querySelector('.mobile-menu-btn');
+        if (menuButton) {
+            const closeMenu = () => {
+                nav.classList.remove('is-open');
+                menuButton.setAttribute('aria-expanded', 'false');
+            };
+
+            menuButton.setAttribute('aria-expanded', 'false');
+            menuButton.addEventListener('click', () => {
+                const isOpen = nav.classList.toggle('is-open');
+                menuButton.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            nav.querySelectorAll('.nav-links a, .nav-cta').forEach((link) => {
+                link.addEventListener('click', closeMenu);
+            });
+        }
+
         // Smooth scroll for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {

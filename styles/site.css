@@ -1108,24 +1108,63 @@
                 padding-top: 7rem;
             }
 
-            .nav-links, .nav-cta {
-                display: none;
-            }
-
-            .nav-actions {
-                margin-left: auto;
-            }
-
-            .language-switcher {
-                gap: 0.2rem;
-            }
-
-            .language-switcher button {
-                padding: 0.45rem 0.58rem;
+            .nav-container {
+                flex-wrap: wrap;
+                row-gap: 1rem;
             }
 
             .mobile-menu-btn {
                 display: block;
+            }
+
+            .nav-links,
+            .nav-actions {
+                display: none;
+                order: 3;
+                width: 100%;
+            }
+
+            .nav.is-open {
+                background: rgba(255, 255, 255, 0.98);
+                backdrop-filter: blur(20px);
+                box-shadow: var(--shadow-soft);
+            }
+
+            .nav.is-open .nav-links {
+                display: flex;
+                flex-direction: column;
+                gap: 1.25rem;
+                margin: 0;
+                padding: 0.5rem 0 0;
+            }
+
+            .nav.is-open .nav-actions {
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+                gap: 1rem;
+                padding-bottom: 0.5rem;
+            }
+
+            .nav.is-open .nav-cta {
+                display: inline-flex;
+                justify-content: center;
+            }
+
+            .language-switcher {
+                justify-content: center;
+            }
+
+            .nav.is-open .mobile-menu-btn span:nth-child(1) {
+                transform: translateY(7px) rotate(45deg);
+            }
+
+            .nav.is-open .mobile-menu-btn span:nth-child(2) {
+                opacity: 0;
+            }
+
+            .nav.is-open .mobile-menu-btn span:nth-child(3) {
+                transform: translateY(-7px) rotate(-45deg);
             }
 
             .hero-container {

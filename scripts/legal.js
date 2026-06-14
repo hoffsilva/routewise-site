@@ -1,0 +1,370 @@
+        const CONTACT_EMAIL = 'hi@routewise.app';
+        const documents = {
+            pt: {
+                metaTitle: 'RouteWise - Termos e Privacidade',
+                brandSubtitle: 'Rotas de entrega com menos desperdício.',
+                home: 'Início',
+                privacyNav: 'Privacidade',
+                termsNav: 'Termos',
+                kicker: 'Legal',
+                title: 'Política de privacidade e termos em uma página.',
+                intro: 'Estes documentos explicam como o RouteWise usa dados, processa assinaturas e define as condições de uso do app.',
+                footer: 'Otimize rotas, importe endereços e envie entregas para o mapa certo.',
+                privacy: {
+                    title: 'Política de Privacidade do RouteWise',
+                    updated: 'Última atualização: 9 de junho de 2026',
+                    intro: 'Esta política explica quais informações o RouteWise usa, por que elas são usadas e quais escolhas você tem sobre seus dados.',
+                    sections: [
+                        ['1. Visão geral', [
+                            'O RouteWise ajuda entregadores a organizar paradas, importar listas de endereços, otimizar rotas, abrir navegação em apps externos e acompanhar o histórico de entregas.',
+                            'Esta política se aplica ao app RouteWise, ao site routewise.app e aos fluxos de conta, sincronização, importação de endereços, OCR, mapas e assinatura conectados ao produto.'
+                        ]],
+                        ['2. Dados que você fornece', [
+                            'Podemos processar dados de conta, como e-mail, identificador de usuário, preferências de idioma, plano e estado de assinatura.',
+                            'Também processamos destinos, endereços, nomes de paradas, arquivos ou textos de importação, histórico de entregas, preferências de navegação, configurações do app e outros dados que você adiciona ao produto.'
+                        ]],
+                        ['3. Localização, mapas e rotas', [
+                            'Quando você concede permissão, o RouteWise pode usar a localização atual para centralizar o mapa, calcular a rota a partir da sua posição e melhorar a ordem das paradas.',
+                            'Endereços, coordenadas e consultas de busca podem ser enviados a serviços de mapas, autocomplete e roteamento para permitir sugestões, detalhes de lugares, cálculo de distância e navegação.'
+                        ]],
+                        ['4. Importação, câmera, OCR e imagens', [
+                            'Se você importar endereços por CSV, texto, câmera ou imagem escolhida por você, o app pode processar esse conteúdo para extrair texto, identificar endereços e montar um preview de revisão.',
+                            'Imagens podem ser otimizadas no dispositivo e enviadas ao backend do RouteWise para processamento de IA/OCR e sugestões de endereço. Use esse recurso apenas com arquivos e imagens que você tem autorização para processar.'
+                        ]],
+                        ['5. Conta, sincronização e armazenamento', [
+                            'O RouteWise usa autenticação, tokens seguros, banco local e sincronização para manter seus dados disponíveis entre sessões e dispositivos quando esse fluxo está ativo.',
+                            'Dados sensíveis de autenticação devem ser armazenados por mecanismos seguros do dispositivo quando disponíveis. Mesmo assim, você é responsável por proteger seu aparelho e suas credenciais.'
+                        ]],
+                        ['6. Assinaturas e pagamentos', [
+                            'Se você assinar o RouteWise Pro, o status de assinatura é processado pela loja usada na compra e gerenciado pelo RevenueCat para liberar o entitlement Pro.',
+                            'O RouteWise não recebe os dados brutos do seu cartão de pagamento da Apple, Google ou RevenueCat.'
+                        ]],
+                        ['7. Diagnóstico e serviços de terceiros', [
+                            'Podemos usar serviços como Supabase ou infraestrutura equivalente para autenticação e dados, Google Maps ou serviços de mapas para busca e rotas, RevenueCat para assinaturas e Sentry para erros e estabilidade.',
+                            'Esses provedores processam apenas os dados necessários para suas funções e têm suas próprias políticas e obrigações.'
+                        ]],
+                        ['8. Suas escolhas', [
+                            'Você pode negar permissões de localização, câmera e notificações, embora alguns recursos fiquem limitados ou indisponíveis.',
+                            'Você pode excluir dados locais ao remover o app e pode solicitar acesso, correção ou exclusão de dados de conta entrando em contato conosco.',
+                            'Você também pode excluir sua conta dentro do app; isso remove perfil, destinos, histórico de entregas, dados de sincronização, estado local de assinatura e registros do RouteWise ligados ao seu identificador de usuário.'
+                        ]],
+                        ['9. Retenção, segurança e limites', [
+                            'Mantemos dados pelo tempo necessário para fornecer o serviço, cumprir obrigações legais, resolver disputas e proteger a plataforma.',
+                            'A exclusão de conta é processada imediatamente nos sistemas do RouteWise. Backups, logs de segurança, registros das lojas de pagamento ou dados exigidos por obrigação legal podem levar até 30 dias para expirar ou ser mantidos apenas pelo prazo exigido em lei. Dados analíticos anonimizados que não identificam você podem permanecer.',
+                            'Nenhum sistema é 100% seguro. Usamos medidas razoáveis de proteção, mas não podemos garantir segurança absoluta contra todas as ameaças.'
+                        ]],
+                        ['10. LGPD e direitos no Brasil', [
+                            'Para usuários no Brasil, o tratamento de dados pessoais segue a Lei Geral de Proteção de Dados Pessoais, Lei nº 13.709/2018 (LGPD). O RouteWise atua como controlador dos dados pessoais usados para conta, suporte, assinatura e operação do app, salvo quando um prestador de serviço atua como controlador independente nos próprios serviços.',
+                            'As bases legais podem incluir execução de contrato, consentimento, cumprimento de obrigação legal ou regulatória, exercício regular de direitos, legítimo interesse e prevenção à fraude, conforme o recurso usado e o contexto do tratamento.',
+                            'Você pode solicitar confirmação de tratamento, acesso, correção, anonimização, bloqueio ou eliminação de dados desnecessários ou tratados em desconformidade, portabilidade quando aplicável, informação sobre compartilhamento, revisão de decisões automatizadas quando houver e revogação de consentimento.',
+                            `Para exercer direitos previstos na LGPD ou falar com o encarregado/canal de privacidade, envie um e-mail para <a href="mailto:${CONTACT_EMAIL}">${CONTACT_EMAIL}</a>. Se entender necessário, você também pode apresentar reclamação à Autoridade Nacional de Proteção de Dados (ANPD).`
+                        ]],
+                        ['11. Contato', [
+                            `Para dúvidas de privacidade ou solicitações sobre seus dados, entre em contato: <a href="mailto:${CONTACT_EMAIL}">${CONTACT_EMAIL}</a>.`
+                        ]]
+                    ]
+                },
+                terms: {
+                    title: 'Termos de Uso do RouteWise',
+                    updated: 'Última atualização: 9 de junho de 2026',
+                    intro: 'Estes termos explicam as condições para usar o app RouteWise, o site e o RouteWise Pro.',
+                    sections: [
+                        ['1. Aceitação e partes', [
+                            'Ao instalar, acessar ou usar o RouteWise, você concorda com estes termos. Se não concordar, não use o app nem o site.',
+                            'Estes termos são entre você e o RouteWise. A Apple não é responsável pelo app, pelo conteúdo ou pelo suporte do app.'
+                        ]],
+                        ['2. Escopo do produto', [
+                            'O RouteWise é uma ferramenta de produtividade para entregadores. Ele ajuda a organizar destinos, importar listas de endereços, otimizar rotas e abrir navegação em apps compatíveis.',
+                            'O RouteWise é uma ferramenta de apoio. Você continua responsável por suas decisões ao dirigir, pela segurança no trânsito e por cumprir leis locais.'
+                        ]],
+                        ['3. Licença', [
+                            'Concedemos a você uma licença limitada, pessoal, não exclusiva, intransferível, revogável e não sublicenciável para usar o app em dispositivos que você possui ou controla.',
+                            'O uso em dispositivos Apple também deve cumprir as regras dos Apple Media Services e demais termos aplicáveis da App Store. Em Android, também se aplicam os termos do Google Play.'
+                        ]],
+                        ['4. Restrições de uso', [
+                            'Você não pode copiar, distribuir, vender, alugar, sublicenciar, modificar ou explorar o app além do que estes termos permitem.',
+                            'Você não pode fazer engenharia reversa, decompilar, desmontar, tentar extrair o código-fonte, burlar proteções técnicas ou criar obras derivadas do app, exceto quando a lei aplicável não permitir essa restrição.'
+                        ]],
+                        ['5. Serviços de terceiros e dados técnicos', [
+                            'O RouteWise depende de serviços de terceiros para mapas, autocomplete, roteamento, IA/OCR, autenticação, sincronização, assinatura, diagnósticos e infraestrutura.',
+                            'Ao usar o RouteWise, você concorda que dados técnicos, diagnósticos, métricas de uso, erros e dados operacionais necessários podem ser coletados e processados para manter, proteger e melhorar o app.'
+                        ]],
+                        ['6. Assinatura RouteWise Pro', [
+                            'O RouteWise pode oferecer assinaturas auto-renováveis chamadas RouteWise Pro, incluindo RouteWise Pro Monthly, com período de 1 mês, e RouteWise Pro Annual, com período de 1 ano.',
+                            'O preço final varia por país, moeda, tributos e loja usada. O valor aplicável sempre aparece no fluxo de compra e na tela de confirmação da loja antes de qualquer cobrança.',
+                            'A assinatura renova automaticamente ao fim de cada período, salvo cancelamento pelo menos 24 horas antes do fim do período atual quando comprada pela App Store. Regras equivalentes da Google Play se aplicam para compras no Android.',
+                            'Você pode revisar, gerenciar ou cancelar a assinatura nas configurações de assinatura do Apple ID ou na área de assinaturas do Google Play. Reembolsos seguem as políticas da loja aplicável.'
+                        ]],
+                        ['7. Suporte, garantia e Apple', [
+                            'A manutenção e o suporte do RouteWise são fornecidos pelo RouteWise, não pela Apple. Para suporte, entre em contato por hi@routewise.app.',
+                            'Se o app não cumprir uma garantia aplicável, você pode notificar a Apple. Nesse caso, a Apple poderá reembolsar o preço pago pelo app, quando aplicável. Além disso, a Apple não tem obrigação de garantia, manutenção ou suporte relacionada ao RouteWise.',
+                            'A Apple e suas subsidiárias são beneficiárias terceiras destes termos e, após sua aceitação, poderão fazer valer estes termos contra você nessa condição.'
+                        ]],
+                        ['8. Propriedade intelectual e conformidade legal', [
+                            'Todos os direitos do RouteWise, incluindo software, marca, design, textos, estrutura e conteúdo do produto, pertencem ao RouteWise ou a seus licenciadores.',
+                            'Você declara que não está localizado em país sujeito a embargo do governo dos EUA, que não está em país designado pelo governo dos EUA como apoiador de terrorismo e que não está em listas governamentais de partes proibidas ou restritas.'
+                        ]],
+                        ['9. Disponibilidade e limitação de responsabilidade', [
+                            'GPS, distância, tempo, trânsito, geocodificação, OCR e otimização de rotas dependem de permissões, sinal do dispositivo, dados inseridos e serviços de terceiros. Resultados devem ser tratados como estimativas.',
+                            'Na máxima extensão permitida por lei, o RouteWise não se responsabiliza por danos indiretos, incidentais, especiais, punitivos ou consequenciais relacionados ao uso do app, perda de dados, indisponibilidade, decisões de rota ou comportamento de terceiros.'
+                        ]],
+                        ['10. Mudanças e contato', [
+                            'Podemos atualizar estes termos ocasionalmente. A versão mais recente publicada no site deve ser tratada como a versão vigente.',
+                            `Contato: <a href="mailto:${CONTACT_EMAIL}">${CONTACT_EMAIL}</a>.`
+                        ]]
+                    ]
+                }
+            },
+            en: {
+                metaTitle: 'RouteWise - Terms and Privacy',
+                brandSubtitle: 'Delivery routes with less wasted time.',
+                home: 'Home',
+                privacyNav: 'Privacy',
+                termsNav: 'Terms',
+                kicker: 'Legal',
+                title: 'Privacy policy and terms on one page.',
+                intro: 'These documents explain how RouteWise uses data, processes subscriptions, and defines the conditions for using the app.',
+                footer: 'Optimize routes, import addresses, and send deliveries to the right map.',
+                privacy: {
+                    title: 'RouteWise Privacy Policy',
+                    updated: 'Last updated: June 9, 2026',
+                    intro: 'This policy explains what information RouteWise uses, why it is used, and what choices you have over your data.',
+                    sections: [
+                        ['1. Overview', ['RouteWise helps delivery drivers organize stops, import address lists, optimize routes, open navigation in external apps, and track delivery history.', 'This policy applies to the RouteWise app, routewise.app, and the account, sync, address import, OCR, map, and subscription flows connected to the product.']],
+                        ['2. Data you provide', ['We may process account data such as email, user identifier, language preference, plan, and subscription state.', 'We also process destinations, addresses, stop names, imported files or text, delivery history, navigation preferences, app settings, and other data you add to the product.']],
+                        ['3. Location, maps, and routes', ['When you grant permission, RouteWise may use current location to center the map, calculate routes from your position, and improve stop order.', 'Addresses, coordinates, and search queries may be sent to mapping, autocomplete, and routing services to provide suggestions, place details, distance calculation, and navigation.']],
+                        ['4. Import, camera, OCR, and images', ['If you import addresses through CSV, text, camera, or an image you choose, the app may process that content to extract text, identify addresses, and build a review preview.', 'Images may be optimized on device and sent to the RouteWise backend for AI/OCR processing and address suggestions. Use this feature only with files and images you are allowed to process.']],
+                        ['5. Account, sync, and storage', ['RouteWise uses authentication, secure tokens, local database storage, and sync to keep data available across sessions and devices when that flow is active.', 'Authentication data should be stored through secure device mechanisms where available. You remain responsible for protecting your device and credentials.']],
+                        ['6. Subscriptions and payments', ['If you subscribe to RouteWise Pro, subscription status is processed by the store used for purchase and managed through RevenueCat for entitlement access.', 'RouteWise does not receive your raw payment card data from Apple, Google, or RevenueCat.']],
+                        ['7. Diagnostics and third-party services', ['We may use services such as Supabase or equivalent infrastructure for authentication and data, Google Maps or mapping services for search and routes, RevenueCat for subscriptions, and Sentry for errors and stability.', 'Those providers process only the data needed for their respective functions and have their own policies and obligations.']],
+                        ['8. Your choices', ['You can deny location, camera, and notification permissions, although some features may become limited or unavailable.', 'You can remove local data by deleting the app and can request access, correction, or deletion of account data by contacting us.']],
+                        ['9. Retention, security, and limits', ['We keep data as long as needed to provide the service, comply with legal obligations, resolve disputes, and protect the platform.', 'Account deletion is processed immediately in RouteWise systems and removes your profile, destinations, delivery history, sync data, local subscription state, and RouteWise records tied to your user ID. Backups, security logs, payment-store records, or records required by law may take up to 30 days to expire or may be retained only as legally required. Anonymized analytics that no longer identify you may remain.', 'No system is 100% secure. We use reasonable protection measures, but cannot guarantee absolute security against all threats.']],
+                        ['10. Brazilian LGPD rights', ['For users in Brazil, personal data processing follows the Brazilian General Personal Data Protection Law, Law No. 13,709/2018 (LGPD). RouteWise acts as controller for personal data used for account, support, subscription, and app operation, except where a service provider acts as an independent controller for its own services.', 'Legal bases may include contract performance, consent, compliance with legal or regulatory obligations, regular exercise of rights, legitimate interests, and fraud prevention, depending on the feature and context.', 'You may request confirmation of processing, access, correction, anonymization, blocking or deletion of unnecessary or non-compliant data, portability where applicable, information about sharing, review of automated decisions where applicable, and withdrawal of consent.', `To exercise LGPD rights or contact the privacy channel, email <a href="mailto:${CONTACT_EMAIL}">${CONTACT_EMAIL}</a>. You may also file a complaint with Brazil’s National Data Protection Authority (ANPD) when applicable.`]],
+                        ['11. Contact', [`For privacy questions or data requests, contact <a href="mailto:${CONTACT_EMAIL}">${CONTACT_EMAIL}</a>.`]]
+                    ]
+                },
+                terms: {
+                    title: 'RouteWise Terms of Use',
+                    updated: 'Last updated: June 9, 2026',
+                    intro: 'These terms explain the conditions for using the RouteWise app, the website, and RouteWise Pro.',
+                    sections: [
+                        ['1. Acceptance and parties', ['By installing, accessing, or using RouteWise, you agree to these terms. If you do not agree, do not use the app or website.', 'These terms are between you and RouteWise. Apple is not responsible for the app, its content, or support.']],
+                        ['2. Product scope', ['RouteWise is a productivity tool for delivery drivers. It helps organize destinations, import address lists, optimize routes, and open navigation in compatible apps.', 'RouteWise is an assistance tool. You remain responsible for driving decisions, road safety, and compliance with local laws.']],
+                        ['3. License', ['We grant you a limited, personal, non-exclusive, non-transferable, revocable, and non-sublicensable license to use the app on devices you own or control.', 'Use on Apple devices must also comply with Apple Media Services rules and other applicable App Store terms. Android use must also comply with Google Play terms.']],
+                        ['4. Use restrictions', ['You may not copy, distribute, sell, rent, sublicense, modify, or exploit the app beyond what these terms allow.', 'You may not reverse engineer, decompile, disassemble, attempt to extract source code, bypass technical protection measures, or create derivative works from the app except where applicable law prohibits this restriction.']],
+                        ['5. Third-party services and technical data', ['RouteWise depends on third-party services for maps, autocomplete, routing, AI/OCR, authentication, sync, subscriptions, diagnostics, and infrastructure.', 'By using RouteWise, you agree that technical data, diagnostics, usage metrics, errors, and operational data needed to maintain, secure, and improve the app may be collected and processed.']],
+                        ['6. RouteWise Pro subscription', ['RouteWise may offer auto-renewable subscriptions under the RouteWise Pro name, including RouteWise Pro Monthly with a 1-month term and RouteWise Pro Annual with a 1-year term.', 'Final pricing varies by country, currency, taxes, and store. The applicable price is always shown in the purchase flow and store confirmation screen before any charge.', 'The subscription renews automatically at the end of each period unless canceled at least 24 hours before the end of the current period for App Store purchases. Equivalent Google Play rules apply to Android purchases.', 'You can review, manage, or cancel the subscription in Apple ID subscription settings or Google Play subscriptions. Refunds follow the policies of the applicable store.']],
+                        ['7. Support, warranty, and Apple', ['Maintenance and support for RouteWise are provided by RouteWise, not Apple. Contact hi@routewise.app for support.', 'If the app fails to conform to an applicable warranty, you may notify Apple. Apple may refund the purchase price paid for the app where applicable. Other than that, Apple has no warranty, maintenance, or support obligation for RouteWise.', 'Apple and its subsidiaries are third-party beneficiaries of these terms and, upon your acceptance, may enforce these terms against you in that capacity.']],
+                        ['8. Intellectual property and legal compliance', ['All rights in RouteWise, including software, brand, design, text, structure, and product content, belong to RouteWise or its licensors.', 'You represent that you are not located in a country subject to a U.S. government embargo, that you are not in a country designated by the U.S. government as supporting terrorism, and that you are not listed on any U.S. government prohibited or restricted party list.']],
+                        ['9. Availability and limitation of liability', ['GPS, distance, time, traffic, geocoding, OCR, and route optimization depend on permissions, device signal, entered data, and third-party services. Results should be treated as estimates.', 'To the maximum extent permitted by law, RouteWise is not liable for indirect, incidental, special, punitive, or consequential damages related to app use, data loss, service unavailability, routing decisions, or third-party provider behavior.']],
+                        ['10. Changes and contact', ['We may update these terms from time to time. The latest version published on the website should be treated as the current version.', `Contact: <a href="mailto:${CONTACT_EMAIL}">${CONTACT_EMAIL}</a>.`]]
+                    ]
+                }
+            },
+            fr: {
+                metaTitle: 'RouteWise - Conditions et confidentialité',
+                brandSubtitle: 'Des itinéraires de livraison avec moins de temps perdu.',
+                home: 'Accueil',
+                privacyNav: 'Confidentialité',
+                termsNav: 'Conditions',
+                kicker: 'Légal',
+                title: 'Politique de confidentialité et conditions sur une seule page.',
+                intro: 'Ces documents expliquent comment RouteWise utilise les données, traite les abonnements et définit les conditions d’utilisation de l’app.',
+                footer: 'Optimisez les itinéraires, importez les adresses et envoyez les livraisons vers la bonne carte.',
+                privacy: {
+                    title: 'Politique de confidentialité de RouteWise',
+                    updated: 'Dernière mise à jour : 9 juin 2026',
+                    intro: 'Cette politique explique quelles informations RouteWise utilise, pourquoi elles sont utilisées et quels choix vous avez concernant vos données.',
+                    sections: [
+                        ['1. Aperçu', ['RouteWise aide les livreurs à organiser les arrêts, importer des listes d’adresses, optimiser les itinéraires, ouvrir la navigation dans des apps externes et suivre l’historique des livraisons.', 'Cette politique s’applique à l’app RouteWise, à routewise.app et aux flux de compte, synchronisation, importation d’adresses, OCR, cartes et abonnements liés au produit.']],
+                        ['2. Données fournies', ['Nous pouvons traiter des données de compte comme le courriel, l’identifiant utilisateur, la langue, le forfait et l’état de l’abonnement.', 'Nous traitons aussi les destinations, adresses, noms d’arrêts, fichiers ou textes importés, historique de livraisons, préférences de navigation, réglages de l’app et autres données que vous ajoutez au produit.']],
+                        ['3. Localisation, cartes et itinéraires', ['Lorsque vous accordez la permission, RouteWise peut utiliser la position actuelle pour centrer la carte, calculer des itinéraires depuis votre position et améliorer l’ordre des arrêts.', 'Les adresses, coordonnées et requêtes de recherche peuvent être envoyées à des services de cartes, autocomplete et routage pour fournir suggestions, détails de lieux, calculs de distance et navigation.']],
+                        ['4. Importation, caméra, OCR et images', ['Si vous importez des adresses par CSV, texte, caméra ou image choisie par vous, l’app peut traiter ce contenu pour extraire du texte, identifier des adresses et créer un aperçu de révision.', 'Les images peuvent être optimisées sur l’appareil et envoyées au backend RouteWise pour traitement IA/OCR et suggestions d’adresses. Utilisez cette fonction seulement avec des fichiers et images que vous êtes autorisé à traiter.']],
+                        ['5. Compte, synchronisation et stockage', ['RouteWise utilise l’authentification, des jetons sécurisés, une base locale et la synchronisation pour garder les données disponibles entre sessions et appareils lorsque ce flux est actif.', 'Les données d’authentification doivent être stockées avec les mécanismes sécurisés de l’appareil lorsque disponibles. Vous restez responsable de protéger votre appareil et vos identifiants.']],
+                        ['6. Abonnements et paiements', ['Si vous vous abonnez à RouteWise Pro, l’état de l’abonnement est traité par la boutique utilisée pour l’achat et géré par RevenueCat pour l’accès à l’entitlement.', 'RouteWise ne reçoit pas les données brutes de votre carte de paiement d’Apple, Google ou RevenueCat.']],
+                        ['7. Diagnostics et services tiers', ['Nous pouvons utiliser des services comme Supabase ou une infrastructure équivalente pour l’authentification et les données, Google Maps ou d’autres services de cartes pour la recherche et les itinéraires, RevenueCat pour les abonnements et Sentry pour les erreurs et la stabilité.', 'Ces fournisseurs traitent seulement les données nécessaires à leurs fonctions respectives et ont leurs propres politiques et obligations.']],
+                        ['8. Vos choix', ['Vous pouvez refuser les permissions de localisation, caméra et notifications, même si certaines fonctions peuvent être limitées ou indisponibles.', 'Vous pouvez supprimer les données locales en supprimant l’app et demander l’accès, la correction ou la suppression des données de compte en nous contactant.', 'Vous pouvez aussi supprimer votre compte dans l’app; cela supprime le profil, les destinations, l’historique des livraisons, les données de synchronisation, l’état local de l’abonnement et les enregistrements RouteWise liés à votre identifiant utilisateur.']],
+                        ['9. Conservation, sécurité et limites', ['Nous conservons les données aussi longtemps que nécessaire pour fournir le service, respecter les obligations légales, résoudre les différends et protéger la plateforme.', 'La suppression de compte est traitée immédiatement dans les systèmes RouteWise. Les sauvegardes, journaux de sécurité, dossiers des boutiques de paiement ou données requises par la loi peuvent prendre jusqu’à 30 jours à expirer ou être conservés seulement pour la durée légalement requise. Les données analytiques anonymisées qui ne vous identifient plus peuvent rester.', 'Aucun système n’est sécurisé à 100 %. Nous utilisons des mesures raisonnables de protection, mais ne pouvons garantir une sécurité absolue contre toutes les menaces.']],
+                        ['10. Droits brésiliens LGPD', ['Pour les utilisateurs au Brésil, le traitement des données personnelles suit la Lei Geral de Proteção de Dados Pessoais, Loi nº 13.709/2018 (LGPD). RouteWise agit comme contrôleur des données personnelles utilisées pour le compte, le soutien, l’abonnement et le fonctionnement de l’app, sauf lorsqu’un fournisseur agit comme contrôleur indépendant pour ses propres services.', 'Les bases légales peuvent inclure l’exécution du contrat, le consentement, le respect d’obligations légales ou réglementaires, l’exercice régulier de droits, l’intérêt légitime et la prévention de la fraude, selon la fonction utilisée et le contexte.', 'Vous pouvez demander la confirmation du traitement, l’accès, la correction, l’anonymisation, le blocage ou la suppression des données inutiles ou traitées de façon non conforme, la portabilité lorsque applicable, des informations sur le partage, la révision de décisions automatisées lorsque applicable et le retrait du consentement.', `Pour exercer vos droits LGPD ou contacter le canal de confidentialité, écrivez à <a href="mailto:${CONTACT_EMAIL}">${CONTACT_EMAIL}</a>. Vous pouvez également déposer une réclamation auprès de l’Autoridade Nacional de Proteção de Dados (ANPD) lorsque applicable.`]],
+                        ['11. Contact', [`Pour les questions de confidentialité ou demandes liées aux données, contactez <a href="mailto:${CONTACT_EMAIL}">${CONTACT_EMAIL}</a>.`]]
+                    ]
+                },
+                terms: {
+                    title: 'Conditions d’utilisation de RouteWise',
+                    updated: 'Dernière mise à jour : 9 juin 2026',
+                    intro: 'Ces conditions expliquent les règles d’utilisation de l’app RouteWise, du site et de RouteWise Pro.',
+                    sections: [
+                        ['1. Acceptation et parties', ['En installant, consultant ou utilisant RouteWise, vous acceptez ces conditions. Si vous n’acceptez pas, n’utilisez pas l’app ni le site.', 'Ces conditions sont conclues entre vous et RouteWise. Apple n’est pas responsable de l’app, de son contenu ou du soutien.']],
+                        ['2. Portée du produit', ['RouteWise est un outil de productivité pour livreurs. Il aide à organiser les destinations, importer des listes d’adresses, optimiser les itinéraires et ouvrir la navigation dans des apps compatibles.', 'RouteWise est un outil d’assistance. Vous restez responsable de vos décisions de conduite, de la sécurité routière et du respect des lois locales.']],
+                        ['3. Licence', ['Nous vous accordons une licence limitée, personnelle, non exclusive, non transférable, révocable et non sous-licenciable pour utiliser l’app sur les appareils que vous possédez ou contrôlez.', 'L’utilisation sur appareils Apple doit aussi respecter les règles Apple Media Services et les autres conditions applicables de l’App Store. L’utilisation Android doit aussi respecter les conditions Google Play.']],
+                        ['4. Restrictions d’utilisation', ['Vous ne pouvez pas copier, distribuer, vendre, louer, sous-licencier, modifier ou exploiter l’app au-delà de ce que ces conditions autorisent.', 'Vous ne pouvez pas faire de rétro-ingénierie, décompiler, désassembler, tenter d’extraire le code source, contourner les protections techniques ou créer des œuvres dérivées de l’app, sauf si la loi applicable interdit cette restriction.']],
+                        ['5. Services tiers et données techniques', ['RouteWise dépend de services tiers pour les cartes, autocomplete, routage, IA/OCR, authentification, synchronisation, abonnements, diagnostics et infrastructure.', 'En utilisant RouteWise, vous acceptez que les données techniques, diagnostics, métriques d’utilisation, erreurs et données opérationnelles nécessaires au maintien, à la sécurité et à l’amélioration de l’app puissent être collectées et traitées.']],
+                        ['6. Abonnement RouteWise Pro', ['RouteWise peut offrir des abonnements auto-renouvelables sous le nom RouteWise Pro, incluant RouteWise Pro Monthly avec une durée de 1 mois et RouteWise Pro Annual avec une durée de 1 an.', 'Le prix final varie selon le pays, la devise, les taxes et la boutique. Le prix applicable est toujours affiché dans le flux d’achat et l’écran de confirmation de la boutique avant toute facturation.', 'L’abonnement se renouvelle automatiquement à la fin de chaque période sauf annulation au moins 24 heures avant la fin de la période en cours pour les achats App Store. Les règles équivalentes de Google Play s’appliquent aux achats Android.', 'Vous pouvez consulter, gérer ou annuler l’abonnement dans les réglages d’abonnement Apple ID ou dans les abonnements Google Play. Les remboursements suivent les politiques de la boutique applicable.']],
+                        ['7. Soutien, garantie et Apple', ['La maintenance et le soutien de RouteWise sont fournis par RouteWise, pas par Apple. Pour le soutien, contactez hi@routewise.app.', 'Si l’app ne respecte pas une garantie applicable, vous pouvez en aviser Apple. Apple peut rembourser le prix payé pour l’app lorsque applicable. À part cela, Apple n’a aucune obligation de garantie, maintenance ou soutien pour RouteWise.', 'Apple et ses filiales sont bénéficiaires tiers de ces conditions et, après votre acceptation, peuvent faire appliquer ces conditions contre vous à ce titre.']],
+                        ['8. Propriété intellectuelle et conformité légale', ['Tous les droits de RouteWise, y compris le logiciel, la marque, le design, les textes, la structure et le contenu du produit, appartiennent à RouteWise ou à ses concédants.', 'Vous déclarez ne pas être situé dans un pays soumis à un embargo du gouvernement américain, ne pas être dans un pays désigné par le gouvernement américain comme soutenant le terrorisme et ne pas figurer sur une liste gouvernementale américaine de parties interdites ou restreintes.']],
+                        ['9. Disponibilité et limitation de responsabilité', ['Le GPS, la distance, le temps, le trafic, le géocodage, l’OCR et l’optimisation d’itinéraire dépendent des permissions, du signal de l’appareil, des données entrées et des services tiers. Les résultats doivent être traités comme des estimations.', 'Dans la mesure maximale permise par la loi, RouteWise n’est pas responsable des dommages indirects, incidents, spéciaux, punitifs ou consécutifs liés à l’utilisation de l’app, la perte de données, l’indisponibilité, les décisions d’itinéraire ou le comportement de fournisseurs tiers.']],
+                        ['10. Changements et contact', ['Nous pouvons mettre à jour ces conditions de temps à autre. La dernière version publiée sur le site doit être traitée comme la version en vigueur.', `Contact : <a href="mailto:${CONTACT_EMAIL}">${CONTACT_EMAIL}</a>.`]]
+                    ]
+                }
+            },
+            es: {
+                metaTitle: 'RouteWise - Términos y Privacidad',
+                brandSubtitle: 'Rutas de entrega con menos tiempo perdido.',
+                home: 'Inicio',
+                privacyNav: 'Privacidad',
+                termsNav: 'Términos',
+                kicker: 'Legal',
+                title: 'Política de privacidad y términos en una sola página.',
+                intro: 'Estos documentos explican cómo RouteWise usa datos, procesa suscripciones y define las condiciones de uso de la app.',
+                footer: 'Optimiza rutas, importa direcciones y envía entregas al mapa correcto.',
+                privacy: {
+                    title: 'Política de Privacidad de RouteWise',
+                    updated: 'Última actualización: 9 de junio de 2026',
+                    intro: 'Esta política explica qué información usa RouteWise, por qué se usa y qué opciones tienes sobre tus datos.',
+                    sections: [
+                        ['1. Descripción general', ['RouteWise ayuda a repartidores a organizar paradas, importar listas de direcciones, optimizar rutas, abrir navegación en apps externas y consultar el historial de entregas.', 'Esta política se aplica a la app RouteWise, a routewise.app y a los flujos de cuenta, sincronización, importación de direcciones, OCR, mapas y suscripción conectados al producto.']],
+                        ['2. Datos que proporcionas', ['Podemos procesar datos de cuenta como correo electrónico, identificador de usuario, preferencia de idioma, plan y estado de suscripción.', 'También procesamos destinos, direcciones, nombres de paradas, archivos o textos importados, historial de entregas, preferencias de navegación, configuración de la app y otros datos que agregas al producto.']],
+                        ['3. Ubicación, mapas y rutas', ['Cuando concedes permiso, RouteWise puede usar la ubicación actual para centrar el mapa, calcular rutas desde tu posición y mejorar el orden de las paradas.', 'Las direcciones, coordenadas y consultas de búsqueda pueden enviarse a servicios de mapas, autocompletado y enrutamiento para ofrecer sugerencias, detalles de lugares, cálculo de distancia y navegación.']],
+                        ['4. Importación, cámara, OCR e imágenes', ['Si importas direcciones mediante CSV, texto, cámara o una imagen elegida por ti, la app puede procesar ese contenido para extraer texto, identificar direcciones y crear una vista previa de revisión.', 'Las imágenes pueden optimizarse en el dispositivo y enviarse al backend de RouteWise para procesamiento de IA/OCR y sugerencias de dirección. Usa esta función solo con archivos e imágenes que tengas autorización para procesar.']],
+                        ['5. Cuenta, sincronización y almacenamiento', ['RouteWise usa autenticación, tokens seguros, base de datos local y sincronización para mantener tus datos disponibles entre sesiones y dispositivos cuando ese flujo está activo.', 'Los datos de autenticación deben almacenarse mediante mecanismos seguros del dispositivo cuando estén disponibles. Aun así, eres responsable de proteger tu dispositivo y tus credenciales.']],
+                        ['6. Suscripciones y pagos', ['Si te suscribes a RouteWise Pro, el estado de la suscripción es procesado por la tienda usada para la compra y gestionado por RevenueCat para habilitar el entitlement Pro.', 'RouteWise no recibe los datos sin procesar de tu tarjeta de pago de Apple, Google o RevenueCat.']],
+                        ['7. Diagnóstico y servicios de terceros', ['Podemos usar servicios como Supabase o infraestructura equivalente para autenticación y datos, Google Maps u otros servicios de mapas para búsqueda y rutas, RevenueCat para suscripciones y Sentry para errores y estabilidad.', 'Estos proveedores procesan solo los datos necesarios para sus funciones respectivas y tienen sus propias políticas y obligaciones.']],
+                        ['8. Tus opciones', ['Puedes negar permisos de ubicación, cámara y notificaciones, aunque algunas funciones pueden quedar limitadas o no disponibles.', 'Puedes eliminar datos locales al borrar la app y puedes solicitar acceso, corrección o eliminación de datos de cuenta contactándonos.', 'También puedes eliminar tu cuenta dentro de la app; esto elimina perfil, destinos, historial de entregas, datos de sincronización, estado local de suscripción y registros de RouteWise vinculados a tu identificador de usuario.']],
+                        ['9. Retención, seguridad y límites', ['Conservamos los datos durante el tiempo necesario para proporcionar el servicio, cumplir obligaciones legales, resolver disputas y proteger la plataforma.', 'La eliminación de cuenta se procesa inmediatamente en los sistemas de RouteWise. Copias de seguridad, registros de seguridad, registros de tiendas de pago o datos exigidos por obligación legal pueden tardar hasta 30 días en expirar o conservarse solo durante el plazo legal requerido. Los datos analíticos anonimizados que no te identifican pueden permanecer.', 'Ningún sistema es 100% seguro. Usamos medidas razonables de protección, pero no podemos garantizar seguridad absoluta contra todas las amenazas.']],
+                        ['10. LGPD y derechos en Brasil', ['Para usuarios en Brasil, el tratamiento de datos personales sigue la Lei Geral de Proteção de Dados Pessoais, Ley nº 13.709/2018 (LGPD). RouteWise actúa como controlador de los datos personales usados para cuenta, soporte, suscripción y operación de la app, salvo cuando un proveedor actúa como controlador independiente en sus propios servicios.', 'Las bases legales pueden incluir ejecución de contrato, consentimiento, cumplimiento de obligación legal o regulatoria, ejercicio regular de derechos, interés legítimo y prevención de fraude, según la función usada y el contexto del tratamiento.', 'Puedes solicitar confirmación de tratamiento, acceso, corrección, anonimización, bloqueo o eliminación de datos innecesarios o tratados en incumplimiento, portabilidad cuando aplique, información sobre compartición, revisión de decisiones automatizadas cuando exista y revocación del consentimiento.', `Para ejercer derechos previstos por la LGPD o contactar el canal de privacidad, envía un correo a <a href="mailto:${CONTACT_EMAIL}">${CONTACT_EMAIL}</a>. Si lo consideras necesario, también puedes presentar una reclamación ante la Autoridade Nacional de Proteção de Dados (ANPD).`]],
+                        ['11. Contacto', [`Para preguntas de privacidad o solicitudes sobre tus datos, contacta: <a href="mailto:${CONTACT_EMAIL}">${CONTACT_EMAIL}</a>.`]]
+                    ]
+                },
+                terms: {
+                    title: 'Términos de Uso de RouteWise',
+                    updated: 'Última actualización: 9 de junio de 2026',
+                    intro: 'Estos términos explican las condiciones para usar la app RouteWise, el sitio y RouteWise Pro.',
+                    sections: [
+                        ['1. Aceptación y partes', ['Al instalar, acceder o usar RouteWise, aceptas estos términos. Si no estás de acuerdo, no uses la app ni el sitio.', 'Estos términos son entre tú y RouteWise. Apple no es responsable por la app, su contenido o el soporte de la app.']],
+                        ['2. Alcance del producto', ['RouteWise es una herramienta de productividad para repartidores. Ayuda a organizar destinos, importar listas de direcciones, optimizar rutas y abrir navegación en apps compatibles.', 'RouteWise es una herramienta de apoyo. Tú sigues siendo responsable por tus decisiones al conducir, por la seguridad vial y por cumplir las leyes locales.']],
+                        ['3. Licencia', ['Te concedemos una licencia limitada, personal, no exclusiva, intransferible, revocable y no sublicenciable para usar la app en dispositivos que posees o controlas.', 'El uso en dispositivos Apple también debe cumplir las reglas de Apple Media Services y otros términos aplicables de la App Store. En Android, también aplican los términos de Google Play.']],
+                        ['4. Restricciones de uso', ['No puedes copiar, distribuir, vender, alquilar, sublicenciar, modificar o explotar la app más allá de lo permitido por estos términos.', 'No puedes realizar ingeniería inversa, descompilar, desensamblar, intentar extraer el código fuente, eludir protecciones técnicas o crear obras derivadas de la app, excepto cuando la ley aplicable no permita esta restricción.']],
+                        ['5. Servicios de terceros y datos técnicos', ['RouteWise depende de servicios de terceros para mapas, autocompletado, enrutamiento, IA/OCR, autenticación, sincronización, suscripciones, diagnósticos e infraestructura.', 'Al usar RouteWise, aceptas que datos técnicos, diagnósticos, métricas de uso, errores y datos operativos necesarios pueden recopilarse y procesarse para mantener, proteger y mejorar la app.']],
+                        ['6. Suscripción RouteWise Pro', ['RouteWise puede ofrecer suscripciones autorrenovables llamadas RouteWise Pro, incluyendo RouteWise Pro Monthly, con periodo de 1 mes, y RouteWise Pro Annual, con periodo de 1 año.', 'El precio final varía por país, moneda, impuestos y tienda usada. El valor aplicable siempre aparece en el flujo de compra y en la pantalla de confirmación de la tienda antes de cualquier cobro.', 'La suscripción se renueva automáticamente al final de cada periodo, salvo cancelación al menos 24 horas antes del fin del periodo actual cuando se compra en App Store. Reglas equivalentes de Google Play aplican para compras en Android.', 'Puedes revisar, gestionar o cancelar la suscripción en la configuración de suscripciones del Apple ID o en el área de suscripciones de Google Play. Los reembolsos siguen las políticas de la tienda aplicable.']],
+                        ['7. Soporte, garantía y Apple', ['El mantenimiento y soporte de RouteWise son proporcionados por RouteWise, no por Apple. Para soporte, contacta hi@routewise.app.', 'Si la app no cumple una garantía aplicable, puedes notificar a Apple. En ese caso, Apple podrá reembolsar el precio pagado por la app, cuando aplique. Fuera de eso, Apple no tiene obligación de garantía, mantenimiento o soporte relacionada con RouteWise.', 'Apple y sus subsidiarias son terceros beneficiarios de estos términos y, después de tu aceptación, podrán hacer valer estos términos contra ti en esa condición.']],
+                        ['8. Propiedad intelectual y cumplimiento legal', ['Todos los derechos de RouteWise, incluyendo software, marca, diseño, textos, estructura y contenido del producto, pertenecen a RouteWise o a sus licenciantes.', 'Declaras que no estás ubicado en un país sujeto a embargo del gobierno de EE. UU., que no estás en un país designado por el gobierno de EE. UU. como patrocinador del terrorismo y que no estás en listas gubernamentales de partes prohibidas o restringidas.']],
+                        ['9. Disponibilidad y limitación de responsabilidad', ['GPS, distancia, tiempo, tráfico, geocodificación, OCR y optimización de rutas dependen de permisos, señal del dispositivo, datos ingresados y servicios de terceros. Los resultados deben tratarse como estimaciones.', 'En la máxima medida permitida por la ley, RouteWise no se responsabiliza por daños indirectos, incidentales, especiales, punitivos o consecuentes relacionados con el uso de la app, pérdida de datos, indisponibilidad, decisiones de ruta o comportamiento de terceros.']],
+                        ['10. Cambios y contacto', ['Podemos actualizar estos términos ocasionalmente. La versión más reciente publicada en el sitio debe considerarse la versión vigente.', `Contacto: <a href="mailto:${CONTACT_EMAIL}">${CONTACT_EMAIL}</a>.`]]
+                    ]
+                }
+            }
+        };
+
+        const SITE_LANG_STORAGE_KEY = 'routewise-site-lang';
+        const META_DESCRIPTIONS = {
+            en: 'RouteWise privacy policy and terms of use in English, Portuguese, French, and Spanish.',
+            pt: 'Política de privacidade e termos de uso do RouteWise em português, inglês, francês e espanhol.',
+            fr: 'Politique de confidentialité et conditions d’utilisation de RouteWise en anglais, portugais, français et espagnol.',
+            es: 'Política de privacidad y términos de uso de RouteWise en inglés, portugués, francés y español.',
+        };
+        const HTML_LANG = {
+            en: 'en',
+            pt: 'pt-BR',
+            fr: 'fr-CA',
+            es: 'es',
+        };
+
+        function matchSupportedLanguage(rawLanguage) {
+            if (!rawLanguage) return null;
+            const normalized = rawLanguage.trim().replace(/_/g, '-').toLowerCase();
+            if (normalized.startsWith('pt')) return 'pt';
+            if (normalized.startsWith('fr')) return 'fr';
+            if (normalized.startsWith('es')) return 'es';
+            if (normalized.startsWith('en')) return 'en';
+            return null;
+        }
+
+        function readStoredLanguage() {
+            try {
+                return window.localStorage.getItem(SITE_LANG_STORAGE_KEY);
+            } catch {
+                return null;
+            }
+        }
+
+        function writeStoredLanguage(lang) {
+            try {
+                window.localStorage.setItem(SITE_LANG_STORAGE_KEY, lang);
+            } catch {
+                // Storage can be unavailable in private browsing; URL language still works.
+            }
+        }
+
+        function resolveLanguage() {
+            const params = new URLSearchParams(window.location.search);
+            const queryLanguage = params.get('lang');
+            if (queryLanguage) return matchSupportedLanguage(queryLanguage) || 'en';
+
+            const storedLanguage = matchSupportedLanguage(readStoredLanguage());
+            if (storedLanguage) return storedLanguage;
+
+            const browserLanguages = [
+                ...((navigator.languages || [])),
+                navigator.language,
+            ];
+
+            for (const browserLanguage of browserLanguages) {
+                const matched = matchSupportedLanguage(browserLanguage);
+                if (matched) return matched;
+            }
+
+            return 'en';
+        }
+
+        function renderDocument(id, doc) {
+            const sections = doc.sections.map(([title, paragraphs]) => `
+                <section class="legal-section">
+                    <h3>${title}</h3>
+                    ${paragraphs.map((paragraph) => `<p>${paragraph}</p>`).join('')}
+                </section>
+            `).join('');
+
+            return `
+                <article class="legal-document" id="${id}">
+                    <h2>${doc.title}</h2>
+                    <p class="updated">${doc.updated}</p>
+                    <div class="doc-intro">${doc.intro}</div>
+                    ${sections}
+                </article>
+            `;
+        }
+
+        function applyLanguage(lang) {
+            const copy = documents[lang] || documents.en;
+            const description = document.getElementById('page-description');
+            document.documentElement.lang = HTML_LANG[lang] || 'en';
+            document.title = copy.metaTitle;
+            if (description) description.setAttribute('content', META_DESCRIPTIONS[lang] || META_DESCRIPTIONS.en);
+            document.querySelectorAll('[data-text]').forEach((node) => {
+                const key = node.getAttribute('data-text');
+                if (copy[key]) node.textContent = copy[key];
+            });
+            document.querySelectorAll('[data-lang]').forEach((button) => {
+                button.classList.toggle('active', button.getAttribute('data-lang') === lang);
+            });
+            document.querySelectorAll('a[href^="./index.html"]').forEach((link) => {
+                link.setAttribute('href', `./index.html?lang=${lang}`);
+            });
+            document.getElementById('legal-content').innerHTML =
+                renderDocument('privacy', copy.privacy) + renderDocument('terms', copy.terms);
+        }
+
+        document.querySelectorAll('[data-lang]').forEach((button) => {
+            button.addEventListener('click', () => {
+                const lang = matchSupportedLanguage(button.getAttribute('data-lang')) || 'en';
+                const url = new URL(window.location.href);
+                url.searchParams.set('lang', lang);
+                writeStoredLanguage(lang);
+                history.replaceState(null, '', url);
+                applyLanguage(lang);
+            });
+        });
+
+        const activeLang = resolveLanguage();
+        writeStoredLanguage(activeLang);
+        applyLanguage(activeLang);

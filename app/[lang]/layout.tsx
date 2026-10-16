@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 import { notFound } from 'next/navigation';
 import { DM_Sans, Plus_Jakarta_Sans } from 'next/font/google';
+import { Analytics } from '@vercel/analytics/next';
 import { HTML_LANG, LOCALES, isLocale } from '@/i18n/locales';
 import { SITE_URL } from '@/site';
 import '../globals.css';
@@ -27,7 +28,11 @@ export default async function LocaleLayout({ children, params }: { children: Rea
 
   return (
     <html lang={HTML_LANG[lang]} className={`${dmSans.variable} ${jakarta.variable}`}>
-      <body>{children}</body>
+      <body>
+        {children}
+        {/* Vercel Web Analytics: page views without cookies or personal identifiers */}
+        <Analytics />
+      </body>
     </html>
   );
 }

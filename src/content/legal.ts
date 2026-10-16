@@ -17,7 +17,7 @@ export const legalDocuments = {
     "footer": "Optimize routes, import addresses, and send deliveries to the right map.",
     "privacy": {
       "title": "RouteWise Privacy Policy",
-      "updated": "Last updated: October 15, 2026",
+      "updated": "Last updated: October 16, 2026",
       "intro": "This policy explains what information RouteWise uses, why it is used, who processes it, and what choices you have over your data.",
       "sections": [
         [
@@ -73,13 +73,13 @@ export const legalDocuments = {
           "8. Usage limits and diagnostics",
           [
             "We count, per account and per day, the address lookups, label scans, and imports you use, to apply your plan's limits and show your remaining usage.",
-            "When the app crashes or hits an error, we send a report to Sentry with technical details (app version, device, request identifier) and your user identifier, without your addresses, stop names, photos, email, or tokens. Our server logs follow the same rule. RouteWise does not show ads, does not sell your data, and does not track you across other apps or websites."
+            "When the app crashes or hits an error, we send a report to Sentry with technical details (app version, device, request identifier) and your user identifier, without your addresses, stop names, photos, email, or tokens. Our server logs follow the same rule. On routewise.app, we count page visits with Vercel Web Analytics, which uses no cookies and does not identify you. RouteWise does not show ads, does not sell your data, and does not track you across other apps or websites."
           ]
         ],
         [
           "9. Service providers and international transfers",
           [
-            "RouteWise uses these providers, each only for its function: Supabase (accounts and database), Render (RouteWise servers), Vercel (website), Google Maps Platform (address search, places, and routes), OpenAI (reading addresses from photos and imports), Apple and RevenueCat (subscriptions), Sentry (error reports), and an email delivery provider (account emails).",
+            "RouteWise uses these providers, each only for its function: Supabase (accounts and database), Render (RouteWise servers), Vercel (website and its visit counts), Google Maps Platform (address search, places, and routes), OpenAI (reading addresses from photos and imports), Apple and RevenueCat (subscriptions), Sentry (error reports), and an email delivery provider (account emails).",
             "These providers may process data outside your country, including in the United States, under their own security and privacy obligations."
           ]
         ],
@@ -209,7 +209,7 @@ export const legalDocuments = {
     "footer": "Otimize rotas, importe endereços e envie entregas para o mapa certo.",
     "privacy": {
       "title": "Política de Privacidade do RouteWise",
-      "updated": "Última atualização: 15 de outubro de 2026",
+      "updated": "Última atualização: 16 de outubro de 2026",
       "intro": "Esta política explica quais informações o RouteWise usa, por que elas são usadas, quem as processa e quais escolhas você tem sobre seus dados.",
       "sections": [
         [
@@ -265,13 +265,13 @@ export const legalDocuments = {
           "8. Limites de uso e diagnóstico",
           [
             "Contamos, por conta e por dia, as buscas de endereço, leituras de etiqueta e importações que você usa, para aplicar os limites do seu plano e mostrar quanto ainda resta.",
-            "Quando o app trava ou encontra um erro, enviamos um relatório ao Sentry com detalhes técnicos (versão do app, aparelho, identificador da requisição) e o seu identificador de usuário, sem seus endereços, nomes de paradas, fotos, e-mail ou tokens. Os logs dos nossos servidores seguem a mesma regra. O RouteWise não exibe anúncios, não vende seus dados e não rastreia você em outros apps ou sites."
+            "Quando o app trava ou encontra um erro, enviamos um relatório ao Sentry com detalhes técnicos (versão do app, aparelho, identificador da requisição) e o seu identificador de usuário, sem seus endereços, nomes de paradas, fotos, e-mail ou tokens. Os logs dos nossos servidores seguem a mesma regra. No site routewise.app, contamos as visitas às páginas com o Vercel Web Analytics, que não usa cookies e não identifica você. O RouteWise não exibe anúncios, não vende seus dados e não rastreia você em outros apps ou sites."
           ]
         ],
         [
           "9. Prestadores de serviço e transferência internacional",
           [
-            "O RouteWise usa estes prestadores, cada um só para a sua função: Supabase (contas e banco de dados), Render (servidores do RouteWise), Vercel (site), Google Maps Platform (busca de endereços, lugares e rotas), OpenAI (leitura de endereços em fotos e importações), Apple e RevenueCat (assinaturas), Sentry (relatórios de erro) e um provedor de envio de e-mails (e-mails da conta).",
+            "O RouteWise usa estes prestadores, cada um só para a sua função: Supabase (contas e banco de dados), Render (servidores do RouteWise), Vercel (site e contagem de visitas), Google Maps Platform (busca de endereços, lugares e rotas), OpenAI (leitura de endereços em fotos e importações), Apple e RevenueCat (assinaturas), Sentry (relatórios de erro) e um provedor de envio de e-mails (e-mails da conta).",
             "Esses prestadores podem processar dados fora do seu país, inclusive nos Estados Unidos, conforme suas próprias obrigações de segurança e privacidade."
           ]
         ],
@@ -401,7 +401,7 @@ export const legalDocuments = {
     "footer": "Optimisez les itinéraires, importez les adresses et envoyez les livraisons vers la bonne carte.",
     "privacy": {
       "title": "Politique de confidentialité de RouteWise",
-      "updated": "Dernière mise à jour : 15 octobre 2026",
+      "updated": "Dernière mise à jour : 16 octobre 2026",
       "intro": "Cette politique explique quelles informations RouteWise utilise, pourquoi elles sont utilisées, qui les traite et quels choix vous avez sur vos données.",
       "sections": [
         [
@@ -457,13 +457,13 @@ export const legalDocuments = {
           "8. Limites d’utilisation et diagnostics",
           [
             "Nous comptons, par compte et par jour, les recherches d’adresses, lectures d’étiquettes et importations que vous utilisez, pour appliquer les limites de votre forfait et vous montrer ce qu’il vous reste.",
-            "Quand l’app plante ou rencontre une erreur, nous envoyons un rapport à Sentry avec des détails techniques (version de l’app, appareil, identifiant de la requête) et votre identifiant d’utilisateur, sans vos adresses, noms d’arrêts, photos, courriel ni jetons. Les journaux de nos serveurs suivent la même règle. RouteWise n’affiche pas de publicité, ne vend pas vos données et ne vous suit pas dans d’autres apps ou sites Web."
+            "Quand l’app plante ou rencontre une erreur, nous envoyons un rapport à Sentry avec des détails techniques (version de l’app, appareil, identifiant de la requête) et votre identifiant d’utilisateur, sans vos adresses, noms d’arrêts, photos, courriel ni jetons. Les journaux de nos serveurs suivent la même règle. Sur routewise.app, nous comptons les visites des pages avec Vercel Web Analytics, qui n’utilise pas de témoins (cookies) et ne vous identifie pas. RouteWise n’affiche pas de publicité, ne vend pas vos données et ne vous suit pas dans d’autres apps ou sites Web."
           ]
         ],
         [
           "9. Fournisseurs de services et transferts internationaux",
           [
-            "RouteWise utilise ces fournisseurs, chacun seulement pour sa fonction : Supabase (comptes et base de données), Render (serveurs de RouteWise), Vercel (site Web), Google Maps Platform (recherche d’adresses, lieux et itinéraires), OpenAI (lecture d’adresses dans les photos et les importations), Apple et RevenueCat (abonnements), Sentry (rapports d’erreur) et un fournisseur d’envoi de courriels (courriels du compte).",
+            "RouteWise utilise ces fournisseurs, chacun seulement pour sa fonction : Supabase (comptes et base de données), Render (serveurs de RouteWise), Vercel (site Web et décompte des visites), Google Maps Platform (recherche d’adresses, lieux et itinéraires), OpenAI (lecture d’adresses dans les photos et les importations), Apple et RevenueCat (abonnements), Sentry (rapports d’erreur) et un fournisseur d’envoi de courriels (courriels du compte).",
             "Ces fournisseurs peuvent traiter des données hors de votre pays, notamment aux États-Unis, selon leurs propres obligations de sécurité et de confidentialité."
           ]
         ],
@@ -593,7 +593,7 @@ export const legalDocuments = {
     "footer": "Optimiza rutas, importa direcciones y envía entregas al mapa correcto.",
     "privacy": {
       "title": "Política de Privacidad de RouteWise",
-      "updated": "Última actualización: 15 de octubre de 2026",
+      "updated": "Última actualización: 16 de octubre de 2026",
       "intro": "Esta política explica qué información usa RouteWise, por qué se usa, quién la procesa y qué opciones tienes sobre tus datos.",
       "sections": [
         [
@@ -649,13 +649,13 @@ export const legalDocuments = {
           "8. Límites de uso y diagnóstico",
           [
             "Contamos, por cuenta y por día, las búsquedas de direcciones, lecturas de etiquetas e importaciones que usas, para aplicar los límites de tu plan y mostrarte cuánto te queda.",
-            "Cuando la app falla o encuentra un error, enviamos un informe a Sentry con detalles técnicos (versión de la app, dispositivo, identificador de la solicitud) y tu identificador de usuario, sin tus direcciones, nombres de paradas, fotos, correo ni tokens. Los registros de nuestros servidores siguen la misma regla. RouteWise no muestra anuncios, no vende tus datos y no te rastrea en otras apps o sitios web."
+            "Cuando la app falla o encuentra un error, enviamos un informe a Sentry con detalles técnicos (versión de la app, dispositivo, identificador de la solicitud) y tu identificador de usuario, sin tus direcciones, nombres de paradas, fotos, correo ni tokens. Los registros de nuestros servidores siguen la misma regla. En routewise.app contamos las visitas a las páginas con Vercel Web Analytics, que no usa cookies y no te identifica. RouteWise no muestra anuncios, no vende tus datos y no te rastrea en otras apps o sitios web."
           ]
         ],
         [
           "9. Proveedores de servicios y transferencias internacionales",
           [
-            "RouteWise usa estos proveedores, cada uno solo para su función: Supabase (cuentas y base de datos), Render (servidores de RouteWise), Vercel (sitio web), Google Maps Platform (búsqueda de direcciones, lugares y rutas), OpenAI (lectura de direcciones en fotos e importaciones), Apple y RevenueCat (suscripciones), Sentry (informes de errores) y un proveedor de envío de correos (correos de la cuenta).",
+            "RouteWise usa estos proveedores, cada uno solo para su función: Supabase (cuentas y base de datos), Render (servidores de RouteWise), Vercel (sitio web y conteo de visitas), Google Maps Platform (búsqueda de direcciones, lugares y rutas), OpenAI (lectura de direcciones en fotos e importaciones), Apple y RevenueCat (suscripciones), Sentry (informes de errores) y un proveedor de envío de correos (correos de la cuenta).",
             "Estos proveedores pueden procesar datos fuera de tu país, incluso en Estados Unidos, conforme a sus propias obligaciones de seguridad y privacidad."
           ]
         ],

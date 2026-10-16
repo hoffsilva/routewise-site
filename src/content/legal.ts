@@ -17,75 +17,90 @@ export const legalDocuments = {
     "footer": "Optimize routes, import addresses, and send deliveries to the right map.",
     "privacy": {
       "title": "RouteWise Privacy Policy",
-      "updated": "Last updated: June 9, 2026",
-      "intro": "This policy explains what information RouteWise uses, why it is used, and what choices you have over your data.",
+      "updated": "Last updated: October 15, 2026",
+      "intro": "This policy explains what information RouteWise uses, why it is used, who processes it, and what choices you have over your data.",
       "sections": [
         [
           "1. Overview",
           [
             "RouteWise helps delivery drivers organize stops, import address lists, optimize routes, open navigation in external apps, and track delivery history.",
-            "This policy applies to the RouteWise app, routewise.app, and the account, sync, address import, OCR, map, and subscription flows connected to the product."
+            "This policy applies to the RouteWise app, the routewise.app website, and the account, address search, import, label scanning, route, backup, and subscription features connected to the product."
           ]
         ],
         [
           "2. Data you provide",
           [
-            "We may process account data such as email, user identifier, language preference, plan, and subscription state.",
-            "We also process destinations, addresses, stop names, imported files or text, delivery history, navigation preferences, app settings, and other data you add to the product."
+            "Account data: email address, user identifier, language preference, plan, and subscription status.",
+            "Delivery data: stops (names, addresses, coordinates, and notes), delivery history, address lists and files you import, and photos of labels or documents you scan, plus your app settings such as the navigation app you prefer."
           ]
         ],
         [
-          "3. Location, maps, and routes",
+          "3. Data on your device and backup",
           [
-            "When you grant permission, RouteWise may use current location to center the map, calculate routes from your position, and improve stop order.",
-            "Addresses, coordinates, and search queries may be sent to mapping, autocomplete, and routing services to provide suggestions, place details, distance calculation, and navigation."
+            "Your stops and delivery history are stored on your device, linked to your account. Session tokens are kept in the device's secure storage.",
+            "When backup and sync is available in your version of the app, your stops and delivery history are also stored on RouteWise servers, linked to your account, so you can restore them after reinstalling or on another device. When you delete a stop, it is removed from our servers; we keep only its identifier and deletion date so your other devices remove it too."
           ]
         ],
         [
-          "4. Import, camera, OCR, and images",
+          "4. Location, maps, and routes",
           [
-            "If you import addresses through CSV, text, camera, or an image you choose, the app may process that content to extract text, identify addresses, and build a review preview.",
-            "Images may be optimized on device and sent to the RouteWise backend for AI/OCR processing and address suggestions. Use this feature only with files and images you are allowed to process."
+            "With your permission, the app uses your current location on the device to center the map and order your stops.",
+            "When you search for an address or optimize a route, we send the search text, your current location (as a starting point or to rank results), and your stops' addresses and coordinates through our servers to Google Maps Platform. We do not keep a history of your location."
           ]
         ],
         [
-          "5. Account, sync, and storage",
+          "5. Label scanning, imports, and images",
           [
-            "RouteWise uses authentication, secure tokens, local database storage, and sync to keep data available across sessions and devices when that flow is active.",
-            "Authentication data should be stored through secure device mechanisms where available. You remain responsible for protecting your device and credentials."
+            "When you scan a label, the text is read on your device first. If that isn't enough, a reduced copy of the photo is sent to RouteWise servers and to OpenAI to extract the address.",
+            "We send the files, text, and photos you import to RouteWise servers and process them with OpenAI and Google Maps Platform to build the review list. RouteWise does not keep these photos or files after processing; OpenAI and Google may keep what they receive for a limited time under their own policies. Only use content you are allowed to process."
           ]
         ],
         [
-          "6. Subscriptions and payments",
+          "6. Account and email",
           [
-            "If you subscribe to RouteWise Pro, subscription status is processed by the store used for purchase and managed through RevenueCat for entitlement access.",
-            "RouteWise does not receive your raw payment card data from Apple, Google, or RevenueCat."
+            "We use Supabase for sign-in and account data. Supabase also hosts the RouteWise database.",
+            "We send account emails, such as email confirmation and password reset, through an email delivery provider."
           ]
         ],
         [
-          "7. Diagnostics and third-party services",
+          "7. Subscriptions and payments",
           [
-            "We may use services such as Supabase or equivalent infrastructure for authentication and data, Google Maps or mapping services for search and routes, RevenueCat for subscriptions, and Sentry for errors and stability.",
-            "Those providers process only the data needed for their respective functions and have their own policies and obligations."
+            "If you subscribe to RouteWise Pro, the App Store handles the purchase and RevenueCat manages your subscription status using your RouteWise user identifier.",
+            "RouteWise does not receive your payment card data from Apple or RevenueCat."
           ]
         ],
         [
-          "8. Your choices",
+          "8. Usage limits and diagnostics",
           [
-            "You can deny location, camera, and notification permissions, although some features may become limited or unavailable.",
-            "You can remove local data by deleting the app and can request access, correction, or deletion of account data by contacting us."
+            "We count, per account and per day, the address lookups, label scans, and imports you use, to apply your plan's limits and show your remaining usage.",
+            "When the app crashes or hits an error, we send a report to Sentry with technical details (app version, device, request identifier) and your user identifier, without your addresses, stop names, photos, email, or tokens. Our server logs follow the same rule. RouteWise does not show ads, does not sell your data, and does not track you across other apps or websites."
           ]
         ],
         [
-          "9. Retention, security, and limits",
+          "9. Service providers and international transfers",
           [
-            "We keep data as long as needed to provide the service, comply with legal obligations, resolve disputes, and protect the platform.",
-            "Account deletion is processed immediately in RouteWise systems and removes your profile, destinations, delivery history, sync data, local subscription state, and RouteWise records tied to your user ID. Backups, security logs, payment-store records, or records required by law may take up to 30 days to expire or may be retained only as legally required. Anonymized analytics that no longer identify you may remain.",
+            "RouteWise uses these providers, each only for its function: Supabase (accounts and database), Render (RouteWise servers), Vercel (website), Google Maps Platform (address search, places, and routes), OpenAI (reading addresses from photos and imports), Apple and RevenueCat (subscriptions), Sentry (error reports), and an email delivery provider (account emails).",
+            "These providers may process data outside your country, including in the United States, under their own security and privacy obligations."
+          ]
+        ],
+        [
+          "10. Your choices",
+          [
+            "You can deny location or camera access; some features will be limited or unavailable.",
+            "You can delete your account in the app. This removes your profile, stops, delivery history, data backed up on our servers, usage records, and other RouteWise records tied to your user identifier.",
+            "You can also request access to, correction of, or deletion of your data by writing to <a href=\"mailto:hi@routewise.app\">hi@routewise.app</a>."
+          ]
+        ],
+        [
+          "11. Retention and security",
+          [
+            "We keep your data while your account is active and as needed to provide the service, comply with legal obligations, resolve disputes, and protect the platform.",
+            "We delete your account from RouteWise systems immediately. Copies kept by our providers, such as database backups, error reports, and payment-store records, expire on those providers' retention schedules (error reports, for example, after up to 90 days), unless the law requires keeping them longer.",
             "No system is 100% secure. We use reasonable protection measures, but cannot guarantee absolute security against all threats."
           ]
         ],
         [
-          "10. Brazilian LGPD rights",
+          "12. Brazilian LGPD rights",
           [
             "For users in Brazil, personal data processing follows the Brazilian General Personal Data Protection Law, Law No. 13,709/2018 (LGPD). RouteWise acts as controller for personal data used for account, support, subscription, and app operation, except where a service provider acts as an independent controller for its own services.",
             "Legal bases may include contract performance, consent, compliance with legal or regulatory obligations, regular exercise of rights, legitimate interests, and fraud prevention, depending on the feature and context.",
@@ -94,7 +109,7 @@ export const legalDocuments = {
           ]
         ],
         [
-          "11. Contact",
+          "13. Contact",
           [
             "For privacy questions or data requests, contact <a href=\"mailto:hi@routewise.app\">hi@routewise.app</a>."
           ]
@@ -194,76 +209,90 @@ export const legalDocuments = {
     "footer": "Otimize rotas, importe endereços e envie entregas para o mapa certo.",
     "privacy": {
       "title": "Política de Privacidade do RouteWise",
-      "updated": "Última atualização: 9 de junho de 2026",
-      "intro": "Esta política explica quais informações o RouteWise usa, por que elas são usadas e quais escolhas você tem sobre seus dados.",
+      "updated": "Última atualização: 15 de outubro de 2026",
+      "intro": "Esta política explica quais informações o RouteWise usa, por que elas são usadas, quem as processa e quais escolhas você tem sobre seus dados.",
       "sections": [
         [
           "1. Visão geral",
           [
-            "O RouteWise ajuda entregadores a organizar paradas, importar listas de endereços, otimizar rotas, abrir navegação em apps externos e acompanhar o histórico de entregas.",
-            "Esta política se aplica ao app RouteWise, ao site routewise.app e aos fluxos de conta, sincronização, importação de endereços, OCR, mapas e assinatura conectados ao produto."
+            "O RouteWise ajuda entregadores a organizar paradas, importar listas de endereços, otimizar rotas, abrir a navegação em apps externos e acompanhar o histórico de entregas.",
+            "Esta política se aplica ao app RouteWise, ao site routewise.app e aos recursos de conta, busca de endereços, importação, leitura de etiquetas, rotas, backup e assinatura ligados ao produto."
           ]
         ],
         [
           "2. Dados que você fornece",
           [
-            "Podemos processar dados de conta, como e-mail, identificador de usuário, preferências de idioma, plano e estado de assinatura.",
-            "Também processamos destinos, endereços, nomes de paradas, arquivos ou textos de importação, histórico de entregas, preferências de navegação, configurações do app e outros dados que você adiciona ao produto."
+            "Dados de conta: e-mail, identificador de usuário, preferência de idioma, plano e estado da assinatura.",
+            "Dados de entrega: paradas (nomes, endereços, coordenadas e observações), histórico de entregas, listas e arquivos de endereços que você importa e fotos de etiquetas ou documentos que você lê com a câmera, além das configurações do app, como o app de navegação preferido."
           ]
         ],
         [
-          "3. Localização, mapas e rotas",
+          "3. Dados no seu aparelho e backup",
           [
-            "Quando você concede permissão, o RouteWise pode usar a localização atual para centralizar o mapa, calcular a rota a partir da sua posição e melhorar a ordem das paradas.",
-            "Endereços, coordenadas e consultas de busca podem ser enviados a serviços de mapas, autocomplete e roteamento para permitir sugestões, detalhes de lugares, cálculo de distância e navegação."
+            "Suas paradas e seu histórico de entregas ficam armazenados no seu aparelho, ligados à sua conta. Os tokens de sessão ficam no armazenamento seguro do aparelho.",
+            "Quando o backup e a sincronização estiverem disponíveis na sua versão do app, suas paradas e seu histórico de entregas também ficam armazenados nos servidores do RouteWise, ligados à sua conta, para você recuperá-los ao reinstalar o app ou em outro aparelho. Quando você exclui uma parada, ela é removida dos nossos servidores; guardamos só o identificador e a data da exclusão para que seus outros aparelhos também a removam."
           ]
         ],
         [
-          "4. Importação, câmera, OCR e imagens",
+          "4. Localização, mapas e rotas",
           [
-            "Se você importar endereços por CSV, texto, câmera ou imagem escolhida por você, o app pode processar esse conteúdo para extrair texto, identificar endereços e montar um preview de revisão.",
-            "Imagens podem ser otimizadas no dispositivo e enviadas ao backend do RouteWise para processamento de IA/OCR e sugestões de endereço. Use esse recurso apenas com arquivos e imagens que você tem autorização para processar."
+            "Com a sua permissão, o app usa a sua localização atual no aparelho para centralizar o mapa e ordenar suas paradas.",
+            "Quando você busca um endereço ou otimiza uma rota, enviamos o texto da busca, a sua localização atual (como ponto de partida ou para ordenar os resultados) e os endereços e coordenadas das suas paradas, pelos nossos servidores, à Google Maps Platform. Não guardamos histórico da sua localização."
           ]
         ],
         [
-          "5. Conta, sincronização e armazenamento",
+          "5. Leitura de etiquetas, importação e imagens",
           [
-            "O RouteWise usa autenticação, tokens seguros, banco local e sincronização para manter seus dados disponíveis entre sessões e dispositivos quando esse fluxo está ativo.",
-            "Dados sensíveis de autenticação devem ser armazenados por mecanismos seguros do dispositivo quando disponíveis. Mesmo assim, você é responsável por proteger seu aparelho e suas credenciais."
+            "Quando você lê uma etiqueta, o texto é lido primeiro no seu aparelho. Se isso não bastar, uma cópia reduzida da foto é enviada aos servidores do RouteWise e à OpenAI para extrair o endereço.",
+            "Enviamos os arquivos, textos e fotos que você importa aos servidores do RouteWise e os processamos com a OpenAI e a Google Maps Platform para montar a lista de revisão. O RouteWise não guarda essas fotos e arquivos depois do processamento; a OpenAI e o Google podem mantê-los por tempo limitado, conforme suas próprias políticas. Use apenas conteúdo que você tem autorização para processar."
           ]
         ],
         [
-          "6. Assinaturas e pagamentos",
+          "6. Conta e e-mail",
           [
-            "Se você assinar o RouteWise Pro, o status de assinatura é processado pela loja usada na compra e gerenciado pelo RevenueCat para liberar o entitlement Pro.",
-            "O RouteWise não recebe os dados brutos do seu cartão de pagamento da Apple, Google ou RevenueCat."
+            "Usamos o Supabase para o login e os dados de conta. O Supabase também hospeda o banco de dados do RouteWise.",
+            "Enviamos os e-mails da conta, como confirmação de e-mail e redefinição de senha, por um provedor de envio de e-mails."
           ]
         ],
         [
-          "7. Diagnóstico e serviços de terceiros",
+          "7. Assinaturas e pagamentos",
           [
-            "Podemos usar serviços como Supabase ou infraestrutura equivalente para autenticação e dados, Google Maps ou serviços de mapas para busca e rotas, RevenueCat para assinaturas e Sentry para erros e estabilidade.",
-            "Esses provedores processam apenas os dados necessários para suas funções e têm suas próprias políticas e obrigações."
+            "Se você assinar o RouteWise Pro, a App Store cuida da compra e o RevenueCat gerencia o estado da sua assinatura com o seu identificador de usuário do RouteWise.",
+            "O RouteWise não recebe os dados do seu cartão de pagamento da Apple nem do RevenueCat."
           ]
         ],
         [
-          "8. Suas escolhas",
+          "8. Limites de uso e diagnóstico",
           [
-            "Você pode negar permissões de localização, câmera e notificações, embora alguns recursos fiquem limitados ou indisponíveis.",
-            "Você pode excluir dados locais ao remover o app e pode solicitar acesso, correção ou exclusão de dados de conta entrando em contato conosco.",
-            "Você também pode excluir sua conta dentro do app; isso remove perfil, destinos, histórico de entregas, dados de sincronização, estado local de assinatura e registros do RouteWise ligados ao seu identificador de usuário."
+            "Contamos, por conta e por dia, as buscas de endereço, leituras de etiqueta e importações que você usa, para aplicar os limites do seu plano e mostrar quanto ainda resta.",
+            "Quando o app trava ou encontra um erro, enviamos um relatório ao Sentry com detalhes técnicos (versão do app, aparelho, identificador da requisição) e o seu identificador de usuário, sem seus endereços, nomes de paradas, fotos, e-mail ou tokens. Os logs dos nossos servidores seguem a mesma regra. O RouteWise não exibe anúncios, não vende seus dados e não rastreia você em outros apps ou sites."
           ]
         ],
         [
-          "9. Retenção, segurança e limites",
+          "9. Prestadores de serviço e transferência internacional",
           [
-            "Mantemos dados pelo tempo necessário para fornecer o serviço, cumprir obrigações legais, resolver disputas e proteger a plataforma.",
-            "A exclusão de conta é processada imediatamente nos sistemas do RouteWise. Backups, logs de segurança, registros das lojas de pagamento ou dados exigidos por obrigação legal podem levar até 30 dias para expirar ou ser mantidos apenas pelo prazo exigido em lei. Dados analíticos anonimizados que não identificam você podem permanecer.",
+            "O RouteWise usa estes prestadores, cada um só para a sua função: Supabase (contas e banco de dados), Render (servidores do RouteWise), Vercel (site), Google Maps Platform (busca de endereços, lugares e rotas), OpenAI (leitura de endereços em fotos e importações), Apple e RevenueCat (assinaturas), Sentry (relatórios de erro) e um provedor de envio de e-mails (e-mails da conta).",
+            "Esses prestadores podem processar dados fora do seu país, inclusive nos Estados Unidos, conforme suas próprias obrigações de segurança e privacidade."
+          ]
+        ],
+        [
+          "10. Suas escolhas",
+          [
+            "Você pode negar o acesso à localização ou à câmera; alguns recursos ficarão limitados ou indisponíveis.",
+            "Você pode excluir sua conta no app. Isso remove seu perfil, paradas, histórico de entregas, dados guardados em backup nos nossos servidores, registros de uso e outros registros do RouteWise ligados ao seu identificador de usuário.",
+            "Você também pode pedir acesso, correção ou exclusão dos seus dados escrevendo para <a href=\"mailto:hi@routewise.app\">hi@routewise.app</a>."
+          ]
+        ],
+        [
+          "11. Retenção e segurança",
+          [
+            "Mantemos seus dados enquanto sua conta estiver ativa e pelo tempo necessário para fornecer o serviço, cumprir obrigações legais, resolver disputas e proteger a plataforma.",
+            "Excluímos sua conta dos sistemas do RouteWise imediatamente. Cópias mantidas pelos nossos prestadores, como backups do banco de dados, relatórios de erro e registros das lojas de pagamento, expiram conforme os prazos de retenção desses prestadores (os relatórios de erro, por exemplo, em até 90 dias), salvo quando a lei exigir guardá-las por mais tempo.",
             "Nenhum sistema é 100% seguro. Usamos medidas razoáveis de proteção, mas não podemos garantir segurança absoluta contra todas as ameaças."
           ]
         ],
         [
-          "10. LGPD e direitos no Brasil",
+          "12. Direitos na LGPD",
           [
             "Para usuários no Brasil, o tratamento de dados pessoais segue a Lei Geral de Proteção de Dados Pessoais, Lei nº 13.709/2018 (LGPD). O RouteWise atua como controlador dos dados pessoais usados para conta, suporte, assinatura e operação do app, salvo quando um prestador de serviço atua como controlador independente nos próprios serviços.",
             "As bases legais podem incluir execução de contrato, consentimento, cumprimento de obrigação legal ou regulatória, exercício regular de direitos, legítimo interesse e prevenção à fraude, conforme o recurso usado e o contexto do tratamento.",
@@ -272,9 +301,9 @@ export const legalDocuments = {
           ]
         ],
         [
-          "11. Contato",
+          "13. Contato",
           [
-            "Para dúvidas de privacidade ou solicitações sobre seus dados, entre em contato: <a href=\"mailto:hi@routewise.app\">hi@routewise.app</a>."
+            "Para dúvidas de privacidade ou pedidos sobre seus dados, entre em contato: <a href=\"mailto:hi@routewise.app\">hi@routewise.app</a>."
           ]
         ]
       ]
@@ -372,76 +401,90 @@ export const legalDocuments = {
     "footer": "Optimisez les itinéraires, importez les adresses et envoyez les livraisons vers la bonne carte.",
     "privacy": {
       "title": "Politique de confidentialité de RouteWise",
-      "updated": "Dernière mise à jour : 9 juin 2026",
-      "intro": "Cette politique explique quelles informations RouteWise utilise, pourquoi elles sont utilisées et quels choix vous avez concernant vos données.",
+      "updated": "Dernière mise à jour : 15 octobre 2026",
+      "intro": "Cette politique explique quelles informations RouteWise utilise, pourquoi elles sont utilisées, qui les traite et quels choix vous avez sur vos données.",
       "sections": [
         [
           "1. Aperçu",
           [
-            "RouteWise aide les livreurs à organiser les arrêts, importer des listes d’adresses, optimiser les itinéraires, ouvrir la navigation dans des apps externes et suivre l’historique des livraisons.",
-            "Cette politique s’applique à l’app RouteWise, à routewise.app et aux flux de compte, synchronisation, importation d’adresses, OCR, cartes et abonnements liés au produit."
+            "RouteWise aide les livreurs à organiser leurs arrêts, importer des listes d’adresses, optimiser leurs itinéraires, ouvrir la navigation dans des apps externes et suivre l’historique des livraisons.",
+            "Cette politique s’applique à l’app RouteWise, au site routewise.app et aux fonctions de compte, de recherche d’adresses, d’importation, de lecture d’étiquettes, d’itinéraires, de sauvegarde et d’abonnement liées au produit."
           ]
         ],
         [
-          "2. Données fournies",
+          "2. Données que vous fournissez",
           [
-            "Nous pouvons traiter des données de compte comme le courriel, l’identifiant utilisateur, la langue, le forfait et l’état de l’abonnement.",
-            "Nous traitons aussi les destinations, adresses, noms d’arrêts, fichiers ou textes importés, historique de livraisons, préférences de navigation, réglages de l’app et autres données que vous ajoutez au produit."
+            "Données de compte : adresse courriel, identifiant d’utilisateur, langue préférée, forfait et état de l’abonnement.",
+            "Données de livraison : arrêts (noms, adresses, coordonnées et notes), historique des livraisons, listes et fichiers d’adresses que vous importez et photos d’étiquettes ou de documents que vous numérisez, ainsi que les réglages de l’app, comme l’app de navigation que vous préférez."
           ]
         ],
         [
-          "3. Localisation, cartes et itinéraires",
+          "3. Données sur votre appareil et sauvegarde",
           [
-            "Lorsque vous accordez la permission, RouteWise peut utiliser la position actuelle pour centrer la carte, calculer des itinéraires depuis votre position et améliorer l’ordre des arrêts.",
-            "Les adresses, coordonnées et requêtes de recherche peuvent être envoyées à des services de cartes, autocomplete et routage pour fournir suggestions, détails de lieux, calculs de distance et navigation."
+            "Vos arrêts et votre historique de livraisons sont stockés sur votre appareil, liés à votre compte. Les jetons de session sont conservés dans le stockage sécurisé de l’appareil.",
+            "Lorsque la sauvegarde et la synchronisation sont offertes dans votre version de l’app, vos arrêts et votre historique de livraisons sont aussi stockés sur les serveurs de RouteWise, liés à votre compte, pour que vous puissiez les récupérer après une réinstallation ou sur un autre appareil. Quand vous supprimez un arrêt, il est retiré de nos serveurs; nous conservons seulement son identifiant et la date de suppression pour que vos autres appareils le suppriment aussi."
           ]
         ],
         [
-          "4. Importation, caméra, OCR et images",
+          "4. Localisation, cartes et itinéraires",
           [
-            "Si vous importez des adresses par CSV, texte, caméra ou image choisie par vous, l’app peut traiter ce contenu pour extraire du texte, identifier des adresses et créer un aperçu de révision.",
-            "Les images peuvent être optimisées sur l’appareil et envoyées au backend RouteWise pour traitement IA/OCR et suggestions d’adresses. Utilisez cette fonction seulement avec des fichiers et images que vous êtes autorisé à traiter."
+            "Avec votre permission, l’app utilise votre position actuelle sur l’appareil pour centrer la carte et ordonner vos arrêts.",
+            "Quand vous cherchez une adresse ou optimisez un itinéraire, nous envoyons le texte de recherche, votre position actuelle (comme point de départ ou pour classer les résultats) ainsi que les adresses et coordonnées de vos arrêts, par nos serveurs, à Google Maps Platform. Nous ne conservons pas d’historique de votre position."
           ]
         ],
         [
-          "5. Compte, synchronisation et stockage",
+          "5. Lecture d’étiquettes, importation et images",
           [
-            "RouteWise utilise l’authentification, des jetons sécurisés, une base locale et la synchronisation pour garder les données disponibles entre sessions et appareils lorsque ce flux est actif.",
-            "Les données d’authentification doivent être stockées avec les mécanismes sécurisés de l’appareil lorsque disponibles. Vous restez responsable de protéger votre appareil et vos identifiants."
+            "Quand vous numérisez une étiquette, le texte est d’abord lu sur votre appareil. Si ce n’est pas suffisant, une copie réduite de la photo est envoyée aux serveurs de RouteWise et à OpenAI pour extraire l’adresse.",
+            "Nous envoyons les fichiers, textes et photos que vous importez aux serveurs de RouteWise et les traitons avec OpenAI et Google Maps Platform pour préparer la liste de révision. RouteWise ne conserve pas ces photos ni ces fichiers après le traitement; OpenAI et Google peuvent conserver ce qu’ils reçoivent pendant une durée limitée selon leurs propres politiques. Utilisez seulement du contenu que vous êtes autorisé à traiter."
           ]
         ],
         [
-          "6. Abonnements et paiements",
+          "6. Compte et courriel",
           [
-            "Si vous vous abonnez à RouteWise Pro, l’état de l’abonnement est traité par la boutique utilisée pour l’achat et géré par RevenueCat pour l’accès à l’entitlement.",
-            "RouteWise ne reçoit pas les données brutes de votre carte de paiement d’Apple, Google ou RevenueCat."
+            "Nous utilisons Supabase pour la connexion et les données de compte. Supabase héberge aussi la base de données de RouteWise.",
+            "Nous envoyons les courriels du compte, comme la confirmation de l’adresse courriel et la réinitialisation du mot de passe, par un fournisseur d’envoi de courriels."
           ]
         ],
         [
-          "7. Diagnostics et services tiers",
+          "7. Abonnements et paiements",
           [
-            "Nous pouvons utiliser des services comme Supabase ou une infrastructure équivalente pour l’authentification et les données, Google Maps ou d’autres services de cartes pour la recherche et les itinéraires, RevenueCat pour les abonnements et Sentry pour les erreurs et la stabilité.",
-            "Ces fournisseurs traitent seulement les données nécessaires à leurs fonctions respectives et ont leurs propres politiques et obligations."
+            "Si vous vous abonnez à RouteWise Pro, l’App Store gère l’achat et RevenueCat gère l’état de votre abonnement avec votre identifiant d’utilisateur RouteWise.",
+            "RouteWise ne reçoit pas les données de votre carte de paiement d’Apple ni de RevenueCat."
           ]
         ],
         [
-          "8. Vos choix",
+          "8. Limites d’utilisation et diagnostics",
           [
-            "Vous pouvez refuser les permissions de localisation, caméra et notifications, même si certaines fonctions peuvent être limitées ou indisponibles.",
-            "Vous pouvez supprimer les données locales en supprimant l’app et demander l’accès, la correction ou la suppression des données de compte en nous contactant.",
-            "Vous pouvez aussi supprimer votre compte dans l’app; cela supprime le profil, les destinations, l’historique des livraisons, les données de synchronisation, l’état local de l’abonnement et les enregistrements RouteWise liés à votre identifiant utilisateur."
+            "Nous comptons, par compte et par jour, les recherches d’adresses, lectures d’étiquettes et importations que vous utilisez, pour appliquer les limites de votre forfait et vous montrer ce qu’il vous reste.",
+            "Quand l’app plante ou rencontre une erreur, nous envoyons un rapport à Sentry avec des détails techniques (version de l’app, appareil, identifiant de la requête) et votre identifiant d’utilisateur, sans vos adresses, noms d’arrêts, photos, courriel ni jetons. Les journaux de nos serveurs suivent la même règle. RouteWise n’affiche pas de publicité, ne vend pas vos données et ne vous suit pas dans d’autres apps ou sites Web."
           ]
         ],
         [
-          "9. Conservation, sécurité et limites",
+          "9. Fournisseurs de services et transferts internationaux",
           [
-            "Nous conservons les données aussi longtemps que nécessaire pour fournir le service, respecter les obligations légales, résoudre les différends et protéger la plateforme.",
-            "La suppression de compte est traitée immédiatement dans les systèmes RouteWise. Les sauvegardes, journaux de sécurité, dossiers des boutiques de paiement ou données requises par la loi peuvent prendre jusqu’à 30 jours à expirer ou être conservés seulement pour la durée légalement requise. Les données analytiques anonymisées qui ne vous identifient plus peuvent rester.",
-            "Aucun système n’est sécurisé à 100 %. Nous utilisons des mesures raisonnables de protection, mais ne pouvons garantir une sécurité absolue contre toutes les menaces."
+            "RouteWise utilise ces fournisseurs, chacun seulement pour sa fonction : Supabase (comptes et base de données), Render (serveurs de RouteWise), Vercel (site Web), Google Maps Platform (recherche d’adresses, lieux et itinéraires), OpenAI (lecture d’adresses dans les photos et les importations), Apple et RevenueCat (abonnements), Sentry (rapports d’erreur) et un fournisseur d’envoi de courriels (courriels du compte).",
+            "Ces fournisseurs peuvent traiter des données hors de votre pays, notamment aux États-Unis, selon leurs propres obligations de sécurité et de confidentialité."
           ]
         ],
         [
-          "10. Droits brésiliens LGPD",
+          "10. Vos choix",
+          [
+            "Vous pouvez refuser l’accès à la localisation ou à l’appareil photo; certaines fonctions seront alors limitées ou indisponibles.",
+            "Vous pouvez supprimer votre compte dans l’app. Cela retire votre profil, vos arrêts, votre historique de livraisons, les données sauvegardées sur nos serveurs, vos registres d’utilisation et les autres données de RouteWise liées à votre identifiant d’utilisateur.",
+            "Vous pouvez aussi demander l’accès à vos données, leur correction ou leur suppression en écrivant à <a href=\"mailto:hi@routewise.app\">hi@routewise.app</a>."
+          ]
+        ],
+        [
+          "11. Conservation et sécurité",
+          [
+            "Nous conservons vos données tant que votre compte est actif et aussi longtemps que nécessaire pour fournir le service, respecter nos obligations légales, régler des différends et protéger la plateforme.",
+            "Nous supprimons votre compte des systèmes de RouteWise immédiatement. Les copies conservées par nos fournisseurs, comme les sauvegardes de la base de données, les rapports d’erreur et les registres des boutiques de paiement, expirent selon leurs propres délais de conservation (jusqu’à 90 jours pour les rapports d’erreur, par exemple), sauf si la loi exige de les garder plus longtemps.",
+            "Aucun système n’est sûr à 100 %. Nous utilisons des mesures de protection raisonnables, mais ne pouvons garantir une sécurité absolue contre toutes les menaces."
+          ]
+        ],
+        [
+          "12. Droits prévus par la LGPD (Brésil)",
           [
             "Pour les utilisateurs au Brésil, le traitement des données personnelles suit la Lei Geral de Proteção de Dados Pessoais, Loi nº 13.709/2018 (LGPD). RouteWise agit comme contrôleur des données personnelles utilisées pour le compte, le soutien, l’abonnement et le fonctionnement de l’app, sauf lorsqu’un fournisseur agit comme contrôleur indépendant pour ses propres services.",
             "Les bases légales peuvent inclure l’exécution du contrat, le consentement, le respect d’obligations légales ou réglementaires, l’exercice régulier de droits, l’intérêt légitime et la prévention de la fraude, selon la fonction utilisée et le contexte.",
@@ -450,9 +493,9 @@ export const legalDocuments = {
           ]
         ],
         [
-          "11. Contact",
+          "13. Contact",
           [
-            "Pour les questions de confidentialité ou demandes liées aux données, contactez <a href=\"mailto:hi@routewise.app\">hi@routewise.app</a>."
+            "Pour toute question de confidentialité ou demande concernant vos données, écrivez à <a href=\"mailto:hi@routewise.app\">hi@routewise.app</a>."
           ]
         ]
       ]
@@ -550,76 +593,90 @@ export const legalDocuments = {
     "footer": "Optimiza rutas, importa direcciones y envía entregas al mapa correcto.",
     "privacy": {
       "title": "Política de Privacidad de RouteWise",
-      "updated": "Última actualización: 9 de junio de 2026",
-      "intro": "Esta política explica qué información usa RouteWise, por qué se usa y qué opciones tienes sobre tus datos.",
+      "updated": "Última actualización: 15 de octubre de 2026",
+      "intro": "Esta política explica qué información usa RouteWise, por qué se usa, quién la procesa y qué opciones tienes sobre tus datos.",
       "sections": [
         [
           "1. Descripción general",
           [
-            "RouteWise ayuda a repartidores a organizar paradas, importar listas de direcciones, optimizar rutas, abrir navegación en apps externas y consultar el historial de entregas.",
-            "Esta política se aplica a la app RouteWise, a routewise.app y a los flujos de cuenta, sincronización, importación de direcciones, OCR, mapas y suscripción conectados al producto."
+            "RouteWise ayuda a los repartidores a organizar paradas, importar listas de direcciones, optimizar rutas, abrir la navegación en apps externas y seguir el historial de entregas.",
+            "Esta política se aplica a la app RouteWise, al sitio routewise.app y a las funciones de cuenta, búsqueda de direcciones, importación, lectura de etiquetas, rutas, copia de seguridad y suscripción vinculadas al producto."
           ]
         ],
         [
           "2. Datos que proporcionas",
           [
-            "Podemos procesar datos de cuenta como correo electrónico, identificador de usuario, preferencia de idioma, plan y estado de suscripción.",
-            "También procesamos destinos, direcciones, nombres de paradas, archivos o textos importados, historial de entregas, preferencias de navegación, configuración de la app y otros datos que agregas al producto."
+            "Datos de cuenta: correo electrónico, identificador de usuario, preferencia de idioma, plan y estado de la suscripción.",
+            "Datos de entrega: paradas (nombres, direcciones, coordenadas y notas), historial de entregas, listas y archivos de direcciones que importas y fotos de etiquetas o documentos que escaneas, además de la configuración de la app, como la app de navegación que prefieres."
           ]
         ],
         [
-          "3. Ubicación, mapas y rutas",
+          "3. Datos en tu dispositivo y copia de seguridad",
           [
-            "Cuando concedes permiso, RouteWise puede usar la ubicación actual para centrar el mapa, calcular rutas desde tu posición y mejorar el orden de las paradas.",
-            "Las direcciones, coordenadas y consultas de búsqueda pueden enviarse a servicios de mapas, autocompletado y enrutamiento para ofrecer sugerencias, detalles de lugares, cálculo de distancia y navegación."
+            "Tus paradas y tu historial de entregas se guardan en tu dispositivo, vinculados a tu cuenta. Los tokens de sesión se guardan en el almacenamiento seguro del dispositivo.",
+            "Cuando la copia de seguridad y la sincronización estén disponibles en tu versión de la app, tus paradas y tu historial de entregas también se guardan en los servidores de RouteWise, vinculados a tu cuenta, para que puedas recuperarlos al reinstalar la app o en otro dispositivo. Cuando eliminas una parada, se borra de nuestros servidores; solo conservamos su identificador y la fecha de eliminación para que tus otros dispositivos también la eliminen."
           ]
         ],
         [
-          "4. Importación, cámara, OCR e imágenes",
+          "4. Ubicación, mapas y rutas",
           [
-            "Si importas direcciones mediante CSV, texto, cámara o una imagen elegida por ti, la app puede procesar ese contenido para extraer texto, identificar direcciones y crear una vista previa de revisión.",
-            "Las imágenes pueden optimizarse en el dispositivo y enviarse al backend de RouteWise para procesamiento de IA/OCR y sugerencias de dirección. Usa esta función solo con archivos e imágenes que tengas autorización para procesar."
+            "Con tu permiso, la app usa tu ubicación actual en el dispositivo para centrar el mapa y ordenar tus paradas.",
+            "Cuando buscas una dirección u optimizas una ruta, enviamos el texto de búsqueda, tu ubicación actual (como punto de partida o para ordenar los resultados) y las direcciones y coordenadas de tus paradas, a través de nuestros servidores, a Google Maps Platform. No guardamos un historial de tu ubicación."
           ]
         ],
         [
-          "5. Cuenta, sincronización y almacenamiento",
+          "5. Lectura de etiquetas, importación e imágenes",
           [
-            "RouteWise usa autenticación, tokens seguros, base de datos local y sincronización para mantener tus datos disponibles entre sesiones y dispositivos cuando ese flujo está activo.",
-            "Los datos de autenticación deben almacenarse mediante mecanismos seguros del dispositivo cuando estén disponibles. Aun así, eres responsable de proteger tu dispositivo y tus credenciales."
+            "Cuando escaneas una etiqueta, el texto se lee primero en tu dispositivo. Si no es suficiente, una copia reducida de la foto se envía a los servidores de RouteWise y a OpenAI para extraer la dirección.",
+            "Enviamos los archivos, textos y fotos que importas a los servidores de RouteWise y los procesamos con OpenAI y Google Maps Platform para preparar la lista de revisión. RouteWise no conserva estas fotos ni archivos después del procesamiento; OpenAI y Google pueden conservar lo que reciben por un tiempo limitado según sus propias políticas. Usa solo contenido que tengas autorización para procesar."
           ]
         ],
         [
-          "6. Suscripciones y pagos",
+          "6. Cuenta y correo electrónico",
           [
-            "Si te suscribes a RouteWise Pro, el estado de la suscripción es procesado por la tienda usada para la compra y gestionado por RevenueCat para habilitar el entitlement Pro.",
-            "RouteWise no recibe los datos sin procesar de tu tarjeta de pago de Apple, Google o RevenueCat."
+            "Usamos Supabase para el inicio de sesión y los datos de cuenta. Supabase también aloja la base de datos de RouteWise.",
+            "Enviamos los correos de la cuenta, como la confirmación del correo y el restablecimiento de contraseña, a través de un proveedor de envío de correos."
           ]
         ],
         [
-          "7. Diagnóstico y servicios de terceros",
+          "7. Suscripciones y pagos",
           [
-            "Podemos usar servicios como Supabase o infraestructura equivalente para autenticación y datos, Google Maps u otros servicios de mapas para búsqueda y rutas, RevenueCat para suscripciones y Sentry para errores y estabilidad.",
-            "Estos proveedores procesan solo los datos necesarios para sus funciones respectivas y tienen sus propias políticas y obligaciones."
+            "Si te suscribes a RouteWise Pro, la App Store gestiona la compra y RevenueCat administra el estado de tu suscripción con tu identificador de usuario de RouteWise.",
+            "RouteWise no recibe los datos de tu tarjeta de pago de Apple ni de RevenueCat."
           ]
         ],
         [
-          "8. Tus opciones",
+          "8. Límites de uso y diagnóstico",
           [
-            "Puedes negar permisos de ubicación, cámara y notificaciones, aunque algunas funciones pueden quedar limitadas o no disponibles.",
-            "Puedes eliminar datos locales al borrar la app y puedes solicitar acceso, corrección o eliminación de datos de cuenta contactándonos.",
-            "También puedes eliminar tu cuenta dentro de la app; esto elimina perfil, destinos, historial de entregas, datos de sincronización, estado local de suscripción y registros de RouteWise vinculados a tu identificador de usuario."
+            "Contamos, por cuenta y por día, las búsquedas de direcciones, lecturas de etiquetas e importaciones que usas, para aplicar los límites de tu plan y mostrarte cuánto te queda.",
+            "Cuando la app falla o encuentra un error, enviamos un informe a Sentry con detalles técnicos (versión de la app, dispositivo, identificador de la solicitud) y tu identificador de usuario, sin tus direcciones, nombres de paradas, fotos, correo ni tokens. Los registros de nuestros servidores siguen la misma regla. RouteWise no muestra anuncios, no vende tus datos y no te rastrea en otras apps o sitios web."
           ]
         ],
         [
-          "9. Retención, seguridad y límites",
+          "9. Proveedores de servicios y transferencias internacionales",
           [
-            "Conservamos los datos durante el tiempo necesario para proporcionar el servicio, cumplir obligaciones legales, resolver disputas y proteger la plataforma.",
-            "La eliminación de cuenta se procesa inmediatamente en los sistemas de RouteWise. Copias de seguridad, registros de seguridad, registros de tiendas de pago o datos exigidos por obligación legal pueden tardar hasta 30 días en expirar o conservarse solo durante el plazo legal requerido. Los datos analíticos anonimizados que no te identifican pueden permanecer.",
-            "Ningún sistema es 100% seguro. Usamos medidas razonables de protección, pero no podemos garantizar seguridad absoluta contra todas las amenazas."
+            "RouteWise usa estos proveedores, cada uno solo para su función: Supabase (cuentas y base de datos), Render (servidores de RouteWise), Vercel (sitio web), Google Maps Platform (búsqueda de direcciones, lugares y rutas), OpenAI (lectura de direcciones en fotos e importaciones), Apple y RevenueCat (suscripciones), Sentry (informes de errores) y un proveedor de envío de correos (correos de la cuenta).",
+            "Estos proveedores pueden procesar datos fuera de tu país, incluso en Estados Unidos, conforme a sus propias obligaciones de seguridad y privacidad."
           ]
         ],
         [
-          "10. LGPD y derechos en Brasil",
+          "10. Tus opciones",
+          [
+            "Puedes negar el acceso a la ubicación o a la cámara; algunas funciones quedarán limitadas o no estarán disponibles.",
+            "Puedes eliminar tu cuenta en la app. Esto borra tu perfil, paradas, historial de entregas, datos respaldados en nuestros servidores, registros de uso y otros registros de RouteWise vinculados a tu identificador de usuario.",
+            "También puedes solicitar acceso, corrección o eliminación de tus datos escribiendo a <a href=\"mailto:hi@routewise.app\">hi@routewise.app</a>."
+          ]
+        ],
+        [
+          "11. Conservación y seguridad",
+          [
+            "Conservamos tus datos mientras tu cuenta esté activa y el tiempo necesario para prestar el servicio, cumplir obligaciones legales, resolver disputas y proteger la plataforma.",
+            "Eliminamos tu cuenta de los sistemas de RouteWise de inmediato. Las copias que conservan nuestros proveedores, como copias de seguridad de la base de datos, informes de errores y registros de las tiendas de pago, expiran según los plazos de conservación de esos proveedores (los informes de errores, por ejemplo, en hasta 90 días), salvo que la ley exija conservarlas por más tiempo.",
+            "Ningún sistema es 100 % seguro. Usamos medidas de protección razonables, pero no podemos garantizar seguridad absoluta frente a todas las amenazas."
+          ]
+        ],
+        [
+          "12. Derechos según la LGPD de Brasil",
           [
             "Para usuarios en Brasil, el tratamiento de datos personales sigue la Lei Geral de Proteção de Dados Pessoais, Ley nº 13.709/2018 (LGPD). RouteWise actúa como controlador de los datos personales usados para cuenta, soporte, suscripción y operación de la app, salvo cuando un proveedor actúa como controlador independiente en sus propios servicios.",
             "Las bases legales pueden incluir ejecución de contrato, consentimiento, cumplimiento de obligación legal o regulatoria, ejercicio regular de derechos, interés legítimo y prevención de fraude, según la función usada y el contexto del tratamiento.",
@@ -628,9 +685,9 @@ export const legalDocuments = {
           ]
         ],
         [
-          "11. Contacto",
+          "13. Contacto",
           [
-            "Para preguntas de privacidad o solicitudes sobre tus datos, contacta: <a href=\"mailto:hi@routewise.app\">hi@routewise.app</a>."
+            "Para preguntas de privacidad o solicitudes sobre tus datos, contacta a <a href=\"mailto:hi@routewise.app\">hi@routewise.app</a>."
           ]
         ]
       ]

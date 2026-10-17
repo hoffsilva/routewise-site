@@ -9,6 +9,7 @@ const TARGETS: Record<string, { path: string; hash?: string }> = {
   '/legal.html': { path: '/legal' },
   '/privacy.html': { path: '/legal', hash: 'privacy' },
   '/terms.html': { path: '/legal', hash: 'terms' },
+  '/status': { path: '/status' },
 };
 
 export function proxy(request: NextRequest) {
@@ -30,5 +31,5 @@ export function proxy(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ['/', '/index.html', '/legal', '/legal.html', '/privacy.html', '/terms.html'],
+  matcher: ['/', '/index.html', '/legal', '/legal.html', '/privacy.html', '/terms.html', '/status'],
 };

@@ -10,6 +10,8 @@ const TARGETS: Record<string, { path: string; hash?: string }> = {
   '/privacy.html': { path: '/legal', hash: 'privacy' },
   '/terms.html': { path: '/legal', hash: 'terms' },
   '/status': { path: '/status' },
+  // Email links after Supabase verifies them (SITE-02); the browser keeps the #tokens across the redirect
+  '/auth/confirm': { path: '/auth/confirm' },
 };
 
 export function proxy(request: NextRequest) {
@@ -31,5 +33,5 @@ export function proxy(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ['/', '/index.html', '/legal', '/legal.html', '/privacy.html', '/terms.html', '/status'],
+  matcher: ['/', '/index.html', '/legal', '/legal.html', '/privacy.html', '/terms.html', '/status', '/auth/confirm'],
 };

@@ -5,7 +5,7 @@ export const siteCopy = {
   "en": {
     "meta": {
       "title": "RouteWise - Optimize routes and import delivery addresses",
-      "description": "RouteWise helps delivery drivers optimize routes, import addresses from a spreadsheet, text, photos, or camera, review suggestions, and navigate deliveries."
+      "description": "RouteWise helps delivery drivers optimize routes, import addresses from a CSV file, text, photos, or camera, review suggestions, and navigate deliveries."
     },
     "redirect": {
       "title": "Opening the App Store...",
@@ -22,11 +22,11 @@ export const siteCopy = {
     "hero": {
       "badge": "Optimized routes with smart importing",
       "title": "Deliver more.<br>Drive <span>less.</span>",
-      "description": "RouteWise optimizes your routes automatically and imports stops from a spreadsheet, text, photos, or camera so you can review them before starting deliveries.",
+      "description": "RouteWise optimizes your routes automatically and imports stops from a CSV file, text, photos, or camera so you can review them before starting deliveries.",
       "primaryCta": "Download on the App Store",
       "secondaryCta": "How it works",
       "trustRoute": "Optimized routes",
-      "trustImport": "Spreadsheet, text, photos, and camera"
+      "trustImport": "CSV, text, photos, and camera"
     },
     "features": {
       "kicker": "Features",
@@ -35,7 +35,7 @@ export const siteCopy = {
       "instantTitle": "Instant optimization",
       "instantBody": "Add your stops and RouteWise calculates an efficient route to reduce time, distance, and rework.",
       "filesTitle": "Import files",
-      "filesBody": "Send a spreadsheet or text with addresses. The app understands lists with or without headers and prepares items for review.",
+      "filesBody": "Send a CSV file (exported from Excel or Google Sheets) or text with addresses. The app understands lists with or without headers and prepares items for review.",
       "photoTitle": "Photo or camera with AI",
       "photoBody": "Select a photo or capture a list, manifest, or document. AI extracts multiple addresses into a single preview.",
       "previewTitle": "Preview before saving",
@@ -56,7 +56,7 @@ export const siteCopy = {
       "title": "Start in 3 simple steps",
       "description": "No complicated setup. Download the app and start using it.",
       "oneTitle": "Import addresses",
-      "oneBody": "Use a spreadsheet, text, photo, camera, or manual entry.",
+      "oneBody": "Use a CSV file, text, photo, camera, or manual entry.",
       "twoTitle": "Review the preview",
       "twoBody": "Choose the right suggestions, ignore duplicates, and confirm only what is ready.",
       "threeTitle": "Optimize and navigate",
@@ -78,7 +78,7 @@ export const siteCopy = {
   "pt": {
     "meta": {
       "title": "RouteWise - Otimize rotas e importe endereços de entrega",
-      "description": "RouteWise ajuda entregadores a otimizar rotas, importar endereços por planilha, texto, foto ou câmera, revisar sugestões e navegar até as entregas."
+      "description": "RouteWise ajuda entregadores a otimizar rotas, importar endereços por arquivo CSV, texto, foto ou câmera, revisar sugestões e navegar até as entregas."
     },
     "redirect": {
       "title": "Abrindo a App Store...",
@@ -95,11 +95,11 @@ export const siteCopy = {
     "hero": {
       "badge": "Rotas otimizadas com importação inteligente",
       "title": "Entregue mais.<br>Dirija <span>menos.</span>",
-      "description": "RouteWise otimiza suas rotas automaticamente e também importa paradas por planilha, texto, foto ou câmera para você revisar antes de sair para entregar.",
+      "description": "RouteWise otimiza suas rotas automaticamente e também importa paradas por arquivo CSV, texto, foto ou câmera para você revisar antes de sair para entregar.",
       "primaryCta": "Baixar na App Store",
       "secondaryCta": "Como funciona",
       "trustRoute": "Rotas otimizadas",
-      "trustImport": "Planilha, texto, foto e câmera"
+      "trustImport": "CSV, texto, foto e câmera"
     },
     "features": {
       "kicker": "Recursos",
@@ -108,7 +108,7 @@ export const siteCopy = {
       "instantTitle": "Otimização instantânea",
       "instantBody": "Adicione suas paradas e o RouteWise calcula uma rota eficiente para reduzir tempo, distância e retrabalho.",
       "filesTitle": "Importar arquivos",
-      "filesBody": "Envie uma planilha ou texto com endereços. O app entende listas com ou sem cabeçalho e prepara os itens para revisão.",
+      "filesBody": "Envie um arquivo CSV (exportado do Excel ou do Google Planilhas) ou um texto com endereços. O app entende listas com ou sem cabeçalho e prepara os itens para revisão.",
       "photoTitle": "Foto ou câmera com IA",
       "photoBody": "Selecione uma foto ou tire uma imagem de lista, manifesto ou documento. A IA extrai múltiplos endereços em um único preview.",
       "previewTitle": "Preview antes de salvar",
@@ -129,7 +129,7 @@ export const siteCopy = {
       "title": "Comece em 3 passos simples",
       "description": "Sem configuração complicada. É só baixar e começar a usar.",
       "oneTitle": "Importe os endereços",
-      "oneBody": "Use uma planilha, texto, foto, câmera ou adição manual.",
+      "oneBody": "Use um arquivo CSV, texto, foto, câmera ou adição manual.",
       "twoTitle": "Revise o preview",
       "twoBody": "Escolha as sugestões corretas, ignore duplicados e confirme só o que está pronto.",
       "threeTitle": "Otimize e navegue",
@@ -151,7 +151,7 @@ export const siteCopy = {
   "fr": {
     "meta": {
       "title": "RouteWise - Optimisez vos itinéraires et importez des adresses de livraison",
-      "description": "RouteWise aide les livreurs à optimiser les itinéraires, importer des adresses par feuille de calcul, texte, photo ou caméra, réviser les suggestions et naviguer vers les livraisons."
+      "description": "RouteWise aide les livreurs à optimiser les itinéraires, importer des adresses par fichier CSV, texte, photo ou caméra, réviser les suggestions et naviguer vers les livraisons."
     },
     "redirect": {
       "title": "Ouverture de l’App Store...",
@@ -168,11 +168,11 @@ export const siteCopy = {
     "hero": {
       "badge": "Itinéraires optimisés avec importation intelligente",
       "title": "Livrez plus.<br>Roulez <span>moins.</span>",
-      "description": "RouteWise optimise automatiquement vos itinéraires et importe les arrêts depuis une feuille de calcul, texte, photos ou caméra pour révision avant les livraisons.",
+      "description": "RouteWise optimise automatiquement vos itinéraires et importe les arrêts depuis un fichier CSV, du texte, des photos ou la caméra pour révision avant les livraisons.",
       "primaryCta": "Télécharger sur l’App Store",
       "secondaryCta": "Voir le fonctionnement",
       "trustRoute": "Itinéraires optimisés",
-      "trustImport": "Feuille de calcul, texte, photos et caméra"
+      "trustImport": "CSV, texte, photos et caméra"
     },
     "features": {
       "kicker": "Fonctions",
@@ -181,7 +181,7 @@ export const siteCopy = {
       "instantTitle": "Optimisation instantanée",
       "instantBody": "Ajoutez vos arrêts et RouteWise calcule un itinéraire efficace pour réduire le temps, la distance et les reprises.",
       "filesTitle": "Importer des fichiers",
-      "filesBody": "Envoyez une feuille de calcul ou du texte avec des adresses. L’app comprend les listes avec ou sans en-tête et prépare les éléments pour révision.",
+      "filesBody": "Envoyez un fichier CSV (exporté d’Excel ou de Google Sheets) ou du texte avec des adresses. L’app comprend les listes avec ou sans en-tête et prépare les éléments pour révision.",
       "photoTitle": "Photo ou caméra avec IA",
       "photoBody": "Choisissez une photo ou capturez une liste, un manifeste ou un document. L’IA extrait plusieurs adresses dans un seul aperçu.",
       "previewTitle": "Aperçu avant sauvegarde",
@@ -202,7 +202,7 @@ export const siteCopy = {
       "title": "Commencez en 3 étapes simples",
       "description": "Pas de configuration compliquée. Téléchargez l’app et commencez.",
       "oneTitle": "Importez les adresses",
-      "oneBody": "Utilisez une feuille de calcul, du texte, une photo, la caméra ou l’ajout manuel.",
+      "oneBody": "Utilisez un fichier CSV, du texte, une photo, la caméra ou l’ajout manuel.",
       "twoTitle": "Révisez l’aperçu",
       "twoBody": "Choisissez les bonnes suggestions, ignorez les doublons et confirmez seulement ce qui est prêt.",
       "threeTitle": "Optimisez et naviguez",
@@ -224,7 +224,7 @@ export const siteCopy = {
   "es": {
     "meta": {
       "title": "RouteWise - Optimiza rutas e importa direcciones de entrega",
-      "description": "RouteWise ayuda a repartidores a optimizar rutas, importar direcciones por hoja de cálculo, texto, foto o cámara, revisar sugerencias y navegar hasta las entregas."
+      "description": "RouteWise ayuda a repartidores a optimizar rutas, importar direcciones por archivo CSV, texto, foto o cámara, revisar sugerencias y navegar hasta las entregas."
     },
     "redirect": {
       "title": "Abriendo App Store...",
@@ -241,11 +241,11 @@ export const siteCopy = {
     "hero": {
       "badge": "Rutas optimizadas con importación inteligente",
       "title": "Entrega más.<br>Maneja <span>menos.</span>",
-      "description": "RouteWise optimiza tus rutas automáticamente e importa paradas desde una hoja de cálculo, texto, fotos o cámara para que puedas revisarlas antes de salir a entregar.",
+      "description": "RouteWise optimiza tus rutas automáticamente e importa paradas desde un archivo CSV, texto, fotos o cámara para que puedas revisarlas antes de salir a entregar.",
       "primaryCta": "Descargar en App Store",
       "secondaryCta": "Cómo funciona",
       "trustRoute": "Rutas optimizadas",
-      "trustImport": "Hoja de cálculo, texto, fotos y cámara"
+      "trustImport": "CSV, texto, fotos y cámara"
     },
     "features": {
       "kicker": "Funciones",
@@ -254,7 +254,7 @@ export const siteCopy = {
       "instantTitle": "Optimización instantánea",
       "instantBody": "Agrega tus paradas y RouteWise calcula una ruta eficiente para reducir tiempo, distancia y trabajo repetido.",
       "filesTitle": "Importar archivos",
-      "filesBody": "Envía una hoja de cálculo o texto con direcciones. La app entiende listas con o sin encabezado y prepara los elementos para revisión.",
+      "filesBody": "Envía un archivo CSV (exportado de Excel o Google Sheets) o texto con direcciones. La app entiende listas con o sin encabezado y prepara los elementos para revisión.",
       "photoTitle": "Foto o cámara con IA",
       "photoBody": "Selecciona una foto o captura una lista, manifiesto o documento. La IA extrae varias direcciones en una sola vista previa.",
       "previewTitle": "Vista previa antes de guardar",
@@ -275,7 +275,7 @@ export const siteCopy = {
       "title": "Comienza en 3 pasos simples",
       "description": "Sin configuración complicada. Descarga la app y empieza a usarla.",
       "oneTitle": "Importa las direcciones",
-      "oneBody": "Usa una hoja de cálculo, texto, foto, cámara o entrada manual.",
+      "oneBody": "Usa un archivo CSV, texto, foto, cámara o entrada manual.",
       "twoTitle": "Revisa la vista previa",
       "twoBody": "Elige las sugerencias correctas, ignora duplicados y confirma solo lo que está listo.",
       "threeTitle": "Optimiza y navega",

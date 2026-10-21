@@ -17,7 +17,7 @@ export const legalDocuments = {
     "footer": "Optimize routes, import addresses, and send deliveries to the right map.",
     "privacy": {
       "title": "RouteWise Privacy Policy",
-      "updated": "Last updated: October 16, 2026",
+      "updated": "Last updated: October 21, 2026",
       "intro": "This policy explains what information RouteWise uses, why it is used, who processes it, and what choices you have over your data.",
       "sections": [
         [
@@ -65,8 +65,8 @@ export const legalDocuments = {
         [
           "7. Subscriptions and payments",
           [
-            "If you subscribe to RouteWise Pro, the App Store handles the purchase and RevenueCat manages your subscription status using your RouteWise user identifier.",
-            "RouteWise does not receive your payment card data from Apple or RevenueCat."
+            "If you subscribe to RouteWise Pro, the App Store (on iPhone) or Google Play (on Android) handles the purchase, and RevenueCat manages your subscription status using your RouteWise user identifier.",
+            "RouteWise does not receive your payment card data from Apple, Google, or RevenueCat."
           ]
         ],
         [
@@ -79,7 +79,7 @@ export const legalDocuments = {
         [
           "9. Service providers and international transfers",
           [
-            "RouteWise uses these providers, each only for its function: Supabase (accounts and database), Render (RouteWise servers), Vercel (website and its visit counts), Google Maps Platform (address search, places, and routes), OpenAI (reading addresses from photos and imports), Apple and RevenueCat (subscriptions), Sentry (error reports), and an email delivery provider (account emails).",
+            "RouteWise uses these providers, each only for its function: Supabase (accounts and database), Render (RouteWise servers), Vercel (website and its visit counts), Google Maps Platform (address search, places, and routes), OpenAI (reading addresses from photos and imports), Apple, Google Play, and RevenueCat (subscriptions), Sentry (error reports), and an email delivery provider (account emails).",
             "These providers may process data outside your country, including in the United States, under their own security and privacy obligations."
           ]
         ],
@@ -209,7 +209,7 @@ export const legalDocuments = {
     "footer": "Otimize rotas, importe endereços e envie entregas para o mapa certo.",
     "privacy": {
       "title": "Política de Privacidade do RouteWise",
-      "updated": "Última atualização: 16 de outubro de 2026",
+      "updated": "Última atualização: 21 de outubro de 2026",
       "intro": "Esta política explica quais informações o RouteWise usa, por que elas são usadas, quem as processa e quais escolhas você tem sobre seus dados.",
       "sections": [
         [
@@ -257,8 +257,8 @@ export const legalDocuments = {
         [
           "7. Assinaturas e pagamentos",
           [
-            "Se você assinar o RouteWise Pro, a App Store cuida da compra e o RevenueCat gerencia o estado da sua assinatura com o seu identificador de usuário do RouteWise.",
-            "O RouteWise não recebe os dados do seu cartão de pagamento da Apple nem do RevenueCat."
+            "Se você assinar o RouteWise Pro, a App Store (no iPhone) ou o Google Play (no Android) cuida da compra, e o RevenueCat gerencia o estado da sua assinatura com o seu identificador de usuário do RouteWise.",
+            "O RouteWise não recebe os dados do seu cartão de pagamento da Apple, do Google nem do RevenueCat."
           ]
         ],
         [
@@ -271,7 +271,7 @@ export const legalDocuments = {
         [
           "9. Prestadores de serviço e transferência internacional",
           [
-            "O RouteWise usa estes prestadores, cada um só para a sua função: Supabase (contas e banco de dados), Render (servidores do RouteWise), Vercel (site e contagem de visitas), Google Maps Platform (busca de endereços, lugares e rotas), OpenAI (leitura de endereços em fotos e importações), Apple e RevenueCat (assinaturas), Sentry (relatórios de erro) e um provedor de envio de e-mails (e-mails da conta).",
+            "O RouteWise usa estes prestadores, cada um só para a sua função: Supabase (contas e banco de dados), Render (servidores do RouteWise), Vercel (site e contagem de visitas), Google Maps Platform (busca de endereços, lugares e rotas), OpenAI (leitura de endereços em fotos e importações), Apple, Google Play e RevenueCat (assinaturas), Sentry (relatórios de erro) e um provedor de envio de e-mails (e-mails da conta).",
             "Esses prestadores podem processar dados fora do seu país, inclusive nos Estados Unidos, conforme suas próprias obrigações de segurança e privacidade."
           ]
         ],
@@ -401,7 +401,7 @@ export const legalDocuments = {
     "footer": "Optimisez les itinéraires, importez les adresses et envoyez les livraisons vers la bonne carte.",
     "privacy": {
       "title": "Politique de confidentialité de RouteWise",
-      "updated": "Dernière mise à jour : 16 octobre 2026",
+      "updated": "Dernière mise à jour : 21 octobre 2026",
       "intro": "Cette politique explique quelles informations RouteWise utilise, pourquoi elles sont utilisées, qui les traite et quels choix vous avez sur vos données.",
       "sections": [
         [
@@ -449,8 +449,8 @@ export const legalDocuments = {
         [
           "7. Abonnements et paiements",
           [
-            "Si vous vous abonnez à RouteWise Pro, l’App Store gère l’achat et RevenueCat gère l’état de votre abonnement avec votre identifiant d’utilisateur RouteWise.",
-            "RouteWise ne reçoit pas les données de votre carte de paiement d’Apple ni de RevenueCat."
+            "Si vous vous abonnez à RouteWise Pro, l’App Store (sur iPhone) ou Google Play (sur Android) gère l’achat, et RevenueCat gère l’état de votre abonnement avec votre identifiant d’utilisateur RouteWise.",
+            "RouteWise ne reçoit pas les données de votre carte de paiement d’Apple, de Google ni de RevenueCat."
           ]
         ],
         [
@@ -463,7 +463,7 @@ export const legalDocuments = {
         [
           "9. Fournisseurs de services et transferts internationaux",
           [
-            "RouteWise utilise ces fournisseurs, chacun seulement pour sa fonction : Supabase (comptes et base de données), Render (serveurs de RouteWise), Vercel (site Web et décompte des visites), Google Maps Platform (recherche d’adresses, lieux et itinéraires), OpenAI (lecture d’adresses dans les photos et les importations), Apple et RevenueCat (abonnements), Sentry (rapports d’erreur) et un fournisseur d’envoi de courriels (courriels du compte).",
+            "RouteWise utilise ces fournisseurs, chacun seulement pour sa fonction : Supabase (comptes et base de données), Render (serveurs de RouteWise), Vercel (site Web et décompte des visites), Google Maps Platform (recherche d’adresses, lieux et itinéraires), OpenAI (lecture d’adresses dans les photos et les importations), Apple, Google Play et RevenueCat (abonnements), Sentry (rapports d’erreur) et un fournisseur d’envoi de courriels (courriels du compte).",
             "Ces fournisseurs peuvent traiter des données hors de votre pays, notamment aux États-Unis, selon leurs propres obligations de sécurité et de confidentialité."
           ]
         ],
@@ -593,7 +593,7 @@ export const legalDocuments = {
     "footer": "Optimiza rutas, importa direcciones y envía entregas al mapa correcto.",
     "privacy": {
       "title": "Política de Privacidad de RouteWise",
-      "updated": "Última actualización: 16 de octubre de 2026",
+      "updated": "Última actualización: 21 de octubre de 2026",
       "intro": "Esta política explica qué información usa RouteWise, por qué se usa, quién la procesa y qué opciones tienes sobre tus datos.",
       "sections": [
         [
@@ -641,8 +641,8 @@ export const legalDocuments = {
         [
           "7. Suscripciones y pagos",
           [
-            "Si te suscribes a RouteWise Pro, la App Store gestiona la compra y RevenueCat administra el estado de tu suscripción con tu identificador de usuario de RouteWise.",
-            "RouteWise no recibe los datos de tu tarjeta de pago de Apple ni de RevenueCat."
+            "Si te suscribes a RouteWise Pro, la App Store (en iPhone) o Google Play (en Android) gestiona la compra, y RevenueCat administra el estado de tu suscripción con tu identificador de usuario de RouteWise.",
+            "RouteWise no recibe los datos de tu tarjeta de pago de Apple, Google ni RevenueCat."
           ]
         ],
         [
@@ -655,7 +655,7 @@ export const legalDocuments = {
         [
           "9. Proveedores de servicios y transferencias internacionales",
           [
-            "RouteWise usa estos proveedores, cada uno solo para su función: Supabase (cuentas y base de datos), Render (servidores de RouteWise), Vercel (sitio web y conteo de visitas), Google Maps Platform (búsqueda de direcciones, lugares y rutas), OpenAI (lectura de direcciones en fotos e importaciones), Apple y RevenueCat (suscripciones), Sentry (informes de errores) y un proveedor de envío de correos (correos de la cuenta).",
+            "RouteWise usa estos proveedores, cada uno solo para su función: Supabase (cuentas y base de datos), Render (servidores de RouteWise), Vercel (sitio web y conteo de visitas), Google Maps Platform (búsqueda de direcciones, lugares y rutas), OpenAI (lectura de direcciones en fotos e importaciones), Apple, Google Play y RevenueCat (suscripciones), Sentry (informes de errores) y un proveedor de envío de correos (correos de la cuenta).",
             "Estos proveedores pueden procesar datos fuera de tu país, incluso en Estados Unidos, conforme a sus propias obligaciones de seguridad y privacidad."
           ]
         ],
@@ -780,4 +780,198 @@ export const legalMetaDescriptions: Record<Locale, string> = {
   "pt": "Política de privacidade e termos de uso do RouteWise em português, inglês, francês e espanhol.",
   "fr": "Politique de confidentialité et conditions d’utilisation de RouteWise en anglais, portugais, français et espagnol.",
   "es": "Política de privacidad y términos de uso de RouteWise en inglés, portugués, francés y español."
+};
+
+// Account deletion steps, linked from Google Play's data safety form (MOB-44). Retention matches privacy sections 10–11.
+export const accountDeletion: Record<Locale, {
+  nav: string;
+  title: string;
+  updated: string;
+  intro: string;
+  sections: readonly (readonly [string, readonly string[]])[];
+}> = {
+  "en": {
+    "nav": "Delete account",
+    "title": "Delete your RouteWise account",
+    "updated": "Last updated: October 21, 2026",
+    "intro": "You can delete your RouteWise account (developer: Hoff Silva) and its data at any time, in the app or by email.",
+    "sections": [
+      [
+        "1. Delete it in the app",
+        [
+          "Open RouteWise and sign in.",
+          "Go to Profile and tap Delete account.",
+          "Confirm. The account is deleted right away and you are signed out."
+        ]
+      ],
+      [
+        "2. Ask by email",
+        [
+          "If you can't open the app, write to <a href=\"mailto:hi@routewise.app\">hi@routewise.app</a> from the email of your account and ask us to delete it. We delete the account and reply when it's done."
+        ]
+      ],
+      [
+        "3. What is deleted",
+        [
+          "Your profile, stops, delivery history, data backed up on our servers, usage records, and other RouteWise records tied to your user identifier."
+        ]
+      ],
+      [
+        "4. What is kept, and for how long",
+        [
+          "Copies kept by our providers, such as database backups, error reports, and payment-store records, expire on those providers' retention schedules (error reports, for example, after up to 90 days), unless the law requires keeping them longer."
+        ]
+      ],
+      [
+        "5. Subscriptions",
+        [
+          "Deleting your account does not cancel a RouteWise Pro subscription. Cancel it in your App Store or Google Play subscription settings to avoid future charges."
+        ]
+      ],
+      [
+        "6. Delete some data without deleting the account",
+        [
+          "You can delete stops in the app at any time. If your stops are backed up, deleted stops are also removed from our servers."
+        ]
+      ]
+    ]
+  },
+  "pt": {
+    "nav": "Excluir conta",
+    "title": "Excluir sua conta do RouteWise",
+    "updated": "Última atualização: 21 de outubro de 2026",
+    "intro": "Você pode excluir sua conta do RouteWise (desenvolvedor: Hoff Silva) e os dados dela a qualquer momento, pelo app ou por e-mail.",
+    "sections": [
+      [
+        "1. Excluir pelo app",
+        [
+          "Abra o RouteWise e entre na sua conta.",
+          "Vá em Perfil e toque em Excluir conta.",
+          "Confirme. A conta é excluída na hora e você sai do app."
+        ]
+      ],
+      [
+        "2. Pedir por e-mail",
+        [
+          "Se não conseguir abrir o app, escreva para <a href=\"mailto:hi@routewise.app\">hi@routewise.app</a> a partir do e-mail da sua conta e peça a exclusão. Excluímos a conta e respondemos quando estiver feito."
+        ]
+      ],
+      [
+        "3. O que é excluído",
+        [
+          "Seu perfil, paradas, histórico de entregas, dados com backup nos nossos servidores, registros de uso e outros registros do RouteWise ligados ao seu identificador de usuário."
+        ]
+      ],
+      [
+        "4. O que fica guardado, e por quanto tempo",
+        [
+          "Cópias mantidas pelos nossos prestadores, como backups do banco de dados, relatórios de erro e registros das lojas de pagamento, expiram conforme os prazos de retenção desses prestadores (relatórios de erro, por exemplo, em até 90 dias), salvo quando a lei exigir guardá-las por mais tempo."
+        ]
+      ],
+      [
+        "5. Assinaturas",
+        [
+          "Excluir a conta não cancela a assinatura do RouteWise Pro. Cancele nas configurações de assinatura da App Store ou do Google Play para evitar novas cobranças."
+        ]
+      ],
+      [
+        "6. Excluir alguns dados sem excluir a conta",
+        [
+          "Você pode excluir paradas no app a qualquer momento. Se suas paradas têm backup, as excluídas também são removidas dos nossos servidores."
+        ]
+      ]
+    ]
+  },
+  "fr": {
+    "nav": "Supprimer le compte",
+    "title": "Supprimer votre compte RouteWise",
+    "updated": "Dernière mise à jour : 21 octobre 2026",
+    "intro": "Vous pouvez supprimer votre compte RouteWise (développeur : Hoff Silva) et ses données à tout moment, dans l’app ou par courriel.",
+    "sections": [
+      [
+        "1. Supprimer dans l’app",
+        [
+          "Ouvrez RouteWise et connectez-vous.",
+          "Allez dans Profil et touchez Supprimer le compte.",
+          "Confirmez. Le compte est supprimé immédiatement et vous êtes déconnecté."
+        ]
+      ],
+      [
+        "2. Demander par courriel",
+        [
+          "Si vous ne pouvez pas ouvrir l’app, écrivez à <a href=\"mailto:hi@routewise.app\">hi@routewise.app</a> à partir du courriel de votre compte et demandez la suppression. Nous supprimons le compte et vous répondons une fois que c’est fait."
+        ]
+      ],
+      [
+        "3. Ce qui est supprimé",
+        [
+          "Votre profil, vos arrêts, votre historique de livraisons, les données sauvegardées sur nos serveurs, les registres d’utilisation et les autres données RouteWise liées à votre identifiant d’utilisateur."
+        ]
+      ],
+      [
+        "4. Ce qui est conservé, et pendant combien de temps",
+        [
+          "Les copies conservées par nos fournisseurs, comme les sauvegardes de la base de données, les rapports d’erreur et les registres des boutiques de paiement, expirent selon les délais de conservation de ces fournisseurs (jusqu’à 90 jours pour les rapports d’erreur, par exemple), sauf si la loi exige de les conserver plus longtemps."
+        ]
+      ],
+      [
+        "5. Abonnements",
+        [
+          "Supprimer votre compte n’annule pas l’abonnement RouteWise Pro. Annulez-le dans les réglages d’abonnement de l’App Store ou de Google Play pour éviter de futurs frais."
+        ]
+      ],
+      [
+        "6. Supprimer certaines données sans supprimer le compte",
+        [
+          "Vous pouvez supprimer des arrêts dans l’app à tout moment. Si vos arrêts sont sauvegardés, les arrêts supprimés sont aussi retirés de nos serveurs."
+        ]
+      ]
+    ]
+  },
+  "es": {
+    "nav": "Eliminar cuenta",
+    "title": "Eliminar tu cuenta de RouteWise",
+    "updated": "Última actualización: 21 de octubre de 2026",
+    "intro": "Puedes eliminar tu cuenta de RouteWise (desarrollador: Hoff Silva) y sus datos en cualquier momento, desde la app o por correo.",
+    "sections": [
+      [
+        "1. Eliminarla desde la app",
+        [
+          "Abre RouteWise e inicia sesión.",
+          "Ve a Perfil y toca Eliminar cuenta.",
+          "Confirma. La cuenta se elimina de inmediato y se cierra la sesión."
+        ]
+      ],
+      [
+        "2. Pedirlo por correo",
+        [
+          "Si no puedes abrir la app, escribe a <a href=\"mailto:hi@routewise.app\">hi@routewise.app</a> desde el correo de tu cuenta y pide la eliminación. Eliminamos la cuenta y te respondemos cuando esté hecho."
+        ]
+      ],
+      [
+        "3. Qué se elimina",
+        [
+          "Tu perfil, paradas, historial de entregas, datos respaldados en nuestros servidores, registros de uso y otros registros de RouteWise vinculados a tu identificador de usuario."
+        ]
+      ],
+      [
+        "4. Qué se conserva y por cuánto tiempo",
+        [
+          "Las copias que conservan nuestros proveedores, como copias de seguridad de la base de datos, informes de errores y registros de las tiendas de pago, expiran según los plazos de conservación de esos proveedores (los informes de errores, por ejemplo, en hasta 90 días), salvo que la ley exija conservarlas más tiempo."
+        ]
+      ],
+      [
+        "5. Suscripciones",
+        [
+          "Eliminar tu cuenta no cancela la suscripción a RouteWise Pro. Cancélala en los ajustes de suscripción de la App Store o de Google Play para evitar cargos futuros."
+        ]
+      ],
+      [
+        "6. Eliminar algunos datos sin eliminar la cuenta",
+        [
+          "Puedes eliminar paradas en la app en cualquier momento. Si tus paradas tienen respaldo, las eliminadas también se borran de nuestros servidores."
+        ]
+      ]
+    ]
+  }
 };

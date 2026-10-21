@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'bun:test';
-import { legalDocuments } from '../src/content/legal';
+import { accountDeletion, legalDocuments } from '../src/content/legal';
 import { LOCALES } from '../src/i18n/locales';
 
 const shape = (doc: { sections: readonly (readonly [string, readonly string[]])[] }) =>
@@ -21,6 +21,25 @@ describe('legal text', () => {
       for (const provider of ['Supabase', 'Google Maps Platform', 'OpenAI', 'RevenueCat', 'Sentry']) {
         expect(privacy).toContain(provider);
       }
+    }
+  });
+
+  it('names Google Play as the store for Android purchases (MOB-44)', () => {
+    for (const lang of LOCALES) {
+      expect(JSON.stringify(legalDocuments[lang].privacy)).toContain('Google Play');
+    }
+  });
+
+  it('has an account deletion page with the same steps in every language (Google Play data safety)', () => {
+    const [first, ...others] = LOCALES;
+    for (const lang of others) {
+      expect(shape(accountDeletion[lang])).toEqual(shape(accountDeletion[first!]));
+    }
+    for (const lang of LOCALES) {
+      const deletion = JSON.stringify(accountDeletion[lang]);
+      expect(deletion).toContain('RouteWise');
+      expect(deletion).toContain('hi@routewise.app');
+      expect(deletion).toContain('90');
     }
   });
 });

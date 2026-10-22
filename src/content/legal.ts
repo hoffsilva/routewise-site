@@ -17,7 +17,7 @@ export const legalDocuments = {
     "footer": "Optimize routes, import addresses, and send deliveries to the right map.",
     "privacy": {
       "title": "RouteWise Privacy Policy",
-      "updated": "Last updated: October 21, 2026",
+      "updated": "Last updated: October 22, 2026",
       "intro": "This policy explains what information RouteWise uses, why it is used, who processes it, and what choices you have over your data.",
       "sections": [
         [
@@ -59,7 +59,8 @@ export const legalDocuments = {
           "6. Account and email",
           [
             "We use Supabase for sign-in and account data. Supabase also hosts the RouteWise database.",
-            "We send account emails, such as email confirmation and password reset, through an email delivery provider."
+            "We send account emails, such as email confirmation and password reset, through an email delivery provider.",
+            "Android testers: if you join the RouteWise Android testers group on Google Groups to test the app before launch, RouteWise can see the email address of your Google account. We use it only to give you access to the test on Google Play and to answer your feedback, never for marketing. You can leave the group at any time, which removes your address from it. When the test ends, we delete the group and its member list."
           ]
         ],
         [
@@ -79,7 +80,7 @@ export const legalDocuments = {
         [
           "9. Service providers and international transfers",
           [
-            "RouteWise uses these providers, each only for its function: Supabase (accounts and database), Render (RouteWise servers), Vercel (website and its visit counts), Google Maps Platform (address search, places, and routes), OpenAI (reading addresses from photos and imports), Apple, Google Play, and RevenueCat (subscriptions), Sentry (error reports), and an email delivery provider (account emails).",
+            "RouteWise uses these providers, each only for its function: Supabase (accounts and database), Render (RouteWise servers), Vercel (website and its visit counts), Google Maps Platform (address search, places, and routes), OpenAI (reading addresses from photos and imports), Apple, Google Play, and RevenueCat (subscriptions), Sentry (error reports), Google Groups (the Android testers group), and an email delivery provider (account emails).",
             "These providers may process data outside your country, including in the United States, under their own security and privacy obligations."
           ]
         ],
@@ -209,7 +210,7 @@ export const legalDocuments = {
     "footer": "Otimize rotas, importe endereços e envie entregas para o mapa certo.",
     "privacy": {
       "title": "Política de Privacidade do RouteWise",
-      "updated": "Última atualização: 21 de outubro de 2026",
+      "updated": "Última atualização: 22 de outubro de 2026",
       "intro": "Esta política explica quais informações o RouteWise usa, por que elas são usadas, quem as processa e quais escolhas você tem sobre seus dados.",
       "sections": [
         [
@@ -251,7 +252,8 @@ export const legalDocuments = {
           "6. Conta e e-mail",
           [
             "Usamos o Supabase para o login e os dados de conta. O Supabase também hospeda o banco de dados do RouteWise.",
-            "Enviamos os e-mails da conta, como confirmação de e-mail e redefinição de senha, por um provedor de envio de e-mails."
+            "Enviamos os e-mails da conta, como confirmação de e-mail e redefinição de senha, por um provedor de envio de e-mails.",
+            "Testadores Android: se você entrar no grupo de testadores Android do RouteWise no Google Grupos para testar o app antes do lançamento, o RouteWise passa a ver o e-mail da sua conta Google. Usamos esse e-mail só para liberar seu acesso ao teste no Google Play e responder seu feedback, nunca para marketing. Você pode sair do grupo quando quiser, o que remove seu endereço dele. Quando o teste terminar, excluímos o grupo e a lista de participantes."
           ]
         ],
         [
@@ -271,7 +273,7 @@ export const legalDocuments = {
         [
           "9. Prestadores de serviço e transferência internacional",
           [
-            "O RouteWise usa estes prestadores, cada um só para a sua função: Supabase (contas e banco de dados), Render (servidores do RouteWise), Vercel (site e contagem de visitas), Google Maps Platform (busca de endereços, lugares e rotas), OpenAI (leitura de endereços em fotos e importações), Apple, Google Play e RevenueCat (assinaturas), Sentry (relatórios de erro) e um provedor de envio de e-mails (e-mails da conta).",
+            "O RouteWise usa estes prestadores, cada um só para a sua função: Supabase (contas e banco de dados), Render (servidores do RouteWise), Vercel (site e contagem de visitas), Google Maps Platform (busca de endereços, lugares e rotas), OpenAI (leitura de endereços em fotos e importações), Apple, Google Play e RevenueCat (assinaturas), Sentry (relatórios de erro), Google Grupos (grupo de testadores Android) e um provedor de envio de e-mails (e-mails da conta).",
             "Esses prestadores podem processar dados fora do seu país, inclusive nos Estados Unidos, conforme suas próprias obrigações de segurança e privacidade."
           ]
         ],
@@ -401,7 +403,7 @@ export const legalDocuments = {
     "footer": "Optimisez les itinéraires, importez les adresses et envoyez les livraisons vers la bonne carte.",
     "privacy": {
       "title": "Politique de confidentialité de RouteWise",
-      "updated": "Dernière mise à jour : 21 octobre 2026",
+      "updated": "Dernière mise à jour : 22 octobre 2026",
       "intro": "Cette politique explique quelles informations RouteWise utilise, pourquoi elles sont utilisées, qui les traite et quels choix vous avez sur vos données.",
       "sections": [
         [
@@ -443,7 +445,8 @@ export const legalDocuments = {
           "6. Compte et courriel",
           [
             "Nous utilisons Supabase pour la connexion et les données de compte. Supabase héberge aussi la base de données de RouteWise.",
-            "Nous envoyons les courriels du compte, comme la confirmation de l’adresse courriel et la réinitialisation du mot de passe, par un fournisseur d’envoi de courriels."
+            "Nous envoyons les courriels du compte, comme la confirmation de l’adresse courriel et la réinitialisation du mot de passe, par un fournisseur d’envoi de courriels.",
+            "Testeurs Android : si vous rejoignez le groupe de testeurs Android de RouteWise sur Google Groupes pour tester l’app avant son lancement, RouteWise peut voir l’adresse courriel de votre compte Google. Nous l’utilisons uniquement pour vous donner accès au test sur Google Play et répondre à vos commentaires, jamais à des fins de marketing. Vous pouvez quitter le groupe à tout moment, ce qui en retire votre adresse. À la fin du test, nous supprimons le groupe et sa liste de membres."
           ]
         ],
         [
@@ -463,7 +466,7 @@ export const legalDocuments = {
         [
           "9. Fournisseurs de services et transferts internationaux",
           [
-            "RouteWise utilise ces fournisseurs, chacun seulement pour sa fonction : Supabase (comptes et base de données), Render (serveurs de RouteWise), Vercel (site Web et décompte des visites), Google Maps Platform (recherche d’adresses, lieux et itinéraires), OpenAI (lecture d’adresses dans les photos et les importations), Apple, Google Play et RevenueCat (abonnements), Sentry (rapports d’erreur) et un fournisseur d’envoi de courriels (courriels du compte).",
+            "RouteWise utilise ces fournisseurs, chacun seulement pour sa fonction : Supabase (comptes et base de données), Render (serveurs de RouteWise), Vercel (site Web et décompte des visites), Google Maps Platform (recherche d’adresses, lieux et itinéraires), OpenAI (lecture d’adresses dans les photos et les importations), Apple, Google Play et RevenueCat (abonnements), Sentry (rapports d’erreur), Google Groupes (groupe de testeurs Android) et un fournisseur d’envoi de courriels (courriels du compte).",
             "Ces fournisseurs peuvent traiter des données hors de votre pays, notamment aux États-Unis, selon leurs propres obligations de sécurité et de confidentialité."
           ]
         ],
@@ -593,7 +596,7 @@ export const legalDocuments = {
     "footer": "Optimiza rutas, importa direcciones y envía entregas al mapa correcto.",
     "privacy": {
       "title": "Política de Privacidad de RouteWise",
-      "updated": "Última actualización: 21 de octubre de 2026",
+      "updated": "Última actualización: 22 de octubre de 2026",
       "intro": "Esta política explica qué información usa RouteWise, por qué se usa, quién la procesa y qué opciones tienes sobre tus datos.",
       "sections": [
         [
@@ -635,7 +638,8 @@ export const legalDocuments = {
           "6. Cuenta y correo electrónico",
           [
             "Usamos Supabase para el inicio de sesión y los datos de cuenta. Supabase también aloja la base de datos de RouteWise.",
-            "Enviamos los correos de la cuenta, como la confirmación del correo y el restablecimiento de contraseña, a través de un proveedor de envío de correos."
+            "Enviamos los correos de la cuenta, como la confirmación del correo y el restablecimiento de contraseña, a través de un proveedor de envío de correos.",
+            "Testers de Android: si te unes al grupo de testers de Android de RouteWise en Grupos de Google para probar la app antes del lanzamiento, RouteWise puede ver el correo de tu cuenta de Google. Solo lo usamos para darte acceso a la prueba en Google Play y responder tus comentarios, nunca para marketing. Puedes salir del grupo cuando quieras, lo que elimina tu dirección de él. Cuando termine la prueba, eliminamos el grupo y su lista de miembros."
           ]
         ],
         [
@@ -655,7 +659,7 @@ export const legalDocuments = {
         [
           "9. Proveedores de servicios y transferencias internacionales",
           [
-            "RouteWise usa estos proveedores, cada uno solo para su función: Supabase (cuentas y base de datos), Render (servidores de RouteWise), Vercel (sitio web y conteo de visitas), Google Maps Platform (búsqueda de direcciones, lugares y rutas), OpenAI (lectura de direcciones en fotos e importaciones), Apple, Google Play y RevenueCat (suscripciones), Sentry (informes de errores) y un proveedor de envío de correos (correos de la cuenta).",
+            "RouteWise usa estos proveedores, cada uno solo para su función: Supabase (cuentas y base de datos), Render (servidores de RouteWise), Vercel (sitio web y conteo de visitas), Google Maps Platform (búsqueda de direcciones, lugares y rutas), OpenAI (lectura de direcciones en fotos e importaciones), Apple, Google Play y RevenueCat (suscripciones), Sentry (informes de errores), Grupos de Google (grupo de testers de Android) y un proveedor de envío de correos (correos de la cuenta).",
             "Estos proveedores pueden procesar datos fuera de tu país, incluso en Estados Unidos, conforme a sus propias obligaciones de seguridad y privacidad."
           ]
         ],

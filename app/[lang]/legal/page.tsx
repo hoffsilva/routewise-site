@@ -72,10 +72,10 @@ export default async function LegalPage({ params }: { params: Params }) {
             <h1 className="mb-[18px] max-w-[760px] text-[clamp(2.1rem,5vw,4rem)] tracking-[-0.03em]">{copy.title}</h1>
             <p className="mb-[26px] max-w-[720px] text-[1.08rem] text-mist-600">{copy.intro}</p>
             <div className="flex flex-wrap gap-3">
-              <a href="#privacy" className="inline-flex min-h-11 items-center justify-center rounded-full bg-gradient-warm px-[18px] font-extrabold !text-white shadow-[0_4px_18px_rgba(232,93,76,0.24)] !no-underline">
+              <a href="#privacy" className="inline-flex min-h-11 items-center justify-center rounded-full bg-action px-[18px] text-[19px] font-bold !text-white shadow-[0_4px_18px_rgba(232,93,76,0.24)] !no-underline">
                 {copy.privacyNav}
               </a>
-              <a href="#terms" className="inline-flex min-h-11 items-center justify-center rounded-full bg-mist-100 px-[18px] font-extrabold !text-ink-soft !no-underline">
+              <a href="#terms" className="inline-flex min-h-11 items-center justify-center rounded-full bg-mist-100 px-[18px] text-[19px] font-bold !text-ink-soft !no-underline">
                 {copy.termsNav}
               </a>
             </div>

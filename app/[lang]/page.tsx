@@ -6,6 +6,8 @@ import { localizedAlternates } from '@/i18n/metadata';
 import { Nav } from '@/components/Nav';
 import { Reveal } from '@/components/Reveal';
 import { StoreRedirect } from '@/components/StoreRedirect';
+import { AndroidBetaModal } from '@/components/AndroidBetaModal';
+import { androidBetaCopy } from '@/content/androidBeta';
 import { APP_STORE_URL, SUPPORT_EMAIL } from '@/site';
 
 type Params = Promise<{ lang: string }>;
@@ -64,7 +66,8 @@ export default async function HomePage({ params }: { params: Params }) {
   return (
     <div id="top" className="overflow-x-hidden">
       <StoreRedirect copy={copy.redirect} />
-      <Nav lang={lang} copy={copy.nav} />
+      <Nav lang={lang} copy={copy.nav} androidLabel={androidBetaCopy[lang].menu} />
+      <AndroidBetaModal copy={androidBetaCopy[lang]} />
 
       {/* Hero */}
       <section className="relative flex items-start overflow-hidden bg-gradient-to-b from-paper to-white px-6 pt-24 pb-12 sm:px-8 sm:pt-28 sm:pb-16 lg:min-h-screen lg:items-center lg:pt-32">
@@ -86,7 +89,7 @@ export default async function HomePage({ params }: { params: Params }) {
                 href={APP_STORE_URL}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-gradient-warm px-8 py-4 font-semibold text-white shadow-warm transition hover:-translate-y-[3px] hover:shadow-warm-lg sm:w-auto"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-action px-8 py-4 text-[19px] font-bold text-white shadow-warm transition hover:-translate-y-[3px] hover:shadow-warm-lg sm:w-auto"
               >
                 <svg width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" aria-hidden="true">
                   <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><polyline points="7 10 12 15 17 10" /><line x1="12" y1="15" x2="12" y2="3" />

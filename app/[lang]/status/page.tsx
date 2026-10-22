@@ -114,7 +114,7 @@ export default async function StatusPage({ params }: { params: Params }) {
           </div>
           <a
             href={`/${lang}/status`}
-            className="inline-flex min-h-11 items-center justify-center self-start rounded-full bg-gradient-warm px-[18px] font-extrabold text-white shadow-[0_4px_18px_rgba(232,93,76,0.24)] sm:self-auto"
+            className="inline-flex min-h-11 items-center justify-center self-start rounded-full bg-action px-[18px] text-[19px] font-bold text-white shadow-[0_4px_18px_rgba(232,93,76,0.24)] sm:self-auto"
           >
             {copy.reload}
           </a>

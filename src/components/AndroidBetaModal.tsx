@@ -7,6 +7,8 @@ import { ANDROID_TEST_OPT_IN_URL, ANDROID_TESTERS_GROUP_URL, PLAY_STORE_URL, SUP
 export const ANDROID_HASH = '#android';
 const SEEN_KEY = 'routewise-android-beta-seen';
 const STEP_LINKS = [ANDROID_TESTERS_GROUP_URL, ANDROID_TEST_OPT_IN_URL, PLAY_STORE_URL];
+// Short screen recordings of each step (English UI, recorded on a Pixel 7a emulator)
+const STEP_VIDEOS = ['/assets/android-beta/step-1.mp4', '/assets/android-beta/step-2.mp4', '/assets/android-beta/step-3.mp4'];
 
 /** Android phones and tablets (the app isn't on Google Play yet, so they're invited to the closed test). */
 export function isAndroidDevice(userAgent: string): boolean {
@@ -120,13 +122,24 @@ export function AndroidBetaModal({ copy }: { copy: AndroidBetaCopy }) {
         <h3 className="mb-4 text-[1.25rem] text-ink">{copy.stepsTitle}</h3>
         <ol className="mb-6 grid gap-3">
           {copy.steps.map((step, index) => (
-            <li key={step.title} className="flex flex-col gap-3 rounded-2xl border border-mist-200 p-5 sm:flex-row sm:items-center">
+            <li key={step.title} className="flex flex-col gap-3 rounded-2xl border border-mist-200 p-5 sm:flex-row sm:items-start">
               <span className="flex size-10 shrink-0 items-center justify-center rounded-full bg-gradient-map font-display font-extrabold text-white" aria-hidden="true">
                 {index + 1}
               </span>
               <div className="flex-1">
                 <h4 className="font-display text-[1.05rem] font-bold text-ink">{step.title}</h4>
                 <p className="text-ink-soft">{step.body}</p>
+                {/* Decorative: the text above says the same; hidden for reduced motion */}
+                <video
+                  src={STEP_VIDEOS[index]}
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  preload="metadata"
+                  aria-hidden="true"
+                  className="mt-3 aspect-[9/20] w-44 rounded-xl border border-mist-200 motion-reduce:hidden"
+                />
               </div>
               <a
                 href={STEP_LINKS[index]}
@@ -139,6 +152,11 @@ export function AndroidBetaModal({ copy }: { copy: AndroidBetaCopy }) {
             </li>
           ))}
         </ol>
+
+        <section className="mb-6 rounded-2xl border-l-4 border-action bg-mist-100 p-5">
+          <h3 className="mb-1 text-[1.1rem] text-ink">{copy.waitTitle}</h3>
+          <p className="text-ink-soft">{copy.waitBody}</p>
+        </section>
 
         <p className="mb-6 text-sm text-mist-600">{copy.groupNote}</p>
 

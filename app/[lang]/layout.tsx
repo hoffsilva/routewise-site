@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 import { notFound } from 'next/navigation';
-import { DM_Sans, Plus_Jakarta_Sans } from 'next/font/google';
+import { DM_Sans, Plus_Jakarta_Sans, Urbanist } from 'next/font/google';
 import { SiteAnalytics } from '@/components/SiteAnalytics';
 import { HTML_LANG, LOCALES, isLocale } from '@/i18n/locales';
 import { SITE_URL } from '@/site';
@@ -13,6 +13,8 @@ const jakarta = Plus_Jakarta_Sans({
   weight: ['400', '500', '600', '700', '800'],
   variable: '--font-jakarta',
 });
+// Wordmark only ("routewise"), same as the store images
+const urbanist = Urbanist({ subsets: ['latin'], weight: ['500'], variable: '--font-urbanist' });
 
 export const metadata: Metadata = { metadataBase: new URL(SITE_URL) };
 
@@ -27,7 +29,7 @@ export default async function LocaleLayout({ children, params }: { children: Rea
   if (!isLocale(lang)) notFound();
 
   return (
-    <html lang={HTML_LANG[lang]} className={`${dmSans.variable} ${jakarta.variable}`}>
+    <html lang={HTML_LANG[lang]} className={`${dmSans.variable} ${jakarta.variable} ${urbanist.variable}`}>
       <body>
         {children}
         <SiteAnalytics />

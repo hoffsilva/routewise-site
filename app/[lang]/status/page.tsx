@@ -64,7 +64,7 @@ export default async function StatusPage({ params }: { params: Params }) {
         <a href={`/${lang}`} className="flex items-center gap-3">
           <img src="/icon.png" alt="RouteWise" width={46} height={46} className="size-[46px] rounded-xl object-cover shadow-soft" />
           <div>
-            <span className="text-gradient-map block font-display text-[1.35rem] font-extrabold">RouteWise</span>
+            <span className="text-gradient-map block font-brand text-[1.35rem] font-medium">routewise</span>
             <span className="block text-[0.88rem] font-semibold text-mist-600">{shared.brandSubtitle}</span>
           </div>
         </a>

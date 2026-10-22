@@ -20,7 +20,7 @@ export const androidBetaCopy = {
       },
       {
         title: 'Install the app',
-        body: 'Install RouteWise from Google Play on your phone.',
+        body: 'Install RouteWise from Google Play on your phone. If Google Play says the app isn’t found, wait a little: access for your account can take up to a few hours after you accept.',
         cta: 'Open Google Play',
       },
     ],
@@ -51,7 +51,7 @@ export const androidBetaCopy = {
       },
       {
         title: 'Instale o app',
-        body: 'Instale o RouteWise pelo Google Play no seu celular.',
+        body: 'Instale o RouteWise pelo Google Play no seu celular. Se o Google Play disser que o app não foi encontrado, aguarde um pouco: a liberação para a sua conta pode levar algumas horas depois que você aceitar o convite.',
         cta: 'Abrir o Google Play',
       },
     ],
@@ -82,7 +82,7 @@ export const androidBetaCopy = {
       },
       {
         title: 'Installez l’app',
-        body: 'Installez RouteWise depuis Google Play sur votre téléphone.',
+        body: 'Installez RouteWise depuis Google Play sur votre téléphone. Si Google Play indique que l’application est introuvable, patientez un peu : l’accès pour votre compte peut prendre quelques heures après l’acceptation de l’invitation.',
         cta: 'Ouvrir Google Play',
       },
     ],
@@ -113,7 +113,7 @@ export const androidBetaCopy = {
       },
       {
         title: 'Instala la app',
-        body: 'Instala RouteWise desde Google Play en tu teléfono.',
+        body: 'Instala RouteWise desde Google Play en tu teléfono. Si Google Play dice que la app no se encuentra, espera un poco: el acceso para tu cuenta puede tardar unas horas después de aceptar.',
         cta: 'Abrir Google Play',
       },
     ],

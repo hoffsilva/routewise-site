@@ -209,7 +209,7 @@ function Footer({ lang, copy }: { lang: Locale; copy: (typeof siteCopy)[Locale] 
           <div className="max-w-[300px]">
             <div className="mb-4 flex items-center gap-3">
               <img src="/icon.png" alt="RouteWise" width={40} height={40} className="size-10 rounded-[10px]" />
-              <span className="font-display text-[1.35rem] font-extrabold text-white">RouteWise</span>
+              <span className="font-brand text-[1.35rem] font-medium text-white">routewise</span>
             </div>
             <p className="text-[0.95rem] leading-[1.7]">{copy.footer.tagline}</p>
           </div>

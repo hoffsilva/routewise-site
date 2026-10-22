@@ -32,7 +32,7 @@ export function Nav({ lang, copy }: { lang: Locale; copy: SiteCopy['nav'] }) {
       <div className="mx-auto flex max-w-[1200px] flex-wrap items-center justify-between gap-y-4 lg:flex-nowrap">
         <a href="#top" className="flex items-center gap-3" onClick={close}>
           <img src="/icon.png" alt="RouteWise" width={44} height={44} className="size-11 rounded-xl object-cover" />
-          <span className="text-gradient-map font-display text-2xl font-extrabold">RouteWise</span>
+          <span className="text-gradient-map font-brand text-2xl font-medium">routewise</span>
         </a>
 
         <ul className={`${open ? 'flex' : 'hidden'} order-3 w-full flex-col gap-5 pt-2 lg:order-none lg:flex lg:w-auto lg:flex-row lg:gap-10 lg:pt-0`}>

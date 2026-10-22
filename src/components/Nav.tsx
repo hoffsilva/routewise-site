@@ -5,8 +5,9 @@ import type { Locale } from '@/i18n/locales';
 import type { SiteCopy } from '@/content/site';
 import { APP_STORE_URL } from '@/site';
 import { LanguageSwitcher } from './LanguageSwitcher';
+import { ANDROID_HASH } from './AndroidBetaModal';
 
-export function Nav({ lang, copy }: { lang: Locale; copy: SiteCopy['nav'] }) {
+export function Nav({ lang, copy, androidLabel }: { lang: Locale; copy: SiteCopy['nav']; androidLabel: string }) {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
 
@@ -23,6 +24,8 @@ export function Nav({ lang, copy }: { lang: Locale; copy: SiteCopy['nav'] }) {
     { href: '#recursos', label: copy.features },
     { href: '#screenshots', label: copy.screenshots },
     { href: '#como-funciona', label: copy.howItWorks },
+    // Opens the Android tester modal (hoffsilva/routewise#40)
+    { href: ANDROID_HASH, label: androidLabel },
   ];
 
   return (

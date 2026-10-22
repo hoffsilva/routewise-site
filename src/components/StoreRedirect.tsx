@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 import type { SiteCopy } from '@/content/site';
 import { APP_STORE_URL } from '@/site';
+import { ANDROID_HASH } from './AndroidBetaModal';
 
 const REDIRECT_DELAY_MS = 1400;
 
@@ -28,14 +29,23 @@ export function StoreRedirect({ copy }: { copy: SiteCopy['redirect'] }) {
       window.location.href = APP_STORE_URL;
       return;
     }
-    if (!isIOSDevice()) return;
+    // The Android tester link (#android, routewise.app/android) stays on the site
+    if (!isIOSDevice() || window.location.hash === ANDROID_HASH) return;
 
     setVisible(true);
     timer.current = window.setTimeout(() => {
       window.location.href = APP_STORE_URL;
     }, REDIRECT_DELAY_MS);
+    const cancelForAndroid = () => {
+      if (window.location.hash !== ANDROID_HASH) return;
+      if (timer.current !== null) window.clearTimeout(timer.current);
+      timer.current = null;
+      setVisible(false);
+    };
+    window.addEventListener('hashchange', cancelForAndroid);
     return () => {
       if (timer.current !== null) window.clearTimeout(timer.current);
+      window.removeEventListener('hashchange', cancelForAndroid);
     };
   }, []);
 

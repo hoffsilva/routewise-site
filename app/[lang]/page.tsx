@@ -6,6 +6,8 @@ import { localizedAlternates } from '@/i18n/metadata';
 import { Nav } from '@/components/Nav';
 import { Reveal } from '@/components/Reveal';
 import { StoreRedirect } from '@/components/StoreRedirect';
+import { AndroidBetaModal } from '@/components/AndroidBetaModal';
+import { androidBetaCopy } from '@/content/androidBeta';
 import { APP_STORE_URL, SUPPORT_EMAIL } from '@/site';
 
 type Params = Promise<{ lang: string }>;
@@ -64,7 +66,8 @@ export default async function HomePage({ params }: { params: Params }) {
   return (
     <div id="top" className="overflow-x-hidden">
       <StoreRedirect copy={copy.redirect} />
-      <Nav lang={lang} copy={copy.nav} />
+      <Nav lang={lang} copy={copy.nav} androidLabel={androidBetaCopy[lang].menu} />
+      <AndroidBetaModal copy={androidBetaCopy[lang]} />
 
       {/* Hero */}
       <section className="relative flex items-start overflow-hidden bg-gradient-to-b from-paper to-white px-6 pt-24 pb-12 sm:px-8 sm:pt-28 sm:pb-16 lg:min-h-screen lg:items-center lg:pt-32">

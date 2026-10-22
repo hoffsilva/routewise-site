@@ -35,7 +35,7 @@ export function LanguageSwitcher({ current, variant = 'pill', className = '' }: 
           ? 'rounded-full px-3 py-2 text-xs font-extrabold transition-colors'
           : 'flex-1 rounded-full border px-3 py-2 text-sm font-extrabold shadow-soft sm:flex-none';
         const tone = active
-          ? 'bg-gradient-map text-white border-transparent'
+          ? 'bg-route-teal text-white border-transparent'
           : variant === 'pill'
             ? 'text-mist-600 hover:text-ink'
             : 'border-mist-200 bg-white text-ink-soft';

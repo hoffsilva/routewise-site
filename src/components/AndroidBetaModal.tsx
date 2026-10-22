@@ -132,7 +132,7 @@ export function AndroidBetaModal({ copy }: { copy: AndroidBetaCopy }) {
                 href={STEP_LINKS[index]}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex shrink-0 items-center justify-center rounded-full bg-gradient-warm px-5 py-3 text-center font-semibold text-white shadow-warm transition hover:-translate-y-0.5 hover:shadow-warm-lg"
+                className="inline-flex shrink-0 items-center justify-center rounded-full bg-action px-5 py-3 text-center text-[19px] font-bold text-white shadow-warm transition hover:-translate-y-0.5 hover:shadow-warm-lg"
               >
                 {step.cta}
               </a>

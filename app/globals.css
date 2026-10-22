@@ -16,6 +16,9 @@
   --color-mist-200: #E2E8ED;
   --color-mist-400: #9AABB8;
   --color-mist-600: #5A7184;
+  /* Flat button colors from the app (Optimize route / Add destination), hoffsilva/routewise#43 */
+  --color-action: #F4683F;
+  --color-route-teal: #21998C;
 
   --font-sans: var(--font-dm-sans), sans-serif;
   --font-display: var(--font-jakarta), sans-serif;

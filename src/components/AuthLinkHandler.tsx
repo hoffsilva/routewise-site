@@ -55,7 +55,7 @@ export function AuthLinkHandler({ copy }: { copy: Copy }) {
           <p className="mb-6 text-[1.08rem] text-mist-600">{recovery ? copy.recoveryBody : copy.confirmBody}</p>
           <a
             href={link.appUrl}
-            className="inline-flex min-h-12 items-center justify-center rounded-full bg-gradient-warm px-6 font-extrabold text-white shadow-[0_4px_18px_rgba(232,93,76,0.24)]"
+            className="inline-flex min-h-12 items-center justify-center rounded-full bg-action px-6 text-[19px] font-bold text-white shadow-[0_4px_18px_rgba(232,93,76,0.24)]"
           >
             {copy.openButton}
           </a>

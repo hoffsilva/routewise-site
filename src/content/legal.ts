@@ -17,7 +17,7 @@ export const legalDocuments = {
     "footer": "Optimize routes, import addresses, and send deliveries to the right map.",
     "privacy": {
       "title": "RouteWise Privacy Policy",
-      "updated": "Last updated: October 22, 2026",
+      "updated": "Last updated: November 14, 2026",
       "intro": "This policy explains what information RouteWise uses, why it is used, who processes it, and what choices you have over your data.",
       "sections": [
         [
@@ -45,7 +45,8 @@ export const legalDocuments = {
           "4. Location, maps, and routes",
           [
             "With your permission, the app uses your current location on the device to center the map and order your stops.",
-            "When you search for an address or optimize a route, we send the search text, your current location (as a starting point or to rank results), and your stops' addresses and coordinates through our servers to Google Maps Platform. We do not keep a history of your location."
+            "When you search for an address or optimize a route, we send the search text, your current location (as a starting point or to rank results), and your stops' addresses and coordinates through our servers to Google Maps Platform. We do not keep a history of your location.",
+            "In Québec, the app also downloads the public address list of the city you are in, and of the cities you add in your profile, from RouteWise storage at Supabase, and searches it on your device. The download only shows which city's list was requested, not your exact location."
           ]
         ],
         [
@@ -80,7 +81,7 @@ export const legalDocuments = {
         [
           "9. Service providers and international transfers",
           [
-            "RouteWise uses these providers, each only for its function: Supabase (accounts and database), Render (RouteWise servers), Vercel (website and its visit counts), Google Maps Platform (address search, places, and routes), OpenAI (reading addresses from photos and imports), Apple, Google Play, and RevenueCat (subscriptions), Sentry (error reports), Google Groups (the Android testers group), and an email delivery provider (account emails).",
+            "RouteWise uses these providers, each only for its function: Supabase (accounts, database, and city address lists), Render (RouteWise servers), Vercel (website and its visit counts), Google Maps Platform (address search, places, and routes), OpenAI (reading addresses from photos and imports), Apple, Google Play, and RevenueCat (subscriptions), Sentry (error reports), Google Groups (the Android testers group), and an email delivery provider (account emails).",
             "These providers may process data outside your country, including in the United States, under their own security and privacy obligations."
           ]
         ],
@@ -119,7 +120,7 @@ export const legalDocuments = {
     },
     "terms": {
       "title": "RouteWise Terms of Use",
-      "updated": "Last updated: June 9, 2026",
+      "updated": "Last updated: November 14, 2026",
       "intro": "These terms explain the conditions for using the RouteWise app, the website, and RouteWise Pro.",
       "sections": [
         [
@@ -178,6 +179,7 @@ export const legalDocuments = {
           "8. Intellectual property and legal compliance",
           [
             "All rights in RouteWise, including software, brand, design, text, structure, and product content, belong to RouteWise or its licensors.",
+            "Québec addresses come from the <a href=\"https://www.donneesquebec.ca/recherche/dataset/referentiel-quebecois-des-adresses\">Référentiel québécois des adresses</a> of the Gouvernement du Québec, used under the <a href=\"https://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution 4.0 International (CC BY 4.0)</a> license. RouteWise converts this data into per-city files for searching on the device. The Gouvernement du Québec does not endorse RouteWise.",
             "You represent that you are not located in a country subject to a U.S. government embargo, that you are not in a country designated by the U.S. government as supporting terrorism, and that you are not listed on any U.S. government prohibited or restricted party list."
           ]
         ],
@@ -210,7 +212,7 @@ export const legalDocuments = {
     "footer": "Otimize rotas, importe endereços e envie entregas para o mapa certo.",
     "privacy": {
       "title": "Política de Privacidade do RouteWise",
-      "updated": "Última atualização: 22 de outubro de 2026",
+      "updated": "Última atualização: 14 de novembro de 2026",
       "intro": "Esta política explica quais informações o RouteWise usa, por que elas são usadas, quem as processa e quais escolhas você tem sobre seus dados.",
       "sections": [
         [
@@ -238,7 +240,8 @@ export const legalDocuments = {
           "4. Localização, mapas e rotas",
           [
             "Com a sua permissão, o app usa a sua localização atual no aparelho para centralizar o mapa e ordenar suas paradas.",
-            "Quando você busca um endereço ou otimiza uma rota, enviamos o texto da busca, a sua localização atual (como ponto de partida ou para ordenar os resultados) e os endereços e coordenadas das suas paradas, pelos nossos servidores, à Google Maps Platform. Não guardamos histórico da sua localização."
+            "Quando você busca um endereço ou otimiza uma rota, enviamos o texto da busca, a sua localização atual (como ponto de partida ou para ordenar os resultados) e os endereços e coordenadas das suas paradas, pelos nossos servidores, à Google Maps Platform. Não guardamos histórico da sua localização.",
+            "No Québec, o app também baixa a lista pública de endereços da cidade onde você está, e das cidades que você adicionar no seu perfil, do armazenamento do RouteWise no Supabase, e faz a busca nela no seu aparelho. O download mostra apenas de qual cidade é a lista pedida, não a sua localização exata."
           ]
         ],
         [
@@ -273,7 +276,7 @@ export const legalDocuments = {
         [
           "9. Prestadores de serviço e transferência internacional",
           [
-            "O RouteWise usa estes prestadores, cada um só para a sua função: Supabase (contas e banco de dados), Render (servidores do RouteWise), Vercel (site e contagem de visitas), Google Maps Platform (busca de endereços, lugares e rotas), OpenAI (leitura de endereços em fotos e importações), Apple, Google Play e RevenueCat (assinaturas), Sentry (relatórios de erro), Google Grupos (grupo de testadores Android) e um provedor de envio de e-mails (e-mails da conta).",
+            "O RouteWise usa estes prestadores, cada um só para a sua função: Supabase (contas, banco de dados e listas de endereços das cidades), Render (servidores do RouteWise), Vercel (site e contagem de visitas), Google Maps Platform (busca de endereços, lugares e rotas), OpenAI (leitura de endereços em fotos e importações), Apple, Google Play e RevenueCat (assinaturas), Sentry (relatórios de erro), Google Grupos (grupo de testadores Android) e um provedor de envio de e-mails (e-mails da conta).",
             "Esses prestadores podem processar dados fora do seu país, inclusive nos Estados Unidos, conforme suas próprias obrigações de segurança e privacidade."
           ]
         ],
@@ -312,7 +315,7 @@ export const legalDocuments = {
     },
     "terms": {
       "title": "Termos de Uso do RouteWise",
-      "updated": "Última atualização: 9 de junho de 2026",
+      "updated": "Última atualização: 14 de novembro de 2026",
       "intro": "Estes termos explicam as condições para usar o app RouteWise, o site e o RouteWise Pro.",
       "sections": [
         [
@@ -371,6 +374,7 @@ export const legalDocuments = {
           "8. Propriedade intelectual e conformidade legal",
           [
             "Todos os direitos do RouteWise, incluindo software, marca, design, textos, estrutura e conteúdo do produto, pertencem ao RouteWise ou a seus licenciadores.",
+            "Os endereços do Québec vêm do <a href=\"https://www.donneesquebec.ca/recherche/dataset/referentiel-quebecois-des-adresses\">Référentiel québécois des adresses</a>, do Gouvernement du Québec, usado sob a licença <a href=\"https://creativecommons.org/licenses/by/4.0/\">Creative Commons Atribuição 4.0 Internacional (CC BY 4.0)</a>. O RouteWise converte esses dados em arquivos por cidade para a busca no aparelho. O Gouvernement du Québec não endossa o RouteWise.",
             "Você declara que não está localizado em país sujeito a embargo do governo dos EUA, que não está em país designado pelo governo dos EUA como apoiador de terrorismo e que não está em listas governamentais de partes proibidas ou restritas."
           ]
         ],
@@ -403,7 +407,7 @@ export const legalDocuments = {
     "footer": "Optimisez les itinéraires, importez les adresses et envoyez les livraisons vers la bonne carte.",
     "privacy": {
       "title": "Politique de confidentialité de RouteWise",
-      "updated": "Dernière mise à jour : 22 octobre 2026",
+      "updated": "Dernière mise à jour : 14 novembre 2026",
       "intro": "Cette politique explique quelles informations RouteWise utilise, pourquoi elles sont utilisées, qui les traite et quels choix vous avez sur vos données.",
       "sections": [
         [
@@ -431,7 +435,8 @@ export const legalDocuments = {
           "4. Localisation, cartes et itinéraires",
           [
             "Avec votre permission, l’app utilise votre position actuelle sur l’appareil pour centrer la carte et ordonner vos arrêts.",
-            "Quand vous cherchez une adresse ou optimisez un itinéraire, nous envoyons le texte de recherche, votre position actuelle (comme point de départ ou pour classer les résultats) ainsi que les adresses et coordonnées de vos arrêts, par nos serveurs, à Google Maps Platform. Nous ne conservons pas d’historique de votre position."
+            "Quand vous cherchez une adresse ou optimisez un itinéraire, nous envoyons le texte de recherche, votre position actuelle (comme point de départ ou pour classer les résultats) ainsi que les adresses et coordonnées de vos arrêts, par nos serveurs, à Google Maps Platform. Nous ne conservons pas d’historique de votre position.",
+            "Au Québec, l’app télécharge aussi la liste publique d’adresses de la ville où vous êtes, et des villes que vous ajoutez dans votre profil, depuis le stockage de RouteWise chez Supabase, et y fait la recherche sur votre appareil. Le téléchargement indique seulement la ville dont la liste est demandée, pas votre position exacte."
           ]
         ],
         [
@@ -466,7 +471,7 @@ export const legalDocuments = {
         [
           "9. Fournisseurs de services et transferts internationaux",
           [
-            "RouteWise utilise ces fournisseurs, chacun seulement pour sa fonction : Supabase (comptes et base de données), Render (serveurs de RouteWise), Vercel (site Web et décompte des visites), Google Maps Platform (recherche d’adresses, lieux et itinéraires), OpenAI (lecture d’adresses dans les photos et les importations), Apple, Google Play et RevenueCat (abonnements), Sentry (rapports d’erreur), Google Groupes (groupe de testeurs Android) et un fournisseur d’envoi de courriels (courriels du compte).",
+            "RouteWise utilise ces fournisseurs, chacun seulement pour sa fonction : Supabase (comptes, base de données et listes d’adresses des villes), Render (serveurs de RouteWise), Vercel (site Web et décompte des visites), Google Maps Platform (recherche d’adresses, lieux et itinéraires), OpenAI (lecture d’adresses dans les photos et les importations), Apple, Google Play et RevenueCat (abonnements), Sentry (rapports d’erreur), Google Groupes (groupe de testeurs Android) et un fournisseur d’envoi de courriels (courriels du compte).",
             "Ces fournisseurs peuvent traiter des données hors de votre pays, notamment aux États-Unis, selon leurs propres obligations de sécurité et de confidentialité."
           ]
         ],
@@ -505,7 +510,7 @@ export const legalDocuments = {
     },
     "terms": {
       "title": "Conditions d’utilisation de RouteWise",
-      "updated": "Dernière mise à jour : 9 juin 2026",
+      "updated": "Dernière mise à jour : 14 novembre 2026",
       "intro": "Ces conditions expliquent les règles d’utilisation de l’app RouteWise, du site et de RouteWise Pro.",
       "sections": [
         [
@@ -564,6 +569,7 @@ export const legalDocuments = {
           "8. Propriété intellectuelle et conformité légale",
           [
             "Tous les droits de RouteWise, y compris le logiciel, la marque, le design, les textes, la structure et le contenu du produit, appartiennent à RouteWise ou à ses concédants.",
+            "Les adresses du Québec proviennent du <a href=\"https://www.donneesquebec.ca/recherche/dataset/referentiel-quebecois-des-adresses\">Référentiel québécois des adresses</a> du Gouvernement du Québec, utilisé selon la licence <a href=\"https://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution 4.0 International (CC BY 4.0)</a>. RouteWise convertit ces données en fichiers par ville pour la recherche sur l’appareil. Le Gouvernement du Québec n’endosse pas RouteWise.",
             "Vous déclarez ne pas être situé dans un pays soumis à un embargo du gouvernement américain, ne pas être dans un pays désigné par le gouvernement américain comme soutenant le terrorisme et ne pas figurer sur une liste gouvernementale américaine de parties interdites ou restreintes."
           ]
         ],
@@ -596,7 +602,7 @@ export const legalDocuments = {
     "footer": "Optimiza rutas, importa direcciones y envía entregas al mapa correcto.",
     "privacy": {
       "title": "Política de Privacidad de RouteWise",
-      "updated": "Última actualización: 22 de octubre de 2026",
+      "updated": "Última actualización: 14 de noviembre de 2026",
       "intro": "Esta política explica qué información usa RouteWise, por qué se usa, quién la procesa y qué opciones tienes sobre tus datos.",
       "sections": [
         [
@@ -624,7 +630,8 @@ export const legalDocuments = {
           "4. Ubicación, mapas y rutas",
           [
             "Con tu permiso, la app usa tu ubicación actual en el dispositivo para centrar el mapa y ordenar tus paradas.",
-            "Cuando buscas una dirección u optimizas una ruta, enviamos el texto de búsqueda, tu ubicación actual (como punto de partida o para ordenar los resultados) y las direcciones y coordenadas de tus paradas, a través de nuestros servidores, a Google Maps Platform. No guardamos un historial de tu ubicación."
+            "Cuando buscas una dirección u optimizas una ruta, enviamos el texto de búsqueda, tu ubicación actual (como punto de partida o para ordenar los resultados) y las direcciones y coordenadas de tus paradas, a través de nuestros servidores, a Google Maps Platform. No guardamos un historial de tu ubicación.",
+            "En Québec, la app también descarga la lista pública de direcciones de la ciudad donde estás, y de las ciudades que agregues en tu perfil, desde el almacenamiento de RouteWise en Supabase, y la consulta en tu dispositivo. La descarga solo muestra de qué ciudad es la lista solicitada, no tu ubicación exacta."
           ]
         ],
         [
@@ -659,7 +666,7 @@ export const legalDocuments = {
         [
           "9. Proveedores de servicios y transferencias internacionales",
           [
-            "RouteWise usa estos proveedores, cada uno solo para su función: Supabase (cuentas y base de datos), Render (servidores de RouteWise), Vercel (sitio web y conteo de visitas), Google Maps Platform (búsqueda de direcciones, lugares y rutas), OpenAI (lectura de direcciones en fotos e importaciones), Apple, Google Play y RevenueCat (suscripciones), Sentry (informes de errores), Grupos de Google (grupo de testers de Android) y un proveedor de envío de correos (correos de la cuenta).",
+            "RouteWise usa estos proveedores, cada uno solo para su función: Supabase (cuentas, base de datos y listas de direcciones de las ciudades), Render (servidores de RouteWise), Vercel (sitio web y conteo de visitas), Google Maps Platform (búsqueda de direcciones, lugares y rutas), OpenAI (lectura de direcciones en fotos e importaciones), Apple, Google Play y RevenueCat (suscripciones), Sentry (informes de errores), Grupos de Google (grupo de testers de Android) y un proveedor de envío de correos (correos de la cuenta).",
             "Estos proveedores pueden procesar datos fuera de tu país, incluso en Estados Unidos, conforme a sus propias obligaciones de seguridad y privacidad."
           ]
         ],
@@ -698,7 +705,7 @@ export const legalDocuments = {
     },
     "terms": {
       "title": "Términos de Uso de RouteWise",
-      "updated": "Última actualización: 9 de junio de 2026",
+      "updated": "Última actualización: 14 de noviembre de 2026",
       "intro": "Estos términos explican las condiciones para usar la app RouteWise, el sitio y RouteWise Pro.",
       "sections": [
         [
@@ -757,6 +764,7 @@ export const legalDocuments = {
           "8. Propiedad intelectual y cumplimiento legal",
           [
             "Todos los derechos de RouteWise, incluyendo software, marca, diseño, textos, estructura y contenido del producto, pertenecen a RouteWise o a sus licenciantes.",
+            "Las direcciones de Québec provienen del <a href=\"https://www.donneesquebec.ca/recherche/dataset/referentiel-quebecois-des-adresses\">Référentiel québécois des adresses</a> del Gouvernement du Québec, usado bajo la licencia <a href=\"https://creativecommons.org/licenses/by/4.0/\">Creative Commons Atribución 4.0 Internacional (CC BY 4.0)</a>. RouteWise convierte estos datos en archivos por ciudad para la búsqueda en el dispositivo. El Gouvernement du Québec no respalda a RouteWise.",
             "Declaras que no estás ubicado en un país sujeto a embargo del gobierno de EE. UU., que no estás en un país designado por el gobierno de EE. UU. como patrocinador del terrorismo y que no estás en listas gubernamentales de partes prohibidas o restringidas."
           ]
         ],

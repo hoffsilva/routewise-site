@@ -30,6 +30,17 @@ describe('legal text', () => {
     }
   });
 
+  it('credits the Québec address data under its CC BY 4.0 license and discloses the city downloads (hoffsilva/routewise#85)', () => {
+    for (const lang of LOCALES) {
+      const terms = JSON.stringify(legalDocuments[lang].terms);
+      expect(terms).toContain('Référentiel québécois des adresses');
+      expect(terms).toContain('Gouvernement du Québec');
+      expect(terms).toContain('https://creativecommons.org/licenses/by/4.0/');
+      expect(terms).toContain('https://www.donneesquebec.ca/recherche/dataset/referentiel-quebecois-des-adresses');
+      expect(JSON.stringify(legalDocuments[lang].privacy)).toMatch(/Québec/);
+    }
+  });
+
   it('has an account deletion page with the same steps in every language (Google Play data safety)', () => {
     const [first, ...others] = LOCALES;
     for (const lang of others) {

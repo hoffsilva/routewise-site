@@ -17,7 +17,7 @@ export const legalDocuments = {
     "footer": "Optimize routes, import addresses, and send deliveries to the right map.",
     "privacy": {
       "title": "RouteWise Privacy Policy",
-      "updated": "Last updated: November 14, 2026",
+      "updated": "Last updated: November 18, 2026",
       "intro": "This policy explains what information RouteWise uses, why it is used, who processes it, and what choices you have over your data.",
       "sections": [
         [
@@ -31,14 +31,14 @@ export const legalDocuments = {
           "2. Data you provide",
           [
             "Account data: email address, user identifier, language preference, plan, and subscription status.",
-            "Delivery data: stops (names, addresses, coordinates, and notes), delivery history, address lists and files you import, and photos of labels or documents you scan, plus your app settings such as the navigation app you prefer."
+            "Delivery data: stops (names, addresses, coordinates, and notes), delivery history, the time you spend adding stops and the number of packages added each day, address lists and files you import, and photos of labels or documents you scan, plus your app settings such as the navigation app you prefer."
           ]
         ],
         [
           "3. Data on your device and backup",
           [
-            "Your stops and delivery history are stored on your device, linked to your account. Session tokens are kept in the device's secure storage.",
-            "When backup and sync is available in your version of the app, your stops and delivery history are also stored on RouteWise servers, linked to your account, so you can restore them after reinstalling or on another device. When you delete a stop, it is removed from our servers; we keep only its identifier and deletion date so your other devices remove it too."
+            "Your stops, your delivery history, and the time spent adding stops and the number of packages added each day are stored on your device, linked to your account. Session tokens are kept in the device's secure storage.",
+            "When backup and sync is available in your version of the app, your stops, your delivery history, and those daily figures are also stored on RouteWise servers, linked to your account, so you can restore them after reinstalling or on another device. When you delete a stop, it is removed from our servers; we keep only its identifier and deletion date so your other devices remove it too."
           ]
         ],
         [
@@ -212,7 +212,7 @@ export const legalDocuments = {
     "footer": "Otimize rotas, importe endereços e envie entregas para o mapa certo.",
     "privacy": {
       "title": "Política de Privacidade do RouteWise",
-      "updated": "Última atualização: 14 de novembro de 2026",
+      "updated": "Última atualização: 18 de novembro de 2026",
       "intro": "Esta política explica quais informações o RouteWise usa, por que elas são usadas, quem as processa e quais escolhas você tem sobre seus dados.",
       "sections": [
         [
@@ -226,14 +226,14 @@ export const legalDocuments = {
           "2. Dados que você fornece",
           [
             "Dados de conta: e-mail, identificador de usuário, preferência de idioma, plano e estado da assinatura.",
-            "Dados de entrega: paradas (nomes, endereços, coordenadas e observações), histórico de entregas, listas e arquivos de endereços que você importa e fotos de etiquetas ou documentos que você lê com a câmera, além das configurações do app, como o app de navegação preferido."
+            "Dados de entrega: paradas (nomes, endereços, coordenadas e observações), histórico de entregas, o tempo que você leva para adicionar paradas e o número de pacotes adicionados em cada dia, listas e arquivos de endereços que você importa e fotos de etiquetas ou documentos que você lê com a câmera, além das configurações do app, como o app de navegação preferido."
           ]
         ],
         [
           "3. Dados no seu aparelho e backup",
           [
-            "Suas paradas e seu histórico de entregas ficam armazenados no seu aparelho, ligados à sua conta. Os tokens de sessão ficam no armazenamento seguro do aparelho.",
-            "Quando o backup e a sincronização estiverem disponíveis na sua versão do app, suas paradas e seu histórico de entregas também ficam armazenados nos servidores do RouteWise, ligados à sua conta, para você recuperá-los ao reinstalar o app ou em outro aparelho. Quando você exclui uma parada, ela é removida dos nossos servidores; guardamos só o identificador e a data da exclusão para que seus outros aparelhos também a removam."
+            "Suas paradas, seu histórico de entregas e o tempo gasto adicionando paradas e o número de pacotes adicionados em cada dia ficam armazenados no seu aparelho, ligados à sua conta. Os tokens de sessão ficam no armazenamento seguro do aparelho.",
+            "Quando o backup e a sincronização estiverem disponíveis na sua versão do app, suas paradas, seu histórico de entregas e esses números diários também ficam armazenados nos servidores do RouteWise, ligados à sua conta, para você recuperá-los ao reinstalar o app ou em outro aparelho. Quando você exclui uma parada, ela é removida dos nossos servidores; guardamos só o identificador e a data da exclusão para que seus outros aparelhos também a removam."
           ]
         ],
         [
@@ -407,7 +407,7 @@ export const legalDocuments = {
     "footer": "Optimisez les itinéraires, importez les adresses et envoyez les livraisons vers la bonne carte.",
     "privacy": {
       "title": "Politique de confidentialité de RouteWise",
-      "updated": "Dernière mise à jour : 14 novembre 2026",
+      "updated": "Dernière mise à jour : 18 novembre 2026",
       "intro": "Cette politique explique quelles informations RouteWise utilise, pourquoi elles sont utilisées, qui les traite et quels choix vous avez sur vos données.",
       "sections": [
         [
@@ -421,14 +421,14 @@ export const legalDocuments = {
           "2. Données que vous fournissez",
           [
             "Données de compte : adresse courriel, identifiant d’utilisateur, langue préférée, forfait et état de l’abonnement.",
-            "Données de livraison : arrêts (noms, adresses, coordonnées et notes), historique des livraisons, listes et fichiers d’adresses que vous importez et photos d’étiquettes ou de documents que vous numérisez, ainsi que les réglages de l’app, comme l’app de navigation que vous préférez."
+            "Données de livraison : arrêts (noms, adresses, coordonnées et notes), historique des livraisons, le temps que vous passez à ajouter des arrêts et le nombre de colis ajoutés chaque jour, listes et fichiers d’adresses que vous importez et photos d’étiquettes ou de documents que vous numérisez, ainsi que les réglages de l’app, comme l’app de navigation que vous préférez."
           ]
         ],
         [
           "3. Données sur votre appareil et sauvegarde",
           [
-            "Vos arrêts et votre historique de livraisons sont stockés sur votre appareil, liés à votre compte. Les jetons de session sont conservés dans le stockage sécurisé de l’appareil.",
-            "Lorsque la sauvegarde et la synchronisation sont offertes dans votre version de l’app, vos arrêts et votre historique de livraisons sont aussi stockés sur les serveurs de RouteWise, liés à votre compte, pour que vous puissiez les récupérer après une réinstallation ou sur un autre appareil. Quand vous supprimez un arrêt, il est retiré de nos serveurs; nous conservons seulement son identifiant et la date de suppression pour que vos autres appareils le suppriment aussi."
+            "Vos arrêts, votre historique de livraisons, ainsi que le temps passé à ajouter des arrêts et le nombre de colis ajoutés chaque jour, sont stockés sur votre appareil, liés à votre compte. Les jetons de session sont conservés dans le stockage sécurisé de l’appareil.",
+            "Lorsque la sauvegarde et la synchronisation sont offertes dans votre version de l’app, vos arrêts, votre historique de livraisons et ces données quotidiennes sont aussi stockés sur les serveurs de RouteWise, liés à votre compte, pour que vous puissiez les récupérer après une réinstallation ou sur un autre appareil. Quand vous supprimez un arrêt, il est retiré de nos serveurs; nous conservons seulement son identifiant et la date de suppression pour que vos autres appareils le suppriment aussi."
           ]
         ],
         [
@@ -602,7 +602,7 @@ export const legalDocuments = {
     "footer": "Optimiza rutas, importa direcciones y envía entregas al mapa correcto.",
     "privacy": {
       "title": "Política de Privacidad de RouteWise",
-      "updated": "Última actualización: 14 de noviembre de 2026",
+      "updated": "Última actualización: 18 de noviembre de 2026",
       "intro": "Esta política explica qué información usa RouteWise, por qué se usa, quién la procesa y qué opciones tienes sobre tus datos.",
       "sections": [
         [
@@ -616,14 +616,14 @@ export const legalDocuments = {
           "2. Datos que proporcionas",
           [
             "Datos de cuenta: correo electrónico, identificador de usuario, preferencia de idioma, plan y estado de la suscripción.",
-            "Datos de entrega: paradas (nombres, direcciones, coordenadas y notas), historial de entregas, listas y archivos de direcciones que importas y fotos de etiquetas o documentos que escaneas, además de la configuración de la app, como la app de navegación que prefieres."
+            "Datos de entrega: paradas (nombres, direcciones, coordenadas y notas), historial de entregas, el tiempo que dedicas a agregar paradas y la cantidad de paquetes agregados cada día, listas y archivos de direcciones que importas y fotos de etiquetas o documentos que escaneas, además de la configuración de la app, como la app de navegación que prefieres."
           ]
         ],
         [
           "3. Datos en tu dispositivo y copia de seguridad",
           [
-            "Tus paradas y tu historial de entregas se guardan en tu dispositivo, vinculados a tu cuenta. Los tokens de sesión se guardan en el almacenamiento seguro del dispositivo.",
-            "Cuando la copia de seguridad y la sincronización estén disponibles en tu versión de la app, tus paradas y tu historial de entregas también se guardan en los servidores de RouteWise, vinculados a tu cuenta, para que puedas recuperarlos al reinstalar la app o en otro dispositivo. Cuando eliminas una parada, se borra de nuestros servidores; solo conservamos su identificador y la fecha de eliminación para que tus otros dispositivos también la eliminen."
+            "Tus paradas, tu historial de entregas y el tiempo dedicado a agregar paradas y la cantidad de paquetes agregados cada día se guardan en tu dispositivo, vinculados a tu cuenta. Los tokens de sesión se guardan en el almacenamiento seguro del dispositivo.",
+            "Cuando la copia de seguridad y la sincronización estén disponibles en tu versión de la app, tus paradas, tu historial de entregas y esas cifras diarias también se guardan en los servidores de RouteWise, vinculados a tu cuenta, para que puedas recuperarlos al reinstalar la app o en otro dispositivo. Cuando eliminas una parada, se borra de nuestros servidores; solo conservamos su identificador y la fecha de eliminación para que tus otros dispositivos también la eliminen."
           ]
         ],
         [

@@ -17,7 +17,7 @@ export const legalDocuments = {
     "footer": "Optimize routes, import addresses, and send deliveries to the right map.",
     "privacy": {
       "title": "RouteWise Privacy Policy",
-      "updated": "Last updated: November 18, 2026",
+      "updated": "Last updated: November 19, 2026",
       "intro": "This policy explains what information RouteWise uses, why it is used, who processes it, and what choices you have over your data.",
       "sections": [
         [
@@ -75,13 +75,13 @@ export const legalDocuments = {
           "8. Usage limits and diagnostics",
           [
             "We count, per account and per day, the address lookups, label scans, and imports you use, to apply your plan's limits and show your remaining usage.",
-            "When the app crashes or hits an error, we send a report to Sentry with technical details (app version, device, request identifier) and your user identifier, without your addresses, stop names, photos, email, or tokens. Our server logs follow the same rule. On routewise.app, we count page visits with Vercel Web Analytics, which uses no cookies and does not identify you. RouteWise does not show ads, does not sell your data, and does not track you across other apps or websites."
+            "When the app crashes or hits an error, we send a report to Sentry with technical details (app version, device, request identifier) and your user identifier, without your addresses, stop names, photos, email, or tokens. Our server logs follow the same rule. To understand how the app is used and improve it, the app also sends anonymous usage statistics to PostHog: which screens and features are used, counts (such as the number of stops), durations, and error codes, along with the app version, platform (iOS or Android), language, and plan. They never include your addresses, stop names, coordinates, text read from labels or imports, email, or user identifier, and each app session gets a new random identifier, so these statistics are not linked to you, your account, or your other sessions. On routewise.app, we count page visits with Vercel Web Analytics, which uses no cookies and does not identify you. RouteWise does not show ads, does not sell your data, and does not track you across other apps or websites."
           ]
         ],
         [
           "9. Service providers and international transfers",
           [
-            "RouteWise uses these providers, each only for its function: Supabase (accounts, database, and city address lists), Render (RouteWise servers), Vercel (website and its visit counts), Google Maps Platform (address search, places, and routes), OpenAI (reading addresses from photos and imports), Apple, Google Play, and RevenueCat (subscriptions), Sentry (error reports), Google Groups (the Android testers group), and an email delivery provider (account emails).",
+            "RouteWise uses these providers, each only for its function: Supabase (accounts, database, and city address lists), Render (RouteWise servers), Vercel (website and its visit counts), Google Maps Platform (address search, places, and routes), OpenAI (reading addresses from photos and imports), Apple, Google Play, and RevenueCat (subscriptions), Sentry (error reports), PostHog (anonymous app usage statistics), Google Groups (the Android testers group), and an email delivery provider (account emails).",
             "These providers may process data outside your country, including in the United States, under their own security and privacy obligations."
           ]
         ],
@@ -97,7 +97,7 @@ export const legalDocuments = {
           "11. Retention and security",
           [
             "We keep your data while your account is active and as needed to provide the service, comply with legal obligations, resolve disputes, and protect the platform.",
-            "We delete your account from RouteWise systems immediately. Copies kept by our providers, such as database backups, error reports, and payment-store records, expire on those providers' retention schedules (error reports, for example, after up to 90 days), unless the law requires keeping them longer.",
+            "We delete your account from RouteWise systems immediately. Copies kept by our providers, such as database backups, error reports, and payment-store records, expire on those providers' retention schedules (error reports, for example, after up to 90 days), unless the law requires keeping them longer. Anonymous usage statistics are not linked to your account, so deleting it does not remove them; they are deleted after 12 months.",
             "No system is 100% secure. We use reasonable protection measures, but cannot guarantee absolute security against all threats."
           ]
         ],
@@ -212,7 +212,7 @@ export const legalDocuments = {
     "footer": "Otimize rotas, importe endereços e envie entregas para o mapa certo.",
     "privacy": {
       "title": "Política de Privacidade do RouteWise",
-      "updated": "Última atualização: 18 de novembro de 2026",
+      "updated": "Última atualização: 19 de novembro de 2026",
       "intro": "Esta política explica quais informações o RouteWise usa, por que elas são usadas, quem as processa e quais escolhas você tem sobre seus dados.",
       "sections": [
         [
@@ -270,13 +270,13 @@ export const legalDocuments = {
           "8. Limites de uso e diagnóstico",
           [
             "Contamos, por conta e por dia, as buscas de endereço, leituras de etiqueta e importações que você usa, para aplicar os limites do seu plano e mostrar quanto ainda resta.",
-            "Quando o app trava ou encontra um erro, enviamos um relatório ao Sentry com detalhes técnicos (versão do app, aparelho, identificador da requisição) e o seu identificador de usuário, sem seus endereços, nomes de paradas, fotos, e-mail ou tokens. Os logs dos nossos servidores seguem a mesma regra. No site routewise.app, contamos as visitas às páginas com o Vercel Web Analytics, que não usa cookies e não identifica você. O RouteWise não exibe anúncios, não vende seus dados e não rastreia você em outros apps ou sites."
+            "Quando o app trava ou encontra um erro, enviamos um relatório ao Sentry com detalhes técnicos (versão do app, aparelho, identificador da requisição) e o seu identificador de usuário, sem seus endereços, nomes de paradas, fotos, e-mail ou tokens. Os logs dos nossos servidores seguem a mesma regra. Para entender como o app é usado e melhorá-lo, o app também envia estatísticas anônimas de uso ao PostHog: quais telas e funções são usadas, contagens (como o número de paradas), durações e códigos de erro, junto com a versão do app, a plataforma (iOS ou Android), o idioma e o plano. Elas nunca incluem seus endereços, nomes de paradas, coordenadas, textos lidos de etiquetas ou importações, e-mail ou identificador de usuário, e cada sessão do app recebe um identificador aleatório novo, então essas estatísticas não são vinculadas a você, à sua conta nem às suas outras sessões. No site routewise.app, contamos as visitas às páginas com o Vercel Web Analytics, que não usa cookies e não identifica você. O RouteWise não exibe anúncios, não vende seus dados e não rastreia você em outros apps ou sites."
           ]
         ],
         [
           "9. Prestadores de serviço e transferência internacional",
           [
-            "O RouteWise usa estes prestadores, cada um só para a sua função: Supabase (contas, banco de dados e listas de endereços das cidades), Render (servidores do RouteWise), Vercel (site e contagem de visitas), Google Maps Platform (busca de endereços, lugares e rotas), OpenAI (leitura de endereços em fotos e importações), Apple, Google Play e RevenueCat (assinaturas), Sentry (relatórios de erro), Google Grupos (grupo de testadores Android) e um provedor de envio de e-mails (e-mails da conta).",
+            "O RouteWise usa estes prestadores, cada um só para a sua função: Supabase (contas, banco de dados e listas de endereços das cidades), Render (servidores do RouteWise), Vercel (site e contagem de visitas), Google Maps Platform (busca de endereços, lugares e rotas), OpenAI (leitura de endereços em fotos e importações), Apple, Google Play e RevenueCat (assinaturas), Sentry (relatórios de erro), PostHog (estatísticas anônimas de uso do app), Google Grupos (grupo de testadores Android) e um provedor de envio de e-mails (e-mails da conta).",
             "Esses prestadores podem processar dados fora do seu país, inclusive nos Estados Unidos, conforme suas próprias obrigações de segurança e privacidade."
           ]
         ],
@@ -292,7 +292,7 @@ export const legalDocuments = {
           "11. Retenção e segurança",
           [
             "Mantemos seus dados enquanto sua conta estiver ativa e pelo tempo necessário para fornecer o serviço, cumprir obrigações legais, resolver disputas e proteger a plataforma.",
-            "Excluímos sua conta dos sistemas do RouteWise imediatamente. Cópias mantidas pelos nossos prestadores, como backups do banco de dados, relatórios de erro e registros das lojas de pagamento, expiram conforme os prazos de retenção desses prestadores (os relatórios de erro, por exemplo, em até 90 dias), salvo quando a lei exigir guardá-las por mais tempo.",
+            "Excluímos sua conta dos sistemas do RouteWise imediatamente. Cópias mantidas pelos nossos prestadores, como backups do banco de dados, relatórios de erro e registros das lojas de pagamento, expiram conforme os prazos de retenção desses prestadores (os relatórios de erro, por exemplo, em até 90 dias), salvo quando a lei exigir guardá-las por mais tempo. As estatísticas anônimas de uso não são vinculadas à sua conta, então excluí-la não as remove; elas são apagadas após 12 meses.",
             "Nenhum sistema é 100% seguro. Usamos medidas razoáveis de proteção, mas não podemos garantir segurança absoluta contra todas as ameaças."
           ]
         ],
@@ -407,7 +407,7 @@ export const legalDocuments = {
     "footer": "Optimisez les itinéraires, importez les adresses et envoyez les livraisons vers la bonne carte.",
     "privacy": {
       "title": "Politique de confidentialité de RouteWise",
-      "updated": "Dernière mise à jour : 18 novembre 2026",
+      "updated": "Dernière mise à jour : 19 novembre 2026",
       "intro": "Cette politique explique quelles informations RouteWise utilise, pourquoi elles sont utilisées, qui les traite et quels choix vous avez sur vos données.",
       "sections": [
         [
@@ -465,13 +465,13 @@ export const legalDocuments = {
           "8. Limites d’utilisation et diagnostics",
           [
             "Nous comptons, par compte et par jour, les recherches d’adresses, lectures d’étiquettes et importations que vous utilisez, pour appliquer les limites de votre forfait et vous montrer ce qu’il vous reste.",
-            "Quand l’app plante ou rencontre une erreur, nous envoyons un rapport à Sentry avec des détails techniques (version de l’app, appareil, identifiant de la requête) et votre identifiant d’utilisateur, sans vos adresses, noms d’arrêts, photos, courriel ni jetons. Les journaux de nos serveurs suivent la même règle. Sur routewise.app, nous comptons les visites des pages avec Vercel Web Analytics, qui n’utilise pas de témoins (cookies) et ne vous identifie pas. RouteWise n’affiche pas de publicité, ne vend pas vos données et ne vous suit pas dans d’autres apps ou sites Web."
+            "Quand l’app plante ou rencontre une erreur, nous envoyons un rapport à Sentry avec des détails techniques (version de l’app, appareil, identifiant de la requête) et votre identifiant d’utilisateur, sans vos adresses, noms d’arrêts, photos, courriel ni jetons. Les journaux de nos serveurs suivent la même règle. Pour comprendre comment l’app est utilisée et l’améliorer, l’app envoie aussi des statistiques d’utilisation anonymes à PostHog : les écrans et fonctions utilisés, des décomptes (comme le nombre d’arrêts), des durées et des codes d’erreur, avec la version de l’app, la plateforme (iOS ou Android), la langue et le forfait. Elles n’incluent jamais vos adresses, noms d’arrêts, coordonnées, textes lus sur des étiquettes ou des importations, courriel ni identifiant d’utilisateur, et chaque session de l’app reçoit un nouvel identifiant aléatoire : ces statistiques ne sont donc liées ni à vous, ni à votre compte, ni à vos autres sessions. Sur routewise.app, nous comptons les visites des pages avec Vercel Web Analytics, qui n’utilise pas de témoins (cookies) et ne vous identifie pas. RouteWise n’affiche pas de publicité, ne vend pas vos données et ne vous suit pas dans d’autres apps ou sites Web."
           ]
         ],
         [
           "9. Fournisseurs de services et transferts internationaux",
           [
-            "RouteWise utilise ces fournisseurs, chacun seulement pour sa fonction : Supabase (comptes, base de données et listes d’adresses des villes), Render (serveurs de RouteWise), Vercel (site Web et décompte des visites), Google Maps Platform (recherche d’adresses, lieux et itinéraires), OpenAI (lecture d’adresses dans les photos et les importations), Apple, Google Play et RevenueCat (abonnements), Sentry (rapports d’erreur), Google Groupes (groupe de testeurs Android) et un fournisseur d’envoi de courriels (courriels du compte).",
+            "RouteWise utilise ces fournisseurs, chacun seulement pour sa fonction : Supabase (comptes, base de données et listes d’adresses des villes), Render (serveurs de RouteWise), Vercel (site Web et décompte des visites), Google Maps Platform (recherche d’adresses, lieux et itinéraires), OpenAI (lecture d’adresses dans les photos et les importations), Apple, Google Play et RevenueCat (abonnements), Sentry (rapports d’erreur), PostHog (statistiques d’utilisation anonymes de l’app), Google Groupes (groupe de testeurs Android) et un fournisseur d’envoi de courriels (courriels du compte).",
             "Ces fournisseurs peuvent traiter des données hors de votre pays, notamment aux États-Unis, selon leurs propres obligations de sécurité et de confidentialité."
           ]
         ],
@@ -487,7 +487,7 @@ export const legalDocuments = {
           "11. Conservation et sécurité",
           [
             "Nous conservons vos données tant que votre compte est actif et aussi longtemps que nécessaire pour fournir le service, respecter nos obligations légales, régler des différends et protéger la plateforme.",
-            "Nous supprimons votre compte des systèmes de RouteWise immédiatement. Les copies conservées par nos fournisseurs, comme les sauvegardes de la base de données, les rapports d’erreur et les registres des boutiques de paiement, expirent selon leurs propres délais de conservation (jusqu’à 90 jours pour les rapports d’erreur, par exemple), sauf si la loi exige de les garder plus longtemps.",
+            "Nous supprimons votre compte des systèmes de RouteWise immédiatement. Les copies conservées par nos fournisseurs, comme les sauvegardes de la base de données, les rapports d’erreur et les registres des boutiques de paiement, expirent selon leurs propres délais de conservation (jusqu’à 90 jours pour les rapports d’erreur, par exemple), sauf si la loi exige de les garder plus longtemps. Les statistiques d’utilisation anonymes ne sont pas liées à votre compte : sa suppression ne les retire donc pas ; elles sont effacées après 12 mois.",
             "Aucun système n’est sûr à 100 %. Nous utilisons des mesures de protection raisonnables, mais ne pouvons garantir une sécurité absolue contre toutes les menaces."
           ]
         ],
@@ -602,7 +602,7 @@ export const legalDocuments = {
     "footer": "Optimiza rutas, importa direcciones y envía entregas al mapa correcto.",
     "privacy": {
       "title": "Política de Privacidad de RouteWise",
-      "updated": "Última actualización: 18 de noviembre de 2026",
+      "updated": "Última actualización: 19 de noviembre de 2026",
       "intro": "Esta política explica qué información usa RouteWise, por qué se usa, quién la procesa y qué opciones tienes sobre tus datos.",
       "sections": [
         [
@@ -660,13 +660,13 @@ export const legalDocuments = {
           "8. Límites de uso y diagnóstico",
           [
             "Contamos, por cuenta y por día, las búsquedas de direcciones, lecturas de etiquetas e importaciones que usas, para aplicar los límites de tu plan y mostrarte cuánto te queda.",
-            "Cuando la app falla o encuentra un error, enviamos un informe a Sentry con detalles técnicos (versión de la app, dispositivo, identificador de la solicitud) y tu identificador de usuario, sin tus direcciones, nombres de paradas, fotos, correo ni tokens. Los registros de nuestros servidores siguen la misma regla. En routewise.app contamos las visitas a las páginas con Vercel Web Analytics, que no usa cookies y no te identifica. RouteWise no muestra anuncios, no vende tus datos y no te rastrea en otras apps o sitios web."
+            "Cuando la app falla o encuentra un error, enviamos un informe a Sentry con detalles técnicos (versión de la app, dispositivo, identificador de la solicitud) y tu identificador de usuario, sin tus direcciones, nombres de paradas, fotos, correo ni tokens. Los registros de nuestros servidores siguen la misma regla. Para entender cómo se usa la app y mejorarla, la app también envía estadísticas anónimas de uso a PostHog: qué pantallas y funciones se usan, recuentos (como el número de paradas), duraciones y códigos de error, junto con la versión de la app, la plataforma (iOS o Android), el idioma y el plan. Nunca incluyen tus direcciones, nombres de paradas, coordenadas, textos leídos de etiquetas o importaciones, correo ni identificador de usuario, y cada sesión de la app recibe un identificador aleatorio nuevo, así que estas estadísticas no están vinculadas a ti, a tu cuenta ni a tus otras sesiones. En routewise.app contamos las visitas a las páginas con Vercel Web Analytics, que no usa cookies y no te identifica. RouteWise no muestra anuncios, no vende tus datos y no te rastrea en otras apps o sitios web."
           ]
         ],
         [
           "9. Proveedores de servicios y transferencias internacionales",
           [
-            "RouteWise usa estos proveedores, cada uno solo para su función: Supabase (cuentas, base de datos y listas de direcciones de las ciudades), Render (servidores de RouteWise), Vercel (sitio web y conteo de visitas), Google Maps Platform (búsqueda de direcciones, lugares y rutas), OpenAI (lectura de direcciones en fotos e importaciones), Apple, Google Play y RevenueCat (suscripciones), Sentry (informes de errores), Grupos de Google (grupo de testers de Android) y un proveedor de envío de correos (correos de la cuenta).",
+            "RouteWise usa estos proveedores, cada uno solo para su función: Supabase (cuentas, base de datos y listas de direcciones de las ciudades), Render (servidores de RouteWise), Vercel (sitio web y conteo de visitas), Google Maps Platform (búsqueda de direcciones, lugares y rutas), OpenAI (lectura de direcciones en fotos e importaciones), Apple, Google Play y RevenueCat (suscripciones), Sentry (informes de errores), PostHog (estadísticas anónimas de uso de la app), Grupos de Google (grupo de testers de Android) y un proveedor de envío de correos (correos de la cuenta).",
             "Estos proveedores pueden procesar datos fuera de tu país, incluso en Estados Unidos, conforme a sus propias obligaciones de seguridad y privacidad."
           ]
         ],
@@ -682,7 +682,7 @@ export const legalDocuments = {
           "11. Conservación y seguridad",
           [
             "Conservamos tus datos mientras tu cuenta esté activa y el tiempo necesario para prestar el servicio, cumplir obligaciones legales, resolver disputas y proteger la plataforma.",
-            "Eliminamos tu cuenta de los sistemas de RouteWise de inmediato. Las copias que conservan nuestros proveedores, como copias de seguridad de la base de datos, informes de errores y registros de las tiendas de pago, expiran según los plazos de conservación de esos proveedores (los informes de errores, por ejemplo, en hasta 90 días), salvo que la ley exija conservarlas por más tiempo.",
+            "Eliminamos tu cuenta de los sistemas de RouteWise de inmediato. Las copias que conservan nuestros proveedores, como copias de seguridad de la base de datos, informes de errores y registros de las tiendas de pago, expiran según los plazos de conservación de esos proveedores (los informes de errores, por ejemplo, en hasta 90 días), salvo que la ley exija conservarlas por más tiempo. Las estadísticas anónimas de uso no están vinculadas a tu cuenta, así que eliminarla no las borra; se eliminan después de 12 meses.",
             "Ningún sistema es 100 % seguro. Usamos medidas de protección razonables, pero no podemos garantizar seguridad absoluta frente a todas las amenazas."
           ]
         ],
@@ -805,7 +805,7 @@ export const accountDeletion: Record<Locale, {
   "en": {
     "nav": "Delete account",
     "title": "Delete your RouteWise account",
-    "updated": "Last updated: October 21, 2026",
+    "updated": "Last updated: November 19, 2026",
     "intro": "You can delete your RouteWise account (developer: Hoff Silva) and its data at any time, in the app or by email.",
     "sections": [
       [
@@ -831,7 +831,7 @@ export const accountDeletion: Record<Locale, {
       [
         "4. What is kept, and for how long",
         [
-          "Copies kept by our providers, such as database backups, error reports, and payment-store records, expire on those providers' retention schedules (error reports, for example, after up to 90 days), unless the law requires keeping them longer."
+          "Copies kept by our providers, such as database backups, error reports, and payment-store records, expire on those providers' retention schedules (error reports, for example, after up to 90 days), unless the law requires keeping them longer. Anonymous usage statistics are not linked to your account, so deleting it does not remove them; they are deleted after 12 months."
         ]
       ],
       [
@@ -851,7 +851,7 @@ export const accountDeletion: Record<Locale, {
   "pt": {
     "nav": "Excluir conta",
     "title": "Excluir sua conta do RouteWise",
-    "updated": "Última atualização: 21 de outubro de 2026",
+    "updated": "Última atualização: 19 de novembro de 2026",
     "intro": "Você pode excluir sua conta do RouteWise (desenvolvedor: Hoff Silva) e os dados dela a qualquer momento, pelo app ou por e-mail.",
     "sections": [
       [
@@ -877,7 +877,7 @@ export const accountDeletion: Record<Locale, {
       [
         "4. O que fica guardado, e por quanto tempo",
         [
-          "Cópias mantidas pelos nossos prestadores, como backups do banco de dados, relatórios de erro e registros das lojas de pagamento, expiram conforme os prazos de retenção desses prestadores (relatórios de erro, por exemplo, em até 90 dias), salvo quando a lei exigir guardá-las por mais tempo."
+          "Cópias mantidas pelos nossos prestadores, como backups do banco de dados, relatórios de erro e registros das lojas de pagamento, expiram conforme os prazos de retenção desses prestadores (relatórios de erro, por exemplo, em até 90 dias), salvo quando a lei exigir guardá-las por mais tempo. As estatísticas anônimas de uso não são vinculadas à sua conta, então excluí-la não as remove; elas são apagadas após 12 meses."
         ]
       ],
       [
@@ -897,7 +897,7 @@ export const accountDeletion: Record<Locale, {
   "fr": {
     "nav": "Supprimer le compte",
     "title": "Supprimer votre compte RouteWise",
-    "updated": "Dernière mise à jour : 21 octobre 2026",
+    "updated": "Dernière mise à jour : 19 novembre 2026",
     "intro": "Vous pouvez supprimer votre compte RouteWise (développeur : Hoff Silva) et ses données à tout moment, dans l’app ou par courriel.",
     "sections": [
       [
@@ -923,7 +923,7 @@ export const accountDeletion: Record<Locale, {
       [
         "4. Ce qui est conservé, et pendant combien de temps",
         [
-          "Les copies conservées par nos fournisseurs, comme les sauvegardes de la base de données, les rapports d’erreur et les registres des boutiques de paiement, expirent selon les délais de conservation de ces fournisseurs (jusqu’à 90 jours pour les rapports d’erreur, par exemple), sauf si la loi exige de les conserver plus longtemps."
+          "Les copies conservées par nos fournisseurs, comme les sauvegardes de la base de données, les rapports d’erreur et les registres des boutiques de paiement, expirent selon les délais de conservation de ces fournisseurs (jusqu’à 90 jours pour les rapports d’erreur, par exemple), sauf si la loi exige de les conserver plus longtemps. Les statistiques d’utilisation anonymes ne sont pas liées à votre compte : sa suppression ne les retire donc pas ; elles sont effacées après 12 mois."
         ]
       ],
       [
@@ -943,7 +943,7 @@ export const accountDeletion: Record<Locale, {
   "es": {
     "nav": "Eliminar cuenta",
     "title": "Eliminar tu cuenta de RouteWise",
-    "updated": "Última actualización: 21 de octubre de 2026",
+    "updated": "Última actualización: 19 de noviembre de 2026",
     "intro": "Puedes eliminar tu cuenta de RouteWise (desarrollador: Hoff Silva) y sus datos en cualquier momento, desde la app o por correo.",
     "sections": [
       [
@@ -969,7 +969,7 @@ export const accountDeletion: Record<Locale, {
       [
         "4. Qué se conserva y por cuánto tiempo",
         [
-          "Las copias que conservan nuestros proveedores, como copias de seguridad de la base de datos, informes de errores y registros de las tiendas de pago, expiran según los plazos de conservación de esos proveedores (los informes de errores, por ejemplo, en hasta 90 días), salvo que la ley exija conservarlas más tiempo."
+          "Las copias que conservan nuestros proveedores, como copias de seguridad de la base de datos, informes de errores y registros de las tiendas de pago, expiran según los plazos de conservación de esos proveedores (los informes de errores, por ejemplo, en hasta 90 días), salvo que la ley exija conservarlas más tiempo. Las estadísticas anónimas de uso no están vinculadas a tu cuenta, así que eliminarla no las borra; se eliminan después de 12 meses."
         ]
       ],
       [

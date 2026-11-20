@@ -17,7 +17,7 @@ export const legalDocuments = {
     "footer": "Optimize routes, import addresses, and send deliveries to the right map.",
     "privacy": {
       "title": "RouteWise Privacy Policy",
-      "updated": "Last updated: November 19, 2026",
+      "updated": "Last updated: November 20, 2026",
       "intro": "This policy explains what information RouteWise uses, why it is used, who processes it, and what choices you have over your data.",
       "sections": [
         [
@@ -52,7 +52,7 @@ export const legalDocuments = {
         [
           "5. Label scanning, imports, and images",
           [
-            "When you scan a label, the text is read on your device first. If that isn't enough, a reduced copy of the photo is sent to RouteWise servers and to OpenAI to extract the address.",
+            "When you scan a label, the text is read on your device first. If that isn't enough, the text read from the label is sent to RouteWise servers and to OpenAI to find the address; if the device couldn't read the text, or that doesn't find it, a reduced copy of the photo is sent instead.",
             "We send the files, text, and photos you import to RouteWise servers and process them with OpenAI and Google Maps Platform to build the review list. RouteWise does not keep these photos or files after processing; OpenAI and Google may keep what they receive for a limited time under their own policies. Only use content you are allowed to process."
           ]
         ],
@@ -212,7 +212,7 @@ export const legalDocuments = {
     "footer": "Otimize rotas, importe endereços e envie entregas para o mapa certo.",
     "privacy": {
       "title": "Política de Privacidade do RouteWise",
-      "updated": "Última atualização: 19 de novembro de 2026",
+      "updated": "Última atualização: 20 de novembro de 2026",
       "intro": "Esta política explica quais informações o RouteWise usa, por que elas são usadas, quem as processa e quais escolhas você tem sobre seus dados.",
       "sections": [
         [
@@ -247,7 +247,7 @@ export const legalDocuments = {
         [
           "5. Leitura de etiquetas, importação e imagens",
           [
-            "Quando você lê uma etiqueta, o texto é lido primeiro no seu aparelho. Se isso não bastar, uma cópia reduzida da foto é enviada aos servidores do RouteWise e à OpenAI para extrair o endereço.",
+            "Quando você lê uma etiqueta, o texto é lido primeiro no seu aparelho. Se isso não bastar, o texto lido da etiqueta é enviado aos servidores do RouteWise e à OpenAI para encontrar o endereço; se o aparelho não conseguir ler o texto, ou se isso não o encontrar, uma cópia reduzida da foto é enviada no lugar.",
             "Enviamos os arquivos, textos e fotos que você importa aos servidores do RouteWise e os processamos com a OpenAI e a Google Maps Platform para montar a lista de revisão. O RouteWise não guarda essas fotos e arquivos depois do processamento; a OpenAI e o Google podem mantê-los por tempo limitado, conforme suas próprias políticas. Use apenas conteúdo que você tem autorização para processar."
           ]
         ],
@@ -407,7 +407,7 @@ export const legalDocuments = {
     "footer": "Optimisez les itinéraires, importez les adresses et envoyez les livraisons vers la bonne carte.",
     "privacy": {
       "title": "Politique de confidentialité de RouteWise",
-      "updated": "Dernière mise à jour : 19 novembre 2026",
+      "updated": "Dernière mise à jour : 20 novembre 2026",
       "intro": "Cette politique explique quelles informations RouteWise utilise, pourquoi elles sont utilisées, qui les traite et quels choix vous avez sur vos données.",
       "sections": [
         [
@@ -442,7 +442,7 @@ export const legalDocuments = {
         [
           "5. Lecture d’étiquettes, importation et images",
           [
-            "Quand vous numérisez une étiquette, le texte est d’abord lu sur votre appareil. Si ce n’est pas suffisant, une copie réduite de la photo est envoyée aux serveurs de RouteWise et à OpenAI pour extraire l’adresse.",
+            "Quand vous numérisez une étiquette, le texte est d’abord lu sur votre appareil. Si ce n’est pas suffisant, le texte lu sur l’étiquette est envoyé aux serveurs de RouteWise et à OpenAI pour trouver l’adresse; si l’appareil n’a pas pu lire le texte, ou si cela ne la trouve pas, une copie réduite de la photo est envoyée à la place.",
             "Nous envoyons les fichiers, textes et photos que vous importez aux serveurs de RouteWise et les traitons avec OpenAI et Google Maps Platform pour préparer la liste de révision. RouteWise ne conserve pas ces photos ni ces fichiers après le traitement; OpenAI et Google peuvent conserver ce qu’ils reçoivent pendant une durée limitée selon leurs propres politiques. Utilisez seulement du contenu que vous êtes autorisé à traiter."
           ]
         ],
@@ -602,7 +602,7 @@ export const legalDocuments = {
     "footer": "Optimiza rutas, importa direcciones y envía entregas al mapa correcto.",
     "privacy": {
       "title": "Política de Privacidad de RouteWise",
-      "updated": "Última actualización: 19 de noviembre de 2026",
+      "updated": "Última actualización: 20 de noviembre de 2026",
       "intro": "Esta política explica qué información usa RouteWise, por qué se usa, quién la procesa y qué opciones tienes sobre tus datos.",
       "sections": [
         [
@@ -637,7 +637,7 @@ export const legalDocuments = {
         [
           "5. Lectura de etiquetas, importación e imágenes",
           [
-            "Cuando escaneas una etiqueta, el texto se lee primero en tu dispositivo. Si no es suficiente, una copia reducida de la foto se envía a los servidores de RouteWise y a OpenAI para extraer la dirección.",
+            "Cuando escaneas una etiqueta, el texto se lee primero en tu dispositivo. Si no es suficiente, el texto leído de la etiqueta se envía a los servidores de RouteWise y a OpenAI para encontrar la dirección; si el dispositivo no pudo leer el texto, o así no se encuentra, se envía en su lugar una copia reducida de la foto.",
             "Enviamos los archivos, textos y fotos que importas a los servidores de RouteWise y los procesamos con OpenAI y Google Maps Platform para preparar la lista de revisión. RouteWise no conserva estas fotos ni archivos después del procesamiento; OpenAI y Google pueden conservar lo que reciben por un tiempo limitado según sus propias políticas. Usa solo contenido que tengas autorización para procesar."
           ]
         ],
